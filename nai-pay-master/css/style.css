@@ -1101,6 +1101,19 @@ a, a:hover, a:focus, input:focus {
 	background-color: rgb(72, 170, 78);
 }
 
+.account-pop-up{
+	background: #00000066;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 100000000000000;
+}
+.font-14{
+	font-size: 14px !important;
+}
+
 @media (max-width: 991px) and (min-width: 768px)
 .footer-widget h3 {
     font-size: 22px;
