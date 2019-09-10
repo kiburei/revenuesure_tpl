@@ -1,0 +1,608 @@
+<!doctype html>
+<html>
+<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Market Stall Rent</title>
+		<!-- Bootstrap CSS -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<!--	bootstrap css-->
+		<!--  CSS -->
+		<link rel="stylesheet" href="css/style.css">
+		<!-- <link rel="stylesheet" href="css/style2.css"> -->
+
+		<link rel="stylesheet" href="css/form.css">
+	</head>
+
+<body>
+	<!--	!--	MENU CONTROLS-->
+
+		<header>
+			<div class="nav-holder"></div>
+
+			<nav class="navbar-expand main-navigation">
+				<ul class="navbar-nav">
+					<li class="nav-item toogle-btn">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGEAAAA1CAQAAAD7EE3JAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfjAx0ANwlQDC6OAAABCklEQVRo3u2YPQ6CQBQGB2LhDbyAsZGTYDyFWuj1jEex0HABTwCFyVqIpbD+hPcteUO7ITtkl+RNBsCcFVNSo+FEFQDYUBOSfGo2gYwFZybWH/Rr7ixzyoQFYEKZW+/hd9I/SEXOlT2N9U6+pOEQLhkAc9bMrPfzMTeOr59q0gRGcJ1dQQFXUMAVFHAFBVxBAVdQYAQKffOacp5pOFH1LVLPM22EeU8KU/WdZdddSCHPjCXCvCeNg1R0L9jKX+dd93UG7TzjEUYIV1DAFRRwBQVcQQFXUMAVFPjfSDN864gqGPHYtI7eghGP3YjaUzDisWsd4y8Y8VgepOL3lzyxaR1RBSOe4VtHWzAe1BymrNoaXZcAAAAASUVORK5CYII=" style=" width: 100%; height: 100%;"></image>
+				</svg>
+					</li>
+					<li class="nav-item logo"><a class="nav-link" href="index.html"><img src="img/logo/youtube-logo-png-transparent-image-5.png"></a></li>
+				</ul>
+				<span class="user-details">
+				<img class="icon" src="img/icons/notification.png">
+				<img class="dp" src="img/user/da1c015b357a03bc2468186e54c79795.jpg">
+				<ul class="navbar-nav name-discount">
+					<li class="name">Fname Lname</li>
+					<li class="discount">online</li>
+				</ul>
+
+<!--				toggle menu-->
+				<div class="toogle-user-container drop-shadow">
+					<div class="arrow-container">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  width="25px" height="20px">
+							<path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M12.000,0.000 L-0.000,20.000 L25.000,20.000 L12.000,0.000 Z"/>
+							</svg>
+					</div>
+					<ul class="toogle-user">
+
+					<li><a href="history.html">transaction history</a></li>
+					<li>update profile</li>
+					<li>invite friend</li>
+					<li>logout</li>
+				</ul>
+				</div>
+<!--				toggle menu-->
+			</span>
+			</nav>
+
+			<div class="toogle-menu-container hide">
+
+				<div class="menu-items">
+					<nav class="navbar-expand">
+						<ul class="navbar-nav">
+							<li class="nav-item toogle-btn">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGEAAAA1CAQAAAD7EE3JAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfjAx0ANwlQDC6OAAABCklEQVRo3u2YPQ6CQBQGB2LhDbyAsZGTYDyFWuj1jEex0HABTwCFyVqIpbD+hPcteUO7ITtkl+RNBsCcFVNSo+FEFQDYUBOSfGo2gYwFZybWH/Rr7ixzyoQFYEKZW+/hd9I/SEXOlT2N9U6+pOEQLhkAc9bMrPfzMTeOr59q0gRGcJ1dQQFXUMAVFHAFBVxBAVdQYAQKffOacp5pOFH1LVLPM22EeU8KU/WdZdddSCHPjCXCvCeNg1R0L9jKX+dd93UG7TzjEUYIV1DAFRRwBQVcQQFXUMAVFPjfSDN864gqGPHYtI7eghGP3YjaUzDisWsd4y8Y8VgepOL3lzyxaR1RBSOe4VtHWzAe1BymrNoaXZcAAAAASUVORK5CYII=" style=" width: 100%; height: 100%;"></image>
+						</svg>
+							</li>
+							<li class="nav-item logo"><a class="nav-link"><img src="img/logo/youtube-logo-png-transparent-image-5.png"></a></li>
+						</ul>
+					</nav>
+					<ul class="navbar-nav links-container">
+						<li><a class="nav-link" href="index.html"><img src="img/icons/simple-house-thin (1).png">Home</a></li>
+
+						<li><a class="nav-link toggle"><img src="img/icons/parking.png">Parking Fee</a>
+							<!-- Dropdown -->
+							<ul class="sub-menu ml-4">
+								<li class="py-2"><a href="daily parking.html">Daily Parking</a></li>
+								<li class="py-2"><a href="seasonal parking form.html">Seasonal Parking</a></li>
+								<li class="py-2"><a href="parking penalties.html">Penalties</a></li>
+								<li class="py-2"><a href="parking.html">Sacco Parking</a></li>
+								<li class="py-2"><a href="">Offstreet Parking</a></li>
+							</ul>
+						</li>
+
+						<li><a class="nav-link toggle"><img src="img/icons/house rent.png">Rent</a>
+							<!-- Dropdown -->
+							<ul class="sub-menu ml-4">
+								<li class="py-2"><a href="house rent form.html">House Rent</a></li>
+								<li class="py-2"><a href="market stalls rent.html">Market/Stalls Rent</a></li>
+								<li class="py-2"><a href="print stall receipt.html">House and Stalls Receipt</a></li>
+							</ul>
+						</li>
+
+						<li><a class="nav-link" href="land-rates.html"><img src="img/icons/land rate.png">Land Rate Payment</a>
+							<!-- Dropdown -->
+							<ul class="sub-menu ml-4">
+								<li class="py-2"><a href="land-rates.html">Pay</a></li>
+								<li class="py-2"><a href="land-rate-receipt.html">Receipt</a></li>
+							</ul>
+						</li>
+
+						<li><a class="nav-link" href="single-business-permit.html"><img src="img/icons/briefcase.png">Single Business Permit</a></li>
+
+						<li><a class="nav-link toggle"><img src="img/icons/land rate.png">Unified Business Permit</a>
+							<!-- Dropdown -->
+							<ul class="sub-menu ml-4">
+								<li class="py-2"><a href="renew UBP.html">Renew</a></li>
+								<li class="py-2"><a href="register-business.html">Register</a></li>
+								<li class="py-2"><a href="UBP receipt.html">Receipt</a></li>
+							</ul>
+						</li>
+
+						<li><a class="nav-link toggle"><img src="img/icons/land rate.png">Miscellaneous</a>
+							<!-- Dropdown -->
+							<ul class="sub-menu ml-4">
+								<li class="py-2"><a href="miss bill.html">Pay</a></li>
+								<li class="py-2"><a href="misc receipt.html">Receipt</a></li>
+							</ul>
+						</li>
+
+						<li><a class="nav-link toggle"><img src="img/icons/land rate.png">e-Construction</a>
+							<!-- Dropdown -->
+							<ul class="sub-menu ml-4">
+								<li class="py-2"><a href="construction permit.html">Pay</a></li>
+								<li class="py-2"><a href="e-construction invoice.html">Receipt</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</header>
+		<!--	MENU CONTROLS-->
+	
+	
+	<section id="home-one-info" class="homebg">
+		<!-- view-ad -->
+		<div id="home-section" class="parallax-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<h2 class="text-capitalize">Do it faster</h2>
+						<h1 style="color: #fff" class="pb-">Welcome To NCCG Self service Portal</h1>
+						<p class="text-capitalize">start paying for your county fees efficiently and surprisingly fast.</p>
+						<div class="ad-btn">
+							<a href="ad-post.html" class="btn btn-primary"><i class="fa fa-bullhorn" aria-hidden="true"></i>sign up</a>
+							
+						</div>
+					</div>
+					<div class="col-sm-6 text-center  phone-container d-none d-md-block  d-lg-block">
+						<img src="img/landing page images/iPhone X.png" class="img-responsive">
+                        <div class="shadow"></div>
+					</div>
+				</div><!-- row -->
+			</div><!-- contaioner -->
+		</div>
+		<!-- view-ad -->
+		
+		<div class="container">
+			<div class="row">
+				<!-- row -->	
+				
+<!--				services go here-->
+
+		<div class="container">
+			
+			<div class="section services position-relative">
+				<!-- single-service -->
+				<div class="col-sm-12 text-capitalize position-relative p-0">
+					<h2>services</h2>
+					<p>Browse through the county services that are available to be paid for online</p>
+					<hr>
+				</div>
+				
+				
+				<section class="options-container p-0" id="options-container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <!--            option unified business permit-->
+                    <div class="col-md-4 col-lg-4 col-sm-5 col-12 option business-permit">
+                        <div class="active-triangle display-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40.5px" height="33.5px">
+                                <path fill-rule="evenodd" stroke="#066130" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="#066130" d="M38.084,1.007 L1.015,1.007 L1.015,31.423 L38.084,1.007 Z" />
+                            </svg>
+                        </div>
+                        <div class="icon-container"><img src="img/new-icons/briefcase (1).svg"></div>
+                        <div class="circular-bg"></div>
+                        <p>Unified Business Permit</p>
+                        <!--                more information about the option-->
+                        <div class="options-info left">
+                            <p>Reneiw or register for your business permit, print your receipts and so on...</p>
+                            <span>
+                                <div>
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+                                        <rect fill="none" width="25" height="25" />
+                                        <polyline fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" points="19.946,35.891 9.057,25 19.947,14.11 " />
+                                        <line fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="41" y1="25" x2="9.662" y2="25" />
+                                    </svg>
+                                </div>
+                                More
+                            </span>
+                        </div>
+                        <!--                more information about the option-->
+                    </div>
+                    <!--            end of option-->
+                    <!--            option landrates-->
+                    <div class="col-md-4 col-lg-4 col-sm-5 col-12 option land-rates">
+                        <div class="active-triangle display-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40.5px" height="33.5px">
+                                <path fill-rule="evenodd" stroke="#066130" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="#066130" d="M38.084,1.007 L1.015,1.007 L1.015,31.423 L38.084,1.007 Z" />
+                            </svg>
+                        </div>
+                        <div class="icon-container"><img src="img/new-icons/house.svg"></div>
+                        <div class="circular-bg"></div>
+                        <p>Land rates</p>
+                        <!--                more information about the option-->
+                        <div class="options-info left">
+                            <p>Pay for your land rates or event print your receipts</p>
+                            <span>
+                                <div>
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+                                        <rect fill="none" width="25" height="25" />
+                                        <polyline fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" points="19.946,35.891 9.057,25 19.947,14.11 " />
+                                        <line fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="41" y1="25" x2="9.662" y2="25" />
+                                    </svg>
+                                </div>
+                                More
+                            </span>
+                        </div>
+                        <!--                more information about the option-->
+                    </div>
+                    <!--            end of option-->
+                    <!--            option rent payment-->
+                    <div class="col-md-4 col-lg-4 col-sm-5 col-12 option rents">
+                        <div class="active-triangle display-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40.5px" height="33.5px">
+                                <path fill-rule="evenodd" stroke="#066130" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="#066130" d="M38.084,1.007 L1.015,1.007 L1.015,31.423 L38.084,1.007 Z" />
+                            </svg>
+                        </div>
+                        <div class="icon-container"><img src="img/new-icons/key.svg"></div>
+                        <div class="circular-bg"></div>
+                        <p>Rents</p>
+                        <!--                more information about the option-->
+                        <div class="options-info left">
+                            <p>Pay for your house rent, pay your stall rent</p>
+                            <span>
+                                <div>
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+                                        <rect fill="none" width="25" height="25" />
+                                        <polyline fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" points="19.946,35.891 9.057,25 19.947,14.11 " />
+                                        <line fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="41" y1="25" x2="9.662" y2="25" />
+                                    </svg>
+                                </div>
+                                More
+                            </span>
+                        </div>
+                        <!--                more information about the option-->
+                    </div>
+                    <!--            end of option-->
+                    <!--            option parking fees-->
+                    <div class="col-md-4 col-lg-4 col-sm-5 col-12 option parking">
+                        <div class="active-triangle display-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40.5px" height="33.5px">
+                                <path fill-rule="evenodd" stroke="#066130" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="#066130" d="M38.084,1.007 L1.015,1.007 L1.015,31.423 L38.084,1.007 Z" />
+                            </svg>
+                        </div>
+                        <div class="icon-container"><img src="img/new-icons/parking.svg"></div>
+                        <div class="circular-bg"></div>
+                        <p>Parking Fees</p>
+                        <!--                more information about the option-->
+                        <div class="options-info left">
+                            <p>Pay for your parking, check your parking status, update your daily parking or even start paying for your seasonal parking fee, this is the link to go to...</p>
+                            <span>
+                                <div>
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+                                        <rect fill="none" width="25" height="25" />
+                                        <polyline fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" points="19.946,35.891 9.057,25 19.947,14.11 " />
+                                        <line fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="41" y1="25" x2="9.662" y2="25" />
+                                    </svg>
+                                </div>
+                                More
+                            </span>
+                        </div>
+                        <!--                more information about the option-->
+                    </div>
+                    <!--            end of option-->
+                    <!--            option-->
+                    <div class="col-md-4 col-lg-4 col-sm-5 col-12 option E-Wallet">
+                        <div class="active-triangle display-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40.5px" height="33.5px">
+                                <path fill-rule="evenodd" stroke="#066130" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="#066130" d="M38.084,1.007 L1.015,1.007 L1.015,31.423 L38.084,1.007 Z" />
+                            </svg>
+                        </div>
+                        <div class="icon-container"><img src="img/new-icons/receipt.svg"></div>
+                        <div class="circular-bg"></div>
+                        <p>Bills</p>
+                        <!--                more information about the option-->
+                        <div class="options-info left">
+                            <p>Not sure of where your county fees are to be allocated, just visit this link and you will be assisted</p>
+                            <span>
+                                <div>
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+                                        <rect fill="none" width="25" height="25" />
+                                        <polyline fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" points="19.946,35.891 9.057,25 19.947,14.11 " />
+                                        <line fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="41" y1="25" x2="9.662" y2="25" />
+                                    </svg>
+                                </div>
+                                More
+                            </span>
+                        </div>
+                        <!--                more information about the option-->
+                    </div>
+                    <!--            end of option-->
+                    <!--            option-->
+                    <div class="col-md-4 col-lg-4 col-sm-5 col-12 option construction">
+                        <div class="active-triangle display-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40.5px" height="33.5px">
+                                <path fill-rule="evenodd" stroke="#066130" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="#066130" d="M38.084,1.007 L1.015,1.007 L1.015,31.423 L38.084,1.007 Z" />
+                            </svg>
+                        </div>
+                        <div class="icon-container"><img src="img/new-icons/brickwall.svg"></div>
+                        <div class="circular-bg"></div>
+                        <p>E-Construction</p>
+                        <!--                more information about the option-->
+                        <div class="options-info left">
+                            <p>Click this option if you want to pay for your contruction fee</p>
+                            <span>
+                                <div>
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+                                        <rect fill="none" width="25" height="25" />
+                                        <polyline fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" points="19.946,35.891 9.057,25 19.947,14.11 " />
+                                        <line fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="41" y1="25" x2="9.662" y2="25" />
+                                    </svg>
+                                </div>
+                                More
+                            </span>
+                        </div>
+                        <!--                more information about the option-->
+                    </div>
+                    <!--            end of option-->
+                </div>
+                <div class="col-lg-4 sub-link-container desktop-link pd-0">
+                    <!--            unified busines permit sub-links-->
+                    <div class="sub-link unified-biz-permit1 left" id="unified-biz-permit">
+                        <div class="subicon">
+                            <div>
+                                <img src="img/icons/light orange icons/construction.png">
+                                <h2>unified business permit</h2>
+                            </div>
+                            <p>Select an Option from Below</p>
+                        </div>
+                        <ul>
+                            <li><i class="fas fa-arrow-right"></i><a href="renew UBP.html">renew UBP</a></li>
+                            <li><i class="fas fa-arrow-right"></i><a href="register-business.html">register New business</a></li>
+                            <li><i class="fas fa-arrow-right"></i><a href="single business permit.html">print permit</a></li>
+                            <li><i class="fas fa-arrow-right"></i><a href="#">print receipt</a></li>
+                        </ul>
+                    </div>
+                    <!--            unified busines permit sub-links-->
+                    <!--            land rates-->
+                    <div class="sub-link land-rate1 left" id="land-rate">
+                        <div class="subicon">
+                            <div>
+                                <img src="img/icons/light orange icons/construction.png">
+                                <h2>land rate</h2>
+                            </div>
+                            <p>Select an Option from Below</p>
+                        </div>
+                        <ul>
+                            <li><i class="fas fa-arrow-right"></i><a href="pay land rate.html">pay land rate</a></li>
+                            <li><i class="fas fa-arrow-right"></i><a href="land-receipt.html">print receipt</a></li>
+                        </ul>
+                    </div>
+                    <!--            land rates-->
+                    <!--            rent sub-links-->
+                    <div class="sub-link rent1 left" id="rent">
+                        <div class="subicon">
+                            <div>
+                                <img src="img/icons/light orange icons/construction.png">
+                                <h2>rent</h2>
+                            </div>
+                            <p>Select an Option from Below</p>
+                        </div>
+                        <ul>
+                            <li><i class="fas fa-arrow-right"></i><a href="house rent form.html">house</a></li>
+                            <li><i class="fas fa-arrow-right"></i><a href="market stalls rent.html">stalls</a></li>
+                            <li><i class="fas fa-arrow-right"></i><a href="print stall receipt.html">receipt</a></li>
+                        </ul>
+                    </div>
+                    <!--            unified busines permit sub-links-->
+                    <!--            parking sub-links-->
+                    <div class="sub-link parking1 left" id="parking">
+                        <div class="subicon">
+                            <div>
+                                <img src="img/icons/light orange icons/construction.png">
+                                <h2>parking</h2>
+                            </div>
+                            <p>Select an Option from Below</p>
+                        </div>
+                        <ul>
+                            <li><i class="fas fa-arrow-right"></i><a href="parking.html">daily parking</a></li>
+                            <li><i class="fas fa-arrow-right"></i><a href="seasonal parking form.html">Seasonal parking</a></li>
+                            <li><i class="fas fa-arrow-right"></i><a href="">Sacco</a></li>
+                            <li><i class="fas fa-arrow-right"></i><a href="">Offstreet Parking</a></li>
+                            <li><i class="fas fa-arrow-right"></i><a href="parking penalties.html">Penalties</a></li>
+                            <li><i class="fas fa-arrow-right"></i><a href="#">print receipt</a></li>
+                        </ul>
+                    </div>
+                    <!--            unified busines permit sub-links-->
+                    <!--            wallet sub-links-->
+                    <div class="sub-link wallet1 left" id="wallet">
+                        <div class="subicon">
+                            <div>
+                                <img src="img/icons/light orange icons/construction.png">
+                                <h2>Miscellaneous Fees</h2>
+                            </div>
+                            <p>Select an Option from Below</p>
+                        </div>
+                        <ul>
+                            <li><i class="fas fa-arrow-right"></i><a href="miss bill.html">pay Miscellaneous</a> </li>
+                            <li><i class="fas fa-arrow-right"></i><a href="misc receipt.html">Print Miscellaneous </a></li>
+                        </ul>
+                    </div>
+                    <!--            wallet sub-links-->
+                    <!--            wallet sub-links-->
+                    <div class="sub-link construction1 left" id="construction">
+                        <div class="subicon">
+                            <div>
+                                <img src="img/icons/light orange icons/construction.png">
+                                <h2>construction</h2>
+                            </div>
+                            <p>Select an Option from Below</p>
+                        </div>
+                        <ul>
+                            <li><i class="fas fa-arrow-right"></i><a href="construction permit.html">pay Permit</a></li>
+                            <li><i class="fas fa-arrow-right"></i><a href="e-construction invoice.html">print receipt</a></li>
+                        </ul>
+                    </div>
+                    <!--            wallet sub-links-->
+                </div>
+            </div>
+            <!--    the revenue streams-->
+        </section>
+				
+					
+			</div><!-- services -->	
+		
+														
+		</div>
+<!-- container -->
+	</section>
+			
+			
+			
+			<!-- download -->
+	<section id="download" class="clearfix parallax-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 text-center">
+					<h2>Download on App Store</h2>
+				</div>
+			</div><!-- row -->
+
+			<!-- row -->
+			<div class="row">
+				<!-- download-app -->
+				<div class="col-sm-4">
+					<a href="#" class="download-app">
+						<img src="img/logo/google-play.png" alt="Image" class="img-responsive">
+						<span class="pull-left">
+							<span>available on</span>
+							<strong>Google Play</strong>
+						</span>
+					</a>
+				</div><!-- download-app -->
+
+				<!-- download-app -->
+				<div class="col-sm-4">
+					<a href="#" class="download-app">
+						<img src="images/icon/17.png" alt="Image" class="img-responsive">
+						<span class="pull-left">
+							<span>available on</span>
+							<strong>App Store</strong>
+						</span>
+					</a>
+				</div><!-- download-app -->
+
+				<!-- download-app -->
+				<div class="col-sm-4">
+					<a href="#" class="download-app">
+						<img src="images/icon/18.png" alt="Image" class="img-responsive">
+						<span class="pull-left">
+							<span>available on</span>
+							<strong>Windows Store</strong>
+						</span>
+					</a>
+				</div><!-- download-app -->
+			</div><!-- row -->
+		</div><!-- contaioner -->
+	</section><!-- download -->
+			
+			
+<!--			footer-->
+			<footer id="footer" class="clearfix">
+		<!-- footer-top -->
+		<section class="footer-top clearfix">
+			<div class="container">
+				<div class="row">
+					<!-- footer-widget -->
+					<div class="col-sm-3">
+						<div class="footer-widget">
+							<h3>Quik Links</h3>
+							<ul>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Contact Us</a></li>
+								<li><a href="#">Careers</a></li>
+								<li><a href="#">All Cities</a></li>
+								<li><a href="#">Help &amp; Support</a></li>
+								<li><a href="#">Advertise With Us</a></li>
+								<li><a href="#">Blog</a></li>
+							</ul>
+						</div>
+					</div><!-- footer-widget -->
+
+					<!-- footer-widget -->
+					<div class="col-sm-3">
+						<div class="footer-widget">
+							<h3>How to sell fast</h3>
+							<ul>
+								<li><a href="#">How to sell fast</a></li>
+								<li><a href="#">Membership</a></li>
+								<li><a href="#">Banner Advertising</a></li>
+								<li><a href="#">Promote your ad</a></li>
+								<li><a href="#">Kemiio Delivers</a></li>
+								<li><a href="#">FAQ</a></li>
+							</ul>
+						</div>
+					</div><!-- footer-widget -->
+
+					<!-- footer-widget -->
+					<div class="col-sm-3">
+						<div class="footer-widget social-widget">
+							<h3>Follow us on</h3>
+							<ul>
+								<li><a href="#"><i class="fa fa-facebook-official"></i>Facebook</a></li>
+								<li><a href="#"><i class="fa fa-twitter-square"></i>Twitter</a></li>
+								<li><a href="#"><i class="fa fa-google-plus-square"></i>Google+</a></li>
+								<li><a href="#"><i class="fa fa-whatsapp" style="color: #25d366"></i>WhatsApp</a></li>
+								<li><a href="#"><i class="fa fa-youtube-play"></i>Youtube</a></li>
+							</ul>
+						</div>
+					</div><!-- footer-widget -->
+
+					<!-- footer-widget -->
+					<div class="col-sm-3">
+						<div class="footer-widget news-letter">
+							<h3>Newsletter</h3>
+							<p>Kemiio is Worldest leading classifieds platform that brings!</p>
+							<!-- form -->
+							<form action="#">
+								<input type="email" class="form-control" placeholder="Your E-mail">
+								<button type="submit" class="btn btn-primary">Subscribe</button>
+							</form><!-- form -->			
+						</div>
+					</div><!-- footer-widget -->
+				</div><!-- row -->
+			</div><!-- container -->
+		</section><!-- footer-top -->
+
+		
+		<div class="footer-bottom clearfix text-center">
+			<div class="container">
+				<p>Copyright © 2018 Kemiio </p>
+			</div>
+		</div><!-- footer-bottom -->
+	</footer>
+<!--			footer-->
+			
+			<!--scripts-->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script type="text/javascript" src="js/popmotion.global.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
+    <!-- <script async="async" type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/cleave.js"></script>
+    <script type="text/javascript" src="js/submenuSlider.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript">
+    var audio1 = document.getElementById("audioID");
+
+    //Example of an HTML Audio/Video Method
+
+    function playAudio() {
+        audio1.play();
+    }
+    </script>
+    <!--scripts-->
+</body>
+</html>

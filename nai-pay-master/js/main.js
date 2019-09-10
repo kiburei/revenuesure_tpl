@@ -1,0 +1,132 @@
+$(window).on('load', function() {
+  $('#myModal').modal('show');
+});
+
+(function($) {
+
+  function closesublinks() {
+    $(".construction1").addClass("left");
+    $(".wallet1").addClass("left");
+    $(".parking1").addClass("left");
+    $(".rent1").addClass("left");
+    $(".unified-biz-permit1").addClass("left");
+    $('.land-rate1').addClass("left");
+
+  }
+
+  $(".option").on("click", function() {
+    checkWidth();
+  });
+  $(".hidden-links-container").on("click", function() {
+    $(this).hide();
+  });
+
+  function checkWidth() {
+    var windowSize = $(window).width();
+
+    if (windowSize < 993) {
+      $(".hidden-links-container").css("display", "flex");
+    }
+  }
+
+  // Execute on load
+
+  $(".option").on("click", function() {
+    closesublinks();
+    $(this).addClass("active").siblings().removeClass("active");
+    $(this).children(".active-triangle").removeClass("display-none");
+    $(this).siblings().children(".active-triangle").addClass("display-none");
+  });
+
+  $('.business-permit').on("click", function() {
+    $('.unified-biz-permit1').removeClass("left");
+  });
+
+  $('.construction').on("click", function() {
+    closesublinks();
+    $('.construction1').removeClass("left");
+  });
+
+  $('.E-Wallet').on("click", function() {
+    $('.wallet1').removeClass("left");
+  });
+
+  $('.rents').on("click", function() {
+    $('.rent1').removeClass("left");
+  });
+
+  $('.parking').on("click", function() {
+    $('.parking1').removeClass("left");
+  });
+
+  $('.land-rates').on("click", function() {
+    $('.land-rate1').removeClass("left");
+  });
+
+  $(".name-discount").on("click", function() {
+    $(".toogle-user-container").slideToggle();
+  });
+
+  $(".dp").on("click", function() {
+    $(".toogle-user-container").slideToggle();
+  });
+
+  $(".toogle-user-container").on("click", function() {
+    $(".toogle-user-container").slideUp();
+  });
+
+  //	payment methods mpesa direct
+  $(".m-pesa-direct").on("click", function() {
+    $(".m-pesa-direct-inputs").slideToggle().siblings(".payment-details").slideUp();
+    $(this).siblings().children("span").css("opacity", "0");
+    $(".direct-indicator").css("opacity", "1");
+
+
+  });
+
+  //	payment methods mpesa standard
+  $(".mpesa-standard").on("click", function() {
+    $(".m-pesa-standard-inputs").slideToggle().siblings(".payment-details").slideUp();
+    $(this).siblings().children("span").css("opacity", "0");
+    $(".std-indicator").css("opacity", "1");
+  });
+
+  //	payment methods credits
+  $(".viza-master").on("click", function() {
+    $(".credit-payment-inputs").slideToggle().siblings(".payment-details").slideUp();
+    $(this).siblings().children("span").css("opacity", "0");
+    $(".visa-indicator").css("opacity", "1");
+  });
+
+  //	payment methods airtel
+  $(".airtell").on("click", function() {
+    $(".airtell-inputs").slideToggle().siblings(".payment-details").slideUp();
+    $(this).siblings().children("span").css("opacity", "0");
+    $(".airtel-indicator").css("opacity", "1");
+  });
+
+
+
+})(jQuery);
+
+$(document).ready(function() {
+  // Toggles the side menu and overlay
+  $('.toogle-btn').on('click', function() {
+    $(".overlay").toggleClass("display-none");
+    // $('.toogle-menu-container').toggleClass('hide show');
+  })
+
+  // Closes the side menu and removes the overlay when the overlay is clicked
+  $('.overlay').on('click', function() {
+    // $('.toogle-menu-container').toggleClass('hide show');
+    $(".overlay").toggleClass("display-none");
+  })
+
+  // ScrollMagic for Options
+  var controller = new ScrollMagic.Controller();
+  var ourScene = new ScrollMagic.Scene({
+      triggerElement: '.option',
+      triggerHook: 0.7
+    }).setClassToggle('.option', 'fade-in')
+    .addTo(controller)
+});
