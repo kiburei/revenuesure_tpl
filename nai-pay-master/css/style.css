@@ -897,7 +897,7 @@ img {
     font-weight: 400;
     text-transform: capitalize;
     background-color: #f5d812;
-    padding: 10px 40px 12px;
+   
     border: 0;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -933,6 +933,7 @@ h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
     border-radius: 4px;
 	    margin-top: -100px;
+	border-top: 4px solid #fdc00e;
 }
 
 .services .option{
@@ -1112,6 +1113,31 @@ a, a:hover, a:focus, input:focus {
 }
 .font-14{
 	font-size: 14px !important;
+}
+
+.pop-pointer {
+	display: flex;
+    padding: 5px;
+    background: yellow;
+    margin-right: 15px;
+    border-radius: 50%;
+    color: #495057 !important;
+	font-size: 12px;
+}
+.pop-pointer svg{
+	height: 15px;
+	width: 15px;
+}
+
+.close-pop{
+	right:3rem !important;
+}
+#pop{
+	display: flex;
+}
+
+#download .download-app img{
+	width: 41px;
 }
 
 @media (max-width: 991px) and (min-width: 768px)

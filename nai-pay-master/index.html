@@ -4,8 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Market Stall Rent</title>
+<title>NCCG Self service Platform</title>
 <!-- Bootstrap CSS -->
+	<script src="https://unpkg.com/feather-icons"></script>
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 <link rel="stylesheet" href="css/bootstrap.css">
 <!--	bootstrap css-->
@@ -129,7 +130,7 @@
         <h2 class="text-capitalize">Do it faster</h2>
         <h1 style="color: #fff" class="pb-">Welcome To NCCG Self service Portal</h1>
         <p class="text-capitalize">start paying for your county fees efficiently and surprisingly fast.</p>
-        <div class="ad-btn"> <a href="ad-post.html" class="btn btn-primary"><i class="fa fa-bullhorn" aria-hidden="true"></i>sign up</a> </div>
+        <div class="ad-btn"> <a href="ad-post.html" class="btn btn-primary px-4 py-2"><i class="fa fa-bullhorn" aria-hidden="true"></i>sign up</a> </div>
       </div>
       <div class="col-sm-6 text-center  phone-container d-none d-md-block  d-lg-block"> <img src="img/landing page images/iPhone X.png" class="img-responsive">
         <div class="shadow"></div>
@@ -417,7 +418,7 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12 text-center">
-        <h2>Download on App Store</h2>
+        <h2>NCCG e-Payments Platforms</h2>
       </div>
     </div>
     <!-- row --> 
@@ -425,15 +426,15 @@
     <!-- row -->
     <div class="row"> 
       <!-- download-app -->
-      <div class="col-sm-4"> <a href="#" class="download-app"> <img src="img/logo/google-play.png" alt="Image" class="img-responsive"> <span class="pull-left"> <span>available on</span> <strong>Google Play</strong> </span> </a> </div>
+      <div class="col-sm-4"> <a href="#" class="download-app mb-2"> <img src="img/logo/google-play.png" alt="Image" class="img-responsive"> <span class="pull-left"> <span>available on</span> <strong>Google Play</strong> </span> </a> </div>
       <!-- download-app --> 
       
       <!-- download-app -->
-      <div class="col-sm-4"> <a href="#" class="download-app"> <img src="images/icon/17.png" alt="Image" class="img-responsive"> <span class="pull-left"> <span>available on</span> <strong>App Store</strong> </span> </a> </div>
+      <div class="col-sm-4"> <a href="#" class="download-app mb-2"> <img src="img/logo/ussd.svg" alt="Image" class="img-responsive"> <span class="pull-left"> <span>USSD services</span> <strong>*235#</strong> </span> </a> </div>
       <!-- download-app --> 
       
       <!-- download-app -->
-      <div class="col-sm-4"> <a href="#" class="download-app"> <img src="images/icon/18.png" alt="Image" class="img-responsive"> <span class="pull-left"> <span>available on</span> <strong>Windows Store</strong> </span> </a> </div>
+      <div class="col-sm-4"> <a href="#" class="download-app mb-2"> <img src="img/logo/web.svg" alt="Image" class="img-responsive"> <span class="pull-left"> <span>available on</span> <strong>Web Portal</strong> </span> </a> </div>
       <!-- download-app --> 
     </div>
     <!-- row --> 
@@ -443,23 +444,27 @@
 <!-- download --> 
 	
 <!--	pop up section-->
-	<section class="account-pop-up h-100vh w-100 d-flex justify-content-center align-items-center" id="pop">
+	<section class="account-pop-up h-100vh w-100 justify-content-center align-items-center d-none" id="pop">
 		<div class="container">
 			<div class="row">
 				<div class="coll-12">
-					<div class="pop-item p-5">
-						<div class="col-sm-8 col-md-6 col-lg-5 p-5">
+					<div class="pop-item p-5 position-relative">
+						<a href="#" class="close-pop position-absolute text-white"><i data-feather="x"></i></a>
+						<div class="col-sm-10 col-md-8 col-lg-6 p-md-5">
 							<span class="text-uppercase p-3 bg-light-green mb-3 font-12">made simple</span>
 							<h2 class="mb-4 mt-4 text-capitalize">make your transactions seamless</h2>
 							<p class="font-14 mb-3 text-capitalize">make your experience while transacting simple and easy by registering for an account. by doing so you will get to store your assests and track your transactions history.</p>
 							
-							<form class="mb-4">
-								<input type="email" class="form-control"   title="enter email address" placeholder="Enter email to continue">
+							<form class="mb-4 form-inline">
+								<input type="email" class="form-control font-14 mr-3"   title="enter email address" placeholder="Enter email to continue">
+								<button type="submit" class="btn btn-primary px-3 font-14">Continue</button>
 							</form>
-							<div>
-								<span class="pop-pointer"></span>
-								<span class="text-capitalize">Click to register</span>
-							</div>
+							
+								<a class="d-flex align-items-center text-white" href="#">
+									<span class="pop-pointer mr-2"><i data-feather="chevron-right"></i></span>
+								<span class="text-capitalize">Or Login to your account</span>
+								</a>
+							
 						</div>
 					</div>
 				</div>
@@ -478,19 +483,20 @@
       <div class="row"> 
         <!-- footer-widget -->
         <div class="col-sm-3">
-          <div class="footer-widget news-letter d-flex"> <img src="img/logo/nairobi-city-county-logo.png" height="60px;" class="pr-2">
+          <div class="footer-widget news-letter mb-5"> 
             <div class="">
-              <h3 class="text-white text-capitalize">Android app</h3>
+              <h3 class="text-white text-capitalize">NCCG Self sevice portal</h3>
               <p class="font-12">Make payments easily and quickly. Create account and get to enjoy paying for Nairobi City County services online.</p>
             </div>
+			  <img src="img/logo/nairobi-city-county-logo.png" height="60px;" class="pr-2">
           </div>
         </div>
         <!-- footer-widget --> 
         
         <!-- footer-widget -->
         <div class="col-sm-3">
-          <div class="footer-widget">
-            <h3 class="text-white">Quick Links</h3>
+          <div class="footer-widget mb-5">
+            <h3 class="text-white">My account</h3>
             <ul>
               <li><a href="#">my profile</a></li>
               <li><a href="#">transactions history</a></li>
@@ -505,8 +511,8 @@
         
         <!-- footer-widget -->
         <div class="col-sm-3">
-          <div class="footer-widget social-widget">
-            <h3 class="text-white">Follow us on</h3>
+          <div class="footer-widget social-widget mb-5">
+            <h3 class="text-white">quick links</h3>
             <ul>
               <li><a href="#">daily parking</a></li>
               <li><a href="#">parking penalties</a></li>
@@ -521,7 +527,7 @@
         
         <!-- footer-widget -->
         <div class="col-sm-3">
-          <div class="footer-widget news-letter">
+          <div class="footer-widget news-letter mb-5">
             <h3 class="text-white text-capitalize">Android app</h3>
             <p class="font-12">Download The Mobile App From Google Playstore And Get To Enjoy County Services At The Tip Of Your Fingers</p>
             <a href="#" class="p-3"> <img src="img/logo/google-play-66442243.svg" alt="Google Play Store Badge" class="FooterNew-appStoreIcon-image"> </a> 
@@ -580,6 +586,7 @@
     function playAudio() {
         audio1.play();
     }
+	 feather.replace();
     </script> 
 <!--scripts-->
 </body>
