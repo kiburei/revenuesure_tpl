@@ -557,6 +557,7 @@ footer p {
   background: #066130;
   flex-flow: column;
   transition: all 1s;
+	padding: 10px;
 }
 
 .sub-link-container .sub-link ul {
@@ -568,9 +569,11 @@ footer p {
 
 .sub-link-container .sub-link ul li {
   padding: 7px 15px;
-  width: 100%;
-  font-weight: 300;
-  cursor: pointer;
+    width: 100%;
+    font-weight: 300;
+    cursor: pointer;
+    display: flex;
+    padding-left: 0;
 }
 
 .sub-link-container .sub-link ul li:hover {
@@ -593,18 +596,19 @@ footer p {
 }
 
 .subicon {
-  padding: 16px;
-  width: 100%;
-  background: #00431E;
-  color: #FFDC01;
-  display: flex;
-  align-items: center;
-  align-items: center;
-  flex-flow: column;
+ padding: 16px;
+    width: 100%;
+    /* background: #00431e26; */
+    color: #dddddd21;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    flex-flow: column;
+    border-bottom: 1px solid;
 }
 
 .subicon img {
-  height: 60px;
+  height: 100px;
 }
 
 .subicon h2 {
@@ -623,9 +627,21 @@ footer p {
 
 .subicon>p {
   width: 100%;
-  margin: 0px;
-  margin-top: 16px;
-  font-size: 14px;
+    margin: 0px;
+    margin-top: 16px;
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #f5f5f5;
+    font-weight: 500;
+    /* margin-bottom: 13px; */
+    font-size: 1.2em;
+}
+
+.subicon small{
+	width: 100%;
+	color: white;
 }
 
 .toogle-user-container {
@@ -696,6 +712,7 @@ footer p {
 
 .sub-link-container .sub-link ul li a {
   color: white;
+	font-size: 14px;
 }
 
 .sub-link-container .sub-link ul li a:hover {
@@ -986,6 +1003,7 @@ h1, h2, h3, h4, h5, h6 {
     background-size: contain;
     background-attachment: fixed;
     background-position: center bottom;
+	background-color: white;
 }
 
 #footer {
@@ -1130,6 +1148,7 @@ a, a:hover, a:focus, input:focus {
 
 .close-pop{
 	right:3rem !important;
+	z-index: 1000000;
 }
 #pop{
 	display: flex;
@@ -1242,7 +1261,7 @@ a, a:hover, a:focus, input:focus {
     max-height: 190px;
   }
   .option img {
-    height: 50px;
+/*    height: 50px;*/
   }
   .circular-bg {
     top: 27px;
@@ -1614,12 +1633,12 @@ a, .link, .button.transparent, .button.transparent:hover, .specials_slider_wrapp
     border-radius: 1px;
     position: absolute;
     background-color: white;
-    top: 0px;
-    right: 5px;
+    top: 12px;
+/*    right: 5px;*/
     z-index: 100000000000000000;
     padding-right: 0px;
     padding-left: 0px;
-/*    display: none;*/
+    display: none;
 }
 .profile-pic .dropdown > li {
     color: gray;
@@ -1654,7 +1673,7 @@ a, .link, .button.transparent, .button.transparent:hover, .specials_slider_wrapp
     align-items: center;
 }
 .profile-pic {
-    display: none;
+/*    display: none;*/
 }
 #mobile-search-box {
     height: 100%;
