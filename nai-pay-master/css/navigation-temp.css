@@ -333,7 +333,7 @@ cite {
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
-    line-height: 1.1;
+/*    line-height: 1.1;*/
     color: inherit
 }
 .h1 .small, .h1 small, .h2 .small, .h2 small, .h3 .small, .h3 small, .h4 .small, .h4 small, .h5 .small, .h5 small, .h6 .small, .h6 small, h1 .small, h1 small, h2 .small, h2 small, h3 .small, h3 small, h4 .small, h4 small, h5 .small, h5 small, h6 .small, h6 small {
@@ -345,7 +345,7 @@ legend, pre {
     color: #333
 }
 h1, h2, h3 {
-    margin-top: 20px
+/*    margin-top: 20px*/
 }
 h1 .small, h1 small, h2 .small, h2 small, h3 .small, h3 small {
     font-size: 65%
@@ -1509,25 +1509,7 @@ textarea.input-lg {
 .form-horizontal .form-control-static {
     padding-top: 7px
 }
-.btn {
-    display: inline-block;
-    margin-bottom: 0;
-    font-weight: 400;
-    text-align: center;
-    vertical-align: middle;
-    cursor: pointer;
-    border: 1px solid transparent;
-    white-space: nowrap;
-    padding: 6px 12px;
-    font-size: 14px;
-    line-height: 1.428571429;
-    border-radius: 4px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
-    user-select: none
-}
+
 .btn:focus {
     outline: #333 dotted thin;
     outline: -webkit-focus-ring-color auto 5px;
@@ -8979,7 +8961,7 @@ h1, h2, h3, h3 a, h4, h5 {
     font-weight: 700
 }
 h2, h3, h3 a, h4, h5 {
-    line-height: 20px
+/*    line-height: 20px*/
 }
 hr, img {
     border: 0
@@ -9017,13 +8999,13 @@ h1.shifted {
     padding-right: 200px
 }
 h2, h3, h4, h5 {
-    margin: 30px 0 26px
+/*    margin: 30px 0 26px*/
 }
 h5, h6 {
     line-height: 22px
 }
 h2, h3, h4, h5, h6 {
-    margin: 40px 0 26px
+/*    margin: 40px 0 26px*/
 }
 h3, h3 a {
     font-size: 20px
@@ -9038,8 +9020,10 @@ h1 {
     margin: 0 0 18px
 }
 h2 {
+/*
     font-size: 1.866em;
     line-height: 28px
+*/
 }
 h3 {
     font-size: 1.6em;
@@ -9103,7 +9087,7 @@ ol {
     counter-reset: li
 }
 ol li, ul li {
-    padding-left: 18px
+/*    padding-left: 18px*/
 }
 ol li:before {
 }
@@ -9478,23 +9462,7 @@ a.icon-text:focus {
     margin-right: 2px;
     line-height: 13px
 }
-.btn {
-    font-size: 13px;
-    line-height: 18px;
-    font-weight: 400;
-    text-transform: none;
-    text-decoration: none;
-    margin: 0;
-    border: 1px solid;
-    border-radius: 2px;
-    padding: 7px 18px 9px;
-    overflow: hidden;
-    transition: background-color .3s ease;
-    -moz-transition: background-color .3s ease;
-    -ms-transition: background-color .3s ease;
-    -o-transition: background-color .3s ease;
-    -webkit-transition: background-color .3s ease
-}
+
 .btn-lg, .btn.bold {
     font-weight: 700
 }
@@ -11973,11 +11941,11 @@ body.fill_bg_y .top-block > .maxwidth-theme {
     padding: 0 15px
 }
 .svg.inline.big {
-    min-width: 21px;
-    min-height: 21px;
-    width: 21px;
-    height: 21px;
-    top: -2px
+    min-width: 24px;
+    min-height: 24px;
+    width: 24px;
+    height: 24px;
+    top: -2px;
 }
 .top-block .top-block-item .address {
     position: relative;
@@ -13225,14 +13193,14 @@ ul.mobile_menu .search .search-input-div input {
     cursor: pointer
 }
 #mobileheader .burger .svg-burger, #mobileheader .burger .svg-inline-burger {
-    width: 18px;
-    height: 16px;
-    min-width: 18px;
-    min-height: 16px;
+    width: 18px; */
+    /* height: 16px; */
+    /* min-width: 18px; */
+    /* min-height: 16px; */
     position: absolute;
     left: 50%;
-    top: 50%;
-    margin: -8px 0 0 -9px
+    top: 31%;
+    margin: -8px 0 0 -9px;
 }
 #mobileheader .burger .svg-close, #mobileheader .burger .svg-inline-close {
     width: 16px;
@@ -13316,7 +13284,7 @@ ul.mobile_menu .search .search-input-div input {
     box-shadow: 0 0 0 2px #fff
 }
 #mobileheader [class^=mobileheader-] {
-    height: 100%;
+/*    height: 100%;*/
     width: 100%;
     color: #222
 }
@@ -13332,7 +13300,7 @@ ul.mobile_menu .search .search-input-div input {
     color: #222
 }
 #mobileheader .mobileheader-v2 .svg.inline path {
-    fill: #fff
+/*    fill: #fff*/
 }
 #mobilemenu {
     background: #fff;
@@ -13425,7 +13393,7 @@ border:2px solid #fff
 #mobilemenu .expanded>.dropdown .menu_back a {
     font-size: 15px;
     line-height: 18px;
-    padding: 22px 20px 23px 57px;
+    padding: 22px 20px 23px 22px;
     cursor: pointer;
     position: relative
 }
@@ -13476,7 +13444,7 @@ border:2px solid #fff
     position: absolute;
     z-index: 1;
     width: 46px;
-    top: 0;
+    top: 20px;
     right: 0;
     bottom: 0;
     cursor: pointer;
@@ -15012,7 +14980,7 @@ body .menu-row .mega-menu table td.wide_menu > .wrap > .dropdown-menu > li > .dr
     background-color: #556170
 }
 .menu-row.middle-block:not(.bglight) .mega-menu table {
-    border-left: 1px solid rgba(255,255,255,0.15)
+/*    border-left: 1px solid rgba(255,255,255,0.15)*/
 }
 .menu-row.middle-block:not(.bglight) .mega-menu table td .wrap > a {
     color: white;
@@ -41493,8 +41461,12 @@ button.button, input.button, .button, #header ul.menu.full.opened li:not(.search
     background: #fff;
 }
 .btn.btn-primary {
-    background-color: #00b290;
-    border-color: #00b290;
+    background-color: #1c8241;
+    border-color: #1c8241;
+}
+.btn.btn-secondary {
+    background-color: rgb(252, 192, 14);
+    border-color: #1c8241;
 }
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
     background-color: #30c4a8;

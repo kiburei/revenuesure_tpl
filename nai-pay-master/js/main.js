@@ -1,5 +1,33 @@
 $(window).on('load', function() {
   $('#myModal').modal('show');
+	function explode(){
+ 		$('#pop').removeClass('d-none');
+		$('#pop').addClass('fadeIn');
+		$('.hand-phone').addClass('bounceInUp')
+		
+}
+	
+	function popitem(){
+		$('.pop-item').addClass('tada');
+	}
+setTimeout(explode, 5000);
+	setTimeout(popitem, 5200);
+	
+	$('.close-pop').on('click',function(){
+		closepop();
+	});
+	
+	
+	
+	function closepop(){
+		setTimeout($('#pop').addClass('d-none'),2000);		
+		$('#pop').removeClass('fadeIn');
+		$('.pop-item').removeClass('tada');
+		
+		$('#pop').addClass('zoomOut');
+		$('.pop-item').addClass('rollOut');
+		
+	}
 });
 
 (function($) {
