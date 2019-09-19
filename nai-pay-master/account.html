@@ -15,6 +15,8 @@
 <link rel="stylesheet" href="css/bootstrap.css">
 <!--	bootstrap css-->
 <!--  CSS -->
+
+<link rel="stylesheet" href="css/transactions.css">
 <link rel="stylesheet" href="css/navigation-temp.css">
 <link rel="stylesheet" href="css/style.css">
 <!-- <link rel="stylesheet" href="css/style2.css"> -->
@@ -118,7 +120,7 @@
                   </div>
                 </div>
                 <div class="pull-right">
-                  <div class="wrap_icon inner-table-block btn-span-margin text-capitalize"> <a href="#" ><span id="get-a-receipt">print receipt</span></a> <a href="shop-category.html"><span id="add-shop" class="btn-secondary text-black">create an account</span></a> </div>
+                  <div class="wrap_icon inner-table-block btn-span-margin text-capitalize"> <a href="#" ><span id="sell-item">print receipt</span></a> <a href="shop-category.html"><span id="add-shop" class="btn-secondary text-black">create an account</span></a> </div>
                 </div>
               </div>
             </div>
@@ -793,448 +795,297 @@
   </div>
 </div>
 <div id="mobilemenu-overlay"></div>
-<!--	search receipt pop up-->
-<section class="account-pop-up h-100vh w-100 justify-content-center align-items-center animated d-none" id="search-receipt">
-  <div class="container p-5">
-    <div class="row p-5">
-      <div class="receipt-search-container m-5 d-flex flex-column-md animated" id="get-receipt-container">
-        <div class="col-lg-6 receipt-img-container">
-          <div class="col-lg-8 col-md-12 position-relative p-5">
-            <h2 class="mb-4 text-capitalize text-white">print a receipt for a transaction</h2>
-            <p class="font-14 mb-3 text-capitalize">Make sure all inputs are correct. The process has been made this way to help protect personal data</p>
+<!--		navigation bar --> 
+<!-- header --> 
+<!--	MENU CONTROLS--> 
+
+<!--	main body--> 
+<!--	my account navigations-->
+<div class="menu-row middle-block bgcolored user-nav">
+  <div class="maxwidth-theme p-sm-0 p-0"style="background-color: #00431b;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 p-sm-0 p-0">
+          <div class="menu-only">
+            <nav class="mega-menu sliced ovisible initied">
+              <div class="table-menu">
+                <table>
+                  <tbody>
+                    <tr class="text-capitalize">
+                      <td class="menu-item dropdown catalog wide_menu" style="visibility: visible;"><div class="wrap" id="profile-btn"> <a class="text-center" href="#">
+                          <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">My Profile</font></font>
+                            <div class="line-wrapper"><span class="line"></span></div>
+                          </div>
+                          </a> <span class="tail"></span> </div></td>
+                      <td class="menu-item dropdown" style="visibility: visible;"><div class="wrap" id="transactions-btn"> <a class="text-center" href="#/">
+                          <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Transactions</font></font>
+                            <div class="line-wrapper"><span class="line"></span></div>
+                          </div>
+                          </a> <span class="tail"></span> </div></td>
+                      <td class="menu-item dropdown" style="visibility: visible;"><div class="wrap" id="assets-btn"> <a class="text-center" href="#/">
+                          <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> my assets</font></font>
+                            <div class="line-wrapper"><span class="line"></span></div>
+                          </div>
+                          </a> <span class="tail"></span> </div></td>
+                      <td class="menu-item dropdown" style="visibility: visible;"><div class="wrap" id="bills-btn"> <a class="text-center" href="#/">
+                          <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> my bills</font></font>
+                            <div class="line-wrapper"><span class="line"></span></div>
+                          </div>
+                          </a> <span class="tail"></span> </div></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </nav>
           </div>
         </div>
-        <div class="col-lg-6 p-5 position-relative">
-			<span class="close-receipt-form position-absolute"> <i data-feather="x"></i></span>
-          <form class="transaction-info">
-            <div class="">
-              <h4 class="mb-5 pb-2 text-capitalize">correctly fill in the form bellow to continue</h4>
+      </div>
+    </div>
+  </div>
+</div>
+<!--	my account navigations-->
+<section id="home-one-info" class="homebg "> 
+  <!--		account intro-->
+  <div id="home-section" class="parallax-section py-5">
+    <div class="container">
+      <div class="row margin-120">
+        <div class="col-sm-12 col-md-12">
+          <h1 style="color: #fff" class="text-capitalize mb-1 p-0">my profile</h1>
+          <p class="text-capitalize ">You last logged in at: 14-01-2018 6:40 AM [ Kenya time (GMT + 6:00hrs)]</p>
+        </div>
+        <div class="col-md-1 col-sm-3 d-flex flex-column align-content-center justify-content-center mb-sm-3">
+          <div class="user-dp mb-sm-3"> <img src="img/user/default-user.png" class=" img"> </div>
+        </div>
+        <div class="col-md-6 col-sm-9 d-flex flex-column align-content-center justify-content-center">
+          <h1 style="color: #fff" class="text-capitalize mb-1 p-0 ">hello, john doe</h1>
+          <p class="text-capitalize pb-0 mb-md-0 mb-sm-3">joined in 2019</p>
+        </div>
+        <div class="col-auto text-center ">
+          <h2 class="text-capitalize mb-1 mt-0">23</h2>
+          <p class="text-capitalize">pending bills</p>
+        </div>
+        <div class="col-auto text-center">
+          <h2 class="text-capitalize mb-1 mt-0">23</h2>
+          <p class="text-capitalize">assets</p>
+        </div>
+      </div>
+      
+      <!-- row --> 
+    </div>
+    <!-- contaioner --> 
+  </div>
+  <!--		account intro-->
+  
+  <div class="container">
+    <div class="section services position-relative p-md-5 p-sm-4"> 
+      <!-- single-service -->
+      <div class="col-sm-12 text-capitalize position-relative p-0">
+        <h2>profile details</h2>
+        <p>below are etails on your profile. do remember to save your work once you have edited an item in your profile</p>
+        <hr>
+      </div>
+      <div class="col-lg-7 col-md-12 col-sm-12 p-0">
+        <div class="mb-3">
+          <form class="acount-details-form">
+            <div class="row">
+			  	<div class="form-group col-sm-12 col-md-6 pl-md-0">
+              <label for="exampleInputEmail1" class="text-capitalize">first name</label>
+              <input type="text" class="form-control" id="fname" placeholder="first name eg John">
             </div>
-            <div class="row m-0">
-             
-                <div  class="form-group col-sm-12 pl-md-0">
-                  <label for="sel1"><small>What was the transacton type?</small></label>
-                  <select class="form-control mb-3" id="sel1" required>
-                    <option>Parking</option>
-                    <option>Business</option>
-                    <option class="text-capitalize">County bills</option>
-                    <option class="text-capitalize">land rates</option>
-                    <option class="text-capitalize">rents</option>
-                    <option class="text-capitalize">e-Construction</option>
-                    <option></option>
-                  </select>
-                </div>
-           
+            <div class="form-group col-sm-12 col-md-6 pl-md-0">
+              <label for="exampleInputEmail1" class="text-capitalize">other name(s)</label>
+              <input type="text" class="form-control" id="other-names" placeholder="first name eg Doe">
             </div>
-            <div class="row radio-container m-0">
-              <div class="col-12 pl-md-0 mb-3">
-                <div class="form-check-inline">
-                  <label class="form-check-label">M-Pesa
-                    <input type="radio" class="form-check-input" name="method" required>
-                    <span class="checkmark"></span> </label>
-                </div>
-                <div class="form-check-inline">
-                  <label class="form-check-label">NBK
-                    <input type="radio" class="form-check-input" name="method" required>
-                    <span class="checkmark"></span> </label>
-                </div>
-              </div>
+			  </div>
+            <div class="row">
+			  	<div class="form-group col-sm-12 col-md-6 pl-md-0">
+              <label for="exampleInputEmail1" class="text-capitalize">phone number</label>
+              <input type="text" class="form-control" id="fname" placeholder="eg 07...">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your phone number with anyone else.</small> </div>
+            <div class="form-group col-sm-12 col-md-6 pl-md-0">
+              <label for="exampleInputEmail1" class="text-capitalize">your email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> </div>
+			  </div>
+			  
+			  <div class="row">
+			  	<div class="col-12 text-capitalize">
+				  	<hr>
+					<p>use this section to have your password changed</p>
+				  </div>
+			  </div>
+            
+			 
+            <div class="row">
+				
+				<div class="form-group col-sm-12 col-md-12">
+              <label for="exampleInputPassword1" class="text-capitalize">old password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
             </div>
-            <div class="row m-0">
-            <div class="form-group col-sm-12 pl-md-0 mb-3">
-              <label for="exampleInputEmail1" class="text-capitalize"><small>what was the refference number for the transaction?</small></label>
-              <input type="text" class="form-control" id="fname" placeholder="eg M-Pesa ref number" required>
+			  	<div class="form-group col-sm-12 col-md-6">
+              <label for="exampleInputPassword1" class="text-capitalize">new password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
             </div>
-            <div class="form-group col-sm-12 pl-md-0 mb-3">
-              <label for="identifier" class="text-capitalize"><small>Unique identifire for transaction eg Number plate, bill number, Business ID etc</small></label>
-              <input type="text" class="form-control" id="identifier" placeholder="identifier" required>
+			  
+			  <div class="form-group col-sm-12 col-md-6">
+              <label for="exampleInputPassword1" class="text-capitalize">confirm password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
             </div>
-            <button type="submit" class="btn btn-primary text-capitalize text-white font-14 submit-btn">get receipt</button>
+			  </div>
+			  
+			  <button type="submit" class="btn btn-primary text-capitalize text-white font-14 submit-btn" disabled>save changes</button>
+            
           </form>
         </div>
       </div>
+		
+		<div class="col-md-12 col-lg-5 col-sm-12 py-4 h-100 recent-transactions-container border dot-border py-3 mt-md-5">
+			<div class="recent-transactions p-y-3">
+				<div class="row">
+					<div class="col-12 border-bottom">
+						<p class="text-capitalize d-flex text-primary"><span class="trans-txt text-primary mt-0">recent activities</span><span><i data-feather="arrow-right"></i></span></p>
+					</div>
+					
+					<div class="col-12 border-bottom pb-3 pt-3 the-transaction dot-bottom-border">
+						<div class="row">
+							<div class="col-2 text-center">
+								<p class="text-uppercase mb-2 ppvx_text--md">sep</p>
+								<p class="m-0">
+									11
+								</p>
+							</div>
+							
+							<div class="col-7">
+								<p class="text-capitalize mb-2 ppvx_text--md">daily parking</p>
+								<p class="m-0 ppvx_text--md-det">
+									KBH 4589R
+								</p>
+							</div>
+							
+							<div class="col-3 text-right">
+								<p class="text-capitalize mb-2 ppvx_text--md">ksh 200</p>
+								
+							</div>
+						</div>
+						
+						
+					
+					</div>
+					
+					<div class="col-12 border-bottom pb-3 pt-3 the-transaction dot-bottom-border">
+						<div class="row">
+							<div class="col-2 text-center">
+								<p class="text-uppercase mb-2 ppvx_text--md">sep</p>
+								<p class="m-0">
+									11
+								</p>
+							</div>
+							
+							<div class="col-7">
+								<p class="text-capitalize mb-2 ppvx_text--md">daily parking</p>
+								<p class="m-0 ppvx_text--md-det">
+									KBH 4589R
+								</p>
+							</div>
+							
+							<div class="col-3 text-right">
+								<p class="text-capitalize mb-2 ppvx_text--md">ksh 200</p>
+								
+							</div>
+						</div>
+						
+						
+					
+					</div>
+					
+					<div class="col-12 border-bottom pb-3 pt-3 the-transaction dot-bottom-border">
+						<div class="row">
+							<div class="col-2 text-center">
+								<p class="text-uppercase mb-2 ppvx_text--md">sep</p>
+								<p class="m-0">
+									11
+								</p>
+							</div>
+							
+							<div class="col-7">
+								<p class="text-capitalize mb-2 ppvx_text--md">daily parking</p>
+								<p class="m-0 ppvx_text--md-det">
+									KBH 4589R
+								</p>
+							</div>
+							
+							<div class="col-3 text-right">
+								<p class="text-capitalize mb-2 ppvx_text--md">ksh 200</p>
+								
+							</div>
+						</div>
+						
+						
+					
+					</div>
+					
+					<div class="col-12 border-bottom pb-3 pt-3 the-transaction dot-bottom-border">
+						<div class="row">
+							<div class="col-2 text-center">
+								<p class="text-uppercase mb-2 ppvx_text--md">sep</p>
+								<p class="m-0">
+									11
+								</p>
+							</div>
+							
+							<div class="col-7">
+								<p class="text-capitalize mb-2 ppvx_text--md">daily parking</p>
+								<p class="m-0 ppvx_text--md-det">
+									KBH 4589R
+								</p>
+							</div>
+							
+							<div class="col-3 text-right">
+								<p class="text-capitalize mb-2 ppvx_text--md">ksh 200</p>
+								
+							</div>
+						</div>
+						
+						
+					
+					</div>
+					
+					<div class="col-12 border-bottom pb-3 pt-3 the-transaction dot-bottom-border">
+						<div class="row">
+							<div class="col-2 text-center">
+								<p class="text-uppercase mb-2 ppvx_text--md">sep</p>
+								<p class="m-0">
+									11
+								</p>
+							</div>
+							
+							<div class="col-7">
+								<p class="text-capitalize mb-2 ppvx_text--md">daily parking</p>
+								<p class="m-0 ppvx_text--md-det">
+									KBH 4589R
+								</p>
+							</div>
+							
+							<div class="col-3 text-right">
+								<p class="text-capitalize mb-2 ppvx_text--md">ksh 200</p>
+								
+							</div>
+						</div>
+						
+						
+					
+					</div>
+					
+					
+					 <a href="#" class="btn btn-transparent text-capitalize font-14 mt-5 ml-5 text-capitalize d-none text-primary text-capitalize  text-primary d-none">see more transactions<i data-feather="arrow-right" class="ml-2"></i></a>
+				</div>
+			</div>
+		</div>
     </div>
   </div>
 </section>
-
-<!--	search receipt pop up--> 
-<!--		navigation bar --> 
-<!-- header --> 
-<!--	MENU CONTROLS-->
-
-<section id="home-one-info" class="homebg ">
-<!-- view-ad -->
-<div id="home-section" class="parallax-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12 col-md-5 margin-120">
-        <h2 class="text-capitalize mt-5 mb-3">Do it faster</h2>
-        <h1 style="color: #fff" class="mt-3">Welcome To the NCCG Self service Portal</h1>
-        <p class="text-capitalize">start paying for your county fees efficiently and surprisingly fast.</p>
-        <div class="ad-btn"> <a href="#" class="btn btn-secondary px-5 py-3 text-black text-uppercase">sign up</a> </div>
-      </div>
-      <div class="col-sm-6 text-center  phone-container d-none d-md-block  d-lg-block"> <img src="img/landing page images/hand-phone.png" class="img animated hand-phone">
-        <div class="shadow d-none"></div>
-      </div>
-    </div>
-    <!-- row --> 
-  </div>
-  <!-- contaioner --> 
-</div>
-<!-- view-ad --> 
-
-<!--	mobile view services-->
-<row class="hidden-links-container">
-  <div class="col-lg-5 sub-link-container sub-link-container2"> 
-    
-    <!--            unified busines permit sub-links-->
-    <div class="sub-link unified-biz-permit1 left" id="unified-biz-permit">
-      <div class="subicon">
-        <div> <img src="img/new-icons/line/case.svg"> </div>
-        <p>single business permit</p>
-        <small>Select from fee type options below</small> </div>
-      <ul>
-        <li class="d-flex"><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="renew UBP.html">renew UBP</a></li>
-        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="register-business.html">register New business</a></li>
-        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="single business permit.html">print permit</a></li>
-        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="#">print receipt</a></li>
-      </ul>
-    </div>
-    <!--            unified busines permit sub-links--> 
-    <!--            land rates-->
-    <div class="sub-link land-rate1 left" id="land-rate">
-      <div class="subicon">
-        <div> <img src="img/new-icons/line/land.svg"> </div>
-        <p>land rates</p>
-        <small>Select from fee type options below</small> </div>
-      <ul>
-        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="pay land rate.html">pay land rate</a></li>
-        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="land-receipt.html">print receipt</a></li>
-      </ul>
-    </div>
-    <!--            land rates--> 
-    <!--            rent sub-links-->
-    <div class="sub-link rent1 left" id="rent">
-      <div class="subicon">
-        <div> <img src="img/new-icons/line/key.svg"> </div>
-        <p>rent</p>
-        <small>Select from fee type options below</small> </div>
-      <ul>
-        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="house rent form.html">house</a></li>
-        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="market stalls rent.html">stalls</a></li>
-        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="print stall receipt.html">receipt</a></li>
-      </ul>
-    </div>
-    <!--            unified busines permit sub-links--> 
-    <!--            parking sub-links-->
-    <div class="sub-link parking1 left" id="parking">
-      <div class="subicon">
-        <div> <img src="img/new-icons/line/parking.svg"> </div>
-        <p>parking</p>
-        <small>Select from fee type options below</small> </div>
-      <ul>
-        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="parking.html">daily parking</a></li>
-        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="seasonal parking form.html">Seasonal parking</a></li>
-        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="">Sacco</a></li>
-        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="">Offstreet Parking</a></li>
-        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="parking penalties.html">Penalties</a></li>
-        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="#">print receipt</a></li>
-      </ul>
-    </div>
-    <!--            unified busines permit sub-links--> 
-    <!--            wallet sub-links-->
-    <div class="sub-link wallet1 left" id="wallet">
-      <div class="subicon">
-        <div> <img src="img/new-icons/line/bill.svg"> </div>
-        <p>county bills</p>
-        <small>Select from fee type options below</small> </div>
-      <ul>
-        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="miss bill.html">pay Miscellaneous</a> </li>
-        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="misc receipt.html">Print Miscellaneous </a></li>
-      </ul>
-    </div>
-    <!--            wallet sub-links--> 
-    <!--            wallet sub-links-->
-    <div class="sub-link construction1 left" id="construction">
-      <div class="subicon">
-        <div> <img src="img/new-icons/line/econstruction.svg"> </div>
-        <p class="text-lowercase">e-Construction</p>
-        <small>Select from fee type options below</small> </div>
-      <ul>
-        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="construction permit.html">pay Permit</a></li>
-        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="e-construction invoice.html">print receipt</a></li>
-      </ul>
-    </div>
-    <!--            wallet sub-links--> 
-  </div>
-</row>
-<!--	mobile view services-->
-
-<div class="container">
-<div class="row">
-<!-- row --> 
-
-<!--				services go here-->
-
-<div class="container">
-  <div class="section services position-relative p-md-5 p-sm-4"> 
-    <!-- single-service -->
-    <div class="col-sm-12 text-capitalize position-relative p-0">
-      <h2>services</h2>
-      <p>Browse through the county services that are available to be paid for online</p>
-      <hr>
-    </div>
-    <section class="options-container p-0" id="options-container">
-      <div class="row">
-        <div class="col-lg-8 p-0"> 
-          <!--            option unified business permit-->
-          <div class="col-md-4 col-lg-4 col-sm-6 option business-permit">
-            <div class="active-triangle display-none">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40.5px" height="33.5px">
-                <path fill-rule="evenodd" stroke="#066130" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="#066130" d="M38.084,1.007 L1.015,1.007 L1.015,31.423 L38.084,1.007 Z" />
-              </svg>
-            </div>
-            <div class="icon-container"><img src="img/new-icons/case.svg"></div>
-            <div class="circular-bg"></div>
-            <p>Unified Business Permit</p>
-            <!--                more information about the option-->
-            <div class="options-info left">
-              <p>Reneiw or register for your business permit, print your receipts and so on...</p>
-              <span>
-              <div>
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
-                  <rect fill="none" width="25" height="25" />
-                  <polyline fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" points="19.946,35.891 9.057,25 19.947,14.11 " />
-                  <line fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="41" y1="25" x2="9.662" y2="25" />
-                </svg>
-              </div>
-              More </span> </div>
-            <!--                more information about the option--> 
-          </div>
-          <!--            end of option--> 
-          <!--            option landrates-->
-          <div class="col-md-4 col-lg-4 col-sm-6 option land-rates">
-            <div class="active-triangle display-none">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40.5px" height="33.5px">
-                <path fill-rule="evenodd" stroke="#066130" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="#066130" d="M38.084,1.007 L1.015,1.007 L1.015,31.423 L38.084,1.007 Z" />
-              </svg>
-            </div>
-            <div class="icon-container"><img src="img/new-icons/house.svg"></div>
-            <div class="circular-bg"></div>
-            <p>Land rates</p>
-            <!--                more information about the option-->
-            <div class="options-info left">
-              <p>Pay for your land rates or event print your receipts</p>
-              <span>
-              <div>
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
-                  <rect fill="none" width="25" height="25" />
-                  <polyline fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" points="19.946,35.891 9.057,25 19.947,14.11 " />
-                  <line fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="41" y1="25" x2="9.662" y2="25" />
-                </svg>
-              </div>
-              More </span> </div>
-            <!--                more information about the option--> 
-          </div>
-          <!--            end of option--> 
-          <!--            option rent payment-->
-          <div class="col-md-4 col-lg-4 col-sm-6  option rents">
-            <div class="active-triangle display-none">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40.5px" height="33.5px">
-                <path fill-rule="evenodd" stroke="#066130" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="#066130" d="M38.084,1.007 L1.015,1.007 L1.015,31.423 L38.084,1.007 Z" />
-              </svg>
-            </div>
-            <div class="icon-container"><img src="img/new-icons/key.svg"></div>
-            <div class="circular-bg"></div>
-            <p>Rents</p>
-            <!--                more information about the option-->
-            <div class="options-info left">
-              <p>Pay for your house rent, pay your stall rent</p>
-              <span>
-              <div>
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
-                  <rect fill="none" width="25" height="25" />
-                  <polyline fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" points="19.946,35.891 9.057,25 19.947,14.11 " />
-                  <line fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="41" y1="25" x2="9.662" y2="25" />
-                </svg>
-              </div>
-              More </span> </div>
-            <!--                more information about the option--> 
-          </div>
-          <!--            end of option--> 
-          <!--            option parking fees-->
-          <div class="col-md-4 col-lg-4 col-sm-6 option parking">
-            <div class="active-triangle display-none">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40.5px" height="33.5px">
-                <path fill-rule="evenodd" stroke="#066130" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="#066130" d="M38.084,1.007 L1.015,1.007 L1.015,31.423 L38.084,1.007 Z" />
-              </svg>
-            </div>
-            <div class="icon-container"><img src="img/new-icons/parking.svg"></div>
-            <div class="circular-bg"></div>
-            <p>Parking Fees</p>
-            <!--                more information about the option-->
-            <div class="options-info left">
-              <p>Pay for your parking, check your parking status, update your daily parking or even start paying for your seasonal parking fee, this is the link to go to...</p>
-              <span>
-              <div>
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
-                  <rect fill="none" width="25" height="25" />
-                  <polyline fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" points="19.946,35.891 9.057,25 19.947,14.11 " />
-                  <line fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="41" y1="25" x2="9.662" y2="25" />
-                </svg>
-              </div>
-              More </span> </div>
-            <!--                more information about the option--> 
-          </div>
-          <!--            end of option--> 
-          <!--            option-->
-          <div class="col-md-4 col-lg-4 col-sm-6  option E-Wallet">
-            <div class="active-triangle display-none">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40.5px" height="33.5px">
-                <path fill-rule="evenodd" stroke="#066130" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="#066130" d="M38.084,1.007 L1.015,1.007 L1.015,31.423 L38.084,1.007 Z" />
-              </svg>
-            </div>
-            <div class="icon-container"><img src="img/new-icons/receipt.svg"></div>
-            <div class="circular-bg"></div>
-            <p>Bills</p>
-            <!--                more information about the option-->
-            <div class="options-info left">
-              <p>Not sure of where your county fees are to be allocated, just visit this link and you will be assisted</p>
-              <span>
-              <div>
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
-                  <rect fill="none" width="25" height="25" />
-                  <polyline fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" points="19.946,35.891 9.057,25 19.947,14.11 " />
-                  <line fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="41" y1="25" x2="9.662" y2="25" />
-                </svg>
-              </div>
-              More </span> </div>
-            <!--                more information about the option--> 
-          </div>
-          <!--            end of option--> 
-          <!--            option-->
-          <div class="col-md-4 col-lg-4 col-sm-6  option construction">
-            <div class="active-triangle display-none">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40.5px" height="33.5px">
-                <path fill-rule="evenodd" stroke="#066130" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="#066130" d="M38.084,1.007 L1.015,1.007 L1.015,31.423 L38.084,1.007 Z" />
-              </svg>
-            </div>
-            <div class="icon-container"><img src="img/new-icons/brickwall.svg"></div>
-            <div class="circular-bg"></div>
-            <p>E-Construction</p>
-            <!--                more information about the option-->
-            <div class="options-info left">
-              <p>Click this option if you want to pay for your contruction fee</p>
-              <span>
-              <div>
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
-                  <rect fill="none" width="25" height="25" />
-                  <polyline fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" points="19.946,35.891 9.057,25 19.947,14.11 " />
-                  <line fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="41" y1="25" x2="9.662" y2="25" />
-                </svg>
-              </div>
-              More </span> </div>
-            <!--                more information about the option--> 
-          </div>
-          <!--            end of option--> 
-        </div>
-        <div class="col-lg-4 sub-link-container desktop-link pd-0 text-capitalize"> 
-          <!--            unified busines permit sub-links-->
-          <div class="sub-link unified-biz-permit1 left" id="unified-biz-permit">
-            <div class="subicon">
-              <div> <img src="img/new-icons/line/case.svg"> </div>
-              <p>single business permit</p>
-              <small>Select from fee type options below</small> </div>
-            <ul>
-              <li class="d-flex"><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="renew UBP.html">renew UBP</a></li>
-              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="register-business.html">register New business</a></li>
-              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="single business permit.html">print permit</a></li>
-              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="#">print receipt</a></li>
-            </ul>
-          </div>
-          <!--            unified busines permit sub-links--> 
-          <!--            land rates-->
-          <div class="sub-link land-rate1 left" id="land-rate">
-            <div class="subicon">
-              <div> <img src="img/new-icons/line/land.svg"> </div>
-              <p>land rates</p>
-              <small>Select from fee type options below</small> </div>
-            <ul>
-              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="pay land rate.html">pay land rate</a></li>
-              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="land-receipt.html">print receipt</a></li>
-            </ul>
-          </div>
-          <!--            land rates--> 
-          <!--            rent sub-links-->
-          <div class="sub-link rent1 left" id="rent">
-            <div class="subicon">
-              <div> <img src="img/new-icons/line/key.svg"> </div>
-              <p>rent</p>
-              <small>Select from fee type options below</small> </div>
-            <ul>
-              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="house rent form.html">house</a></li>
-              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="market stalls rent.html">stalls</a></li>
-              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="print stall receipt.html">receipt</a></li>
-            </ul>
-          </div>
-          <!--            unified busines permit sub-links--> 
-          <!--            parking sub-links-->
-          <div class="sub-link parking1 left" id="parking">
-            <div class="subicon">
-              <div> <img src="img/new-icons/line/parking.svg"> </div>
-              <p>parking</p>
-              <small>Select from fee type options below</small> </div>
-            <ul>
-              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="parking.html">daily parking</a></li>
-              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="seasonal parking form.html">Seasonal parking</a></li>
-              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="">Sacco</a></li>
-              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="">Offstreet Parking</a></li>
-              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="parking penalties.html">Penalties</a></li>
-              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="#">print receipt</a></li>
-            </ul>
-          </div>
-          <!--            unified busines permit sub-links--> 
-          <!--            wallet sub-links-->
-          <div class="sub-link wallet1 left" id="wallet">
-            <div class="subicon">
-              <div> <img src="img/new-icons/line/bill.svg"> </div>
-              <p>county bills</p>
-              <small>Select from fee type options below</small> </div>
-            <ul>
-              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="miss bill.html">pay Miscellaneous</a> </li>
-              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="misc receipt.html">Print Miscellaneous </a></li>
-            </ul>
-          </div>
-          <!--            wallet sub-links--> 
-          <!--            wallet sub-links-->
-          <div class="sub-link construction1 left" id="construction">
-            <div class="subicon">
-              <div> <img src="img/new-icons/line/econstruction.svg"> </div>
-              <p class="text-lowercase">e-Construction</p>
-              <small>Select from fee type options below</small> </div>
-            <ul>
-              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="construction permit.html">pay Permit</a></li>
-              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="e-construction invoice.html">print receipt</a></li>
-            </ul>
-          </div>
-          <!--            wallet sub-links--> 
-        </div>
-      </div>
-      <!--    the revenue streams--> 
-    </section>
-  </div>
-  <!-- services --> 
-  
-  <!--	mobile view services--> 
-  
-  <!--	mobile view services--> 
-  
-</div>
-
-<!-- container -->
-</section>
-
-<!-- download -->
+<!--	main body--> 
+	<!-- download -->
 <section id="download" class="clearfix parallax-section">
   <div class="container">
     <div class="row">
@@ -1262,29 +1113,7 @@
   </div>
   <!-- contaioner --> 
 </section>
-<!-- download --> 
-
-<!--	pop up section-->
-<section class="account-pop-up h-100vh w-100 justify-content-center align-items-center d-none animated" id="pop">
-  <div class="container">
-    <div class="row">
-      <div class="coll-12">
-        <div class="pop-item p-5 plposition-relative animated m-5"> <a href="#" class="close-pop position-absolute text-white"><i data-feather="x"></i></a>
-          <div class="col-sm-10 col-md-8 col-lg-6 p-md-5"> <span class="text-uppercase p-3 bg-light-green mb-3 font-12">made simple</span>
-            <h2 class="mb-4 mt-4 text-capitalize text-white">make your transactions seamless</h2>
-            <p class="font-14 mb-3 text-capitalize">make your experience while transacting simple and easy by registering for an account. by doing so you will get to store your assests and track your transactions history.</p>
-            <form class="mb-5 form-inline">
-              <input type="email" class="form-control font-14 mr-3 mb-3"   title="enter email address" placeholder="Enter email to continue">
-              <button type="submit" class="btn btn-secondary px-4 font-14 text-black mb-3">Continue</button>
-            </form>
-            <a class="d-flex align-items-center text-white pt-4" href="#"> <span class="pop-pointer mr-2"><i data-feather="chevron-right"></i></span> <span class="text-capitalize">Or Login to your account</span> </a> </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!--	pop up section--> 
-
+<!-- download -->
 <!--			footer-->
 <footer id="footer" class="clearfix"> 
   <!-- footer-top -->
@@ -1293,12 +1122,13 @@
       <div class="row"> 
         <!-- footer-widget -->
         <div class="col-sm-3">
-          <div class="footer-widget news-letter mb-5">
+          <div class="footer-widget news-letter mb-5"> 
             <div class="">
               <h3 class="text-white text-capitalize">NCCG Self sevice portal</h3>
               <p class="font-12">Make payments easily and quickly. Create account and get to enjoy paying for Nairobi City County services online.</p>
             </div>
-            <img src="img/logo/nairobi-city-county-logo.png" height="60px;" class="pr-2"> </div>
+			  <img src="img/logo/nairobi-city-county-logo.png" height="60px;" class="pr-2">
+          </div>
         </div>
         <!-- footer-widget --> 
         

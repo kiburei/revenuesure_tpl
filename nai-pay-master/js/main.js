@@ -28,6 +28,34 @@ setTimeout(explode, 5000);
 		$('.pop-item').addClass('rollOut');
 		
 	}
+	
+	function closereceiptform(){
+		setTimeout($('#search-receipt').addClass('d-none'),2000);		
+		$('#search-receipt').removeClass('fadeIn');
+		$('#get-receipt-container').removeClass('tada');
+		
+		$('#search-receipt').addClass('zoomOut');
+		$('#get-receipt-container').addClass('rollOut');
+		
+	}
+	
+	function showreceiptform(){
+		$('#search-receipt').removeClass('zoomOut');
+		$('#search-receipt').removeClass('d-none');
+		$('#search-receipt').addClass('fadeIn');
+		$('#get-receipt-container').removeClass('rollOut');
+		$('#get-receipt-container').addClass('tada');
+	}
+	
+	$('.close-receipt-form').on('click',function(){
+		closereceiptform();
+	});
+	
+	$('#get-a-receipt').on('click',function(){
+		showreceiptform();
+	});
+	
+	
 });
 
 (function($) {
@@ -132,6 +160,18 @@ setTimeout(explode, 5000);
     $(this).siblings().children("span").css("opacity", "0");
     $(".airtel-indicator").css("opacity", "1");
   });
+	
+	
+	$('.user-nav .wrap').on('click', function(){
+		$('.user-nav .wrap').removeClass('display-tri');
+		$('.user-nav .wrap').removeClass('active-item')
+		$(this).addClass('display-tri');
+		$(this).addClass('active-item');
+	});
+	
+	$('.acount-details-form input').on('change', function(){
+		$('.submit-btn').prop("disabled", false);
+	})
 
 
 
@@ -158,3 +198,40 @@ $(document).ready(function() {
     }).setClassToggle('.option', 'fade-in')
     .addTo(controller)
 });
+
+
+
+//this part affects the transactions page
+(function($) {
+	$(".main-transaction-container").on("click", function(){
+		returnpannels();
+		var parent=$(this).parent();		
+		$(this).addClass("active-transaction").parent().siblings().children("active-transaction").removeClass("active-transaction");
+		$(this).siblings(".transaction-more-details").addClass("display-flex");
+		$(this).siblings(".transaction-more-details").slideDown();
+		parente.siblings(".transaction-more-details").removeClass("display-flex");
+		
+//		$(".transaction-more-details").eq(index).removeClass("display-none");
+//		console.log(index);
+		
+	});
+	
+	$(".close-panel-container").on("click", function(){
+		$(this).parent().slideUp();	
+		$(this).parent().removeClass("display-flex");
+	});
+	
+	
+	
+	
+	function returnpannels()
+	{
+		$(".main-transaction-container").removeClass("active-transaction");
+		$(".transaction-more-details").slideUp();
+		$(".transaction-more-details").removeClass("display-flex");
+		
+	}
+	
+})(jQuery);
+
+//this part affects the transactions page

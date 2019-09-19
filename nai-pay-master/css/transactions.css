@@ -46,9 +46,10 @@ body {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  background: #fdf1e0;
+  background: #1982401c;
   cursor: pointer;
   flex-flow: column;
+	white-space: nowrap;
 }
 
 .main-transaction-container {
@@ -59,10 +60,12 @@ body {
   align-items: center;
   align-content: center;
   border-left: solid 4px transparent;
+	padding-left: 0px;
+    padding-right: 0px;
 }
 
 .main-transaction-container:nth-child(odd):hover {
-  border-left: solid 4px #df630b;
+ border-left: 4px solid #198240;
 }
 
 .single-transaction:nth-child(even) {
@@ -70,11 +73,11 @@ body {
 }
 
 .main-transaction-container:nth-child(even):hover {
-  border-left: solid 4px #f29d2a;
+  border-left: solid 4px #2da656;
 }
 
 .main-transaction-container:hover {
-  background: #fbdcb1;
+  background:#e7f6eb;
 }
 
 .main-transaction-container div {
@@ -89,33 +92,39 @@ body {
 }
 
 .single-transaction div ul:last-child {
-  font-size: 1.125rem;
-  line-height: 1.33333;
-  font-weight: 400;
+  
+/*  font-weight: 400;*/
   text-transform: none;
 }
 
 .single-transaction div ul:first-child {
-  font-size: 0.8125rem;
+/*  font-size: 0.8125rem;*/
 }
 
 .single-transaction span {
   display: flex;
-  font-size: 1.125rem;
-}
+  }
 
 .single-transaction .date {
   color: black;
-  text-transform: uppercase;
-  width: 8.33333333%;
+    text-transform: uppercase;
+    width: 8.33333333%;
+    font-size: 14px;
+    /* line-height: 1.5rem; */
+    
+    color: #2c2e2f;
+    text-overflow: ellipsis;
+}
+
+.single-transaction .date li:first-child, .type-of-transaction li:first-child, .transaction-amount{
+	font-weight: 600;
 }
 
 .transaction-more-details {
   border: 1px solid lightgray;
   padding: 16px;
-  padding-left: 8.3333333%;
-  display: flex;
-  border-left: solid 4px #ec820d;
+  display: block;
+  border-left: solid 4px #22934a;
   position: relative;
   background: white;
   margin: 0px !important;
@@ -123,7 +132,7 @@ body {
 }
 
 .display-flex {
-  display: flex;
+  display: block;
 }
 
 .display-none {
@@ -132,12 +141,10 @@ body {
 
 .transaction-more-details>div {
   padding-left: 16px;
-  display: flex;
+
   text-transform: capitalize;
   padding: 16px;
-  width: 50%;
-  flex-flow: column;
-  float: left;
+
 }
 
 .transaction-more-details ul {
@@ -176,6 +183,11 @@ body {
   display: flex;
   align-items: center;
   align-content: center;
+	
+}
+
+.report{
+	display: none;
 }
 
 .print-details:hover, .report:hover {
@@ -191,7 +203,7 @@ body {
 
 .active-transaction {
   border: 1px solid lightgray;
-  border-left: solid 4px #f29d2a !important;
+  border-left: solid 4px #2da656 !important;
   border-bottom: 1px solid transparent;
 }
 
@@ -201,6 +213,7 @@ body {
   right: 16px;
   top: 16px;
   cursor: pointer;
+	z-index: 10;
 }
 
 .main-navigation {
@@ -231,7 +244,5 @@ form input[type="submit"] {
   .history-container {
     padding: 1em 10%;
   }
-  .main-transaction-container {
-    padding: 16px 10%;
-  }
+ 
 }

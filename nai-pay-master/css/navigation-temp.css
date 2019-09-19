@@ -1319,7 +1319,7 @@ color:#999
     height: 34px;
     padding: 6px 12px;
     color: #555;
-    background-color: #fff;
+/*    background-color: #fff;*/
     border: 1px solid #ccc;
     border-radius: 4px;
     -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
@@ -14887,7 +14887,7 @@ body .menu-row .mega-menu table td.wide_menu > .wrap > .dropdown-menu > li > .dr
 }
 .mega-menu table td .wrap > a {
     border: none;
-    font-weight: 700;
+    font-weight: 400;
     padding: 41px 12px;
     position: relative;
     text-transform: none;
@@ -41505,9 +41505,18 @@ button.button, input.button, .button, #header ul.menu.full.opened li:not(.search
     border-color: #e63f3a;
 }
 .btn.btn-transparent {
-    background-color: rgba(255,255,255,0);
-    border-color: rgba(255,255,255,0);
-    color: #000000;
+    background: transparent;
+	border: 1px solid #1c8241;
+	color: #1c8241;
+}
+
+.btn.btn-transparent:hover {
+    background: transparent;
+	border: 2px solid #1c8241;
+	color: #1c8241;
+}
+.text-primary{
+	color: #1c8241 !important;
 }
 .btn.btn-transparent:hover, .btn.btn-transparent:active, .btn.btn-transparent:focus {
     background-color: #239049;
