@@ -232,6 +232,39 @@ $(document).ready(function() {
 		
 	}
 	
+	
+//	showing and removing assets form
+	
+	$('#add-asset').on('click', function(){
+		showassetsform();
+	});
+	
+	$('#close-asset-form').on('click', function(){
+		hideassetsform();
+	})
+	
+	function showassetsform(){
+		$(".assets-form-container").removeClass('left');
+		$('.assets-container').addClass('right');
+		
+	}
+	
+	function hideassetsform(){
+		$(".assets-form-container").addClass('left');
+		$('.assets-container').removeClass('right');
+		
+	}
+	$('.drop-title').on('click', function(){
+		$(this).parent().siblings('.drop-container').slideToggle();
+	})
+	
+	$('.assets-container .drop-container li').on('click', function(){
+		var thetext=$(this).text()+'<span><i data-feather="chevron-down" class="ml-2 position-absolute mb-0"></i></span>';
+		$('.assets-container .drop-title').html(thetext); 
+		$('.drop-container').slideUp();
+	});
+	
+	
 })(jQuery);
 
 //this part affects the transactions page

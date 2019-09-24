@@ -880,238 +880,188 @@
     <div class="section services position-relative p-md-5 p-sm-4"> 
       <!-- single-service -->
       <div class="col-sm-12 text-capitalize position-relative p-0">
-        <h2>profile details</h2>
-        <p>below are etails on your profile. do remember to save your work once you have edited an item in your profile</p>
+        <h2>my assets</h2>
+        <p>this are some of the assets registered under your account</p>
         <hr>
       </div>
       <div class="col-lg-7 col-md-12 col-sm-12 p-0">
-        <div class="mb-3 pr-lg-3">
-          <form class="acount-details-form">
-            <div class="row">
-			  	<div class="form-group col-sm-12 col-md-6 pl-md-0 pl-lg-3">
-              <label for="exampleInputEmail1" class="text-capitalize">first name</label>
-              <input type="text" class="form-control" id="fname" placeholder="first name eg John">
+        <div class="mb-3 pr-lg-3 assets-main-coontainer position-relative"> 
+          
+          <!--			assets form-->
+          <div class="assets-form-container py-2 px-4">
+            <div class="col-12 border-bottom pt-4 px-0">
+              <p class="text-capitalize d-flex text-primary position-relative"> <span class="trans-txt text-primary mt-0 position-relative drop-title" > vehicles<i data-feather="chevron-down" class="ml-2 ml-2 position-absolute mb-0 mt-2px"></i> </span> <span id="close-asset-form" title="close the form"><i data-feather="x"></i></span>
+              <ul class="item_list list-unstyled text-capitalize p-3 drop-container">
+                <li>vehcles</li>
+                <li>stall</li>
+                <li>house</li>
+                <li>land</li>
+              </ul>
+              </p>
             </div>
-            <div class="form-group col-sm-12 col-md-6 pl-md-0 pl-lg-3">
-              <label for="exampleInputEmail1" class="text-capitalize">other name(s)</label>
-              <input type="text" class="form-control" id="other-names" placeholder="first name eg Doe">
+            <form>
+              <div class="row">
+                <div class="form-group col-sm-12 col-md-12">
+                  <label for="exampleInputPassword1" class="text-capitalize">registration number</label>
+                  <input type="password" class="form-control" id="number-plate" placeholder="Password">
+                </div>
+                <div class="form-group col-sm-12 col-md-12">
+                  <label for="exampleInputPassword1" class="text-capitalize">car type</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>-- select car type --</option>
+                    <option>canter</option>
+                    <option>pickup</option>
+                    <option>lorry</option>
+                    <option>personal</option>
+                    <option>bus</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <button type="button" class="btn btn-primary text-capitaliz text-white font-14 pull-right">add to assets</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!--			assets form--> 
+          
+          <!--			the assets go here use pegination kindly not more than five assets per page-->
+          <div class="assets-container py-2 px-4 animated">
+            <div class="col-12 border-bottom pt-4 px-0">
+              <p class="text-capitalize d-flex text-primary position-relative "> <span class="trans-txt text-primary mt-0 drop-title" > all assets<span><i data-feather="chevron-down" class="ml-2 position-absolute mb-0 mt-2px"></i></span> </span> <span id="add-asset" title="Add new asset"><i data-feather="plus"></i></span>
+              <ul class="item_list list-unstyled text-capitalize p-3 drop-container">
+                <li>all assets</li>
+                <li>vehcles</li>
+                <li>stall</li>
+                <li>house</li>
+                <li>land</li>
+              </ul>
+              </p>
             </div>
-			  </div>
-            <div class="row">
-			  	<div class="form-group col-sm-12 col-md-6 pl-md-0 pl-lg-3">
-              <label for="exampleInputEmail1" class="text-capitalize">phone number</label>
-              <input type="text" class="form-control" id="fname" placeholder="eg 07...">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your phone number with anyone else.</small> </div>
-            <div class="form-group col-sm-12 col-md-6 pl-md-0">
-              <label for="exampleInputEmail1" class="text-capitalize">your email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> </div>
-			  </div>
-			  
-			  <div class="row">
-			  	<div class="col-12 text-capitalize">
-				  	<hr>
-					<p>use this section to have your password changed</p>
-				  </div>
-			  </div>
-            
-			 
-            <div class="row">
-				
-				<div class="form-group col-sm-12 col-md-12">
-              <label for="exampleInputPassword1" class="text-capitalize">old password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-            </div>
-			  	<div class="form-group col-sm-12 col-md-6">
-              <label for="exampleInputPassword1" class="text-capitalize">new password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-            </div>
-			  
-			  <div class="form-group col-sm-12 col-md-6">
-              <label for="exampleInputPassword1" class="text-capitalize">confirm password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-            </div>
-			  </div>
-			  
-			  <button type="submit" class="btn btn-primary text-capitalize text-white font-14 submit-btn" disabled>save changes</button>
-            
-          </form>
+            <ul class="item_list list-unstyled the-assets-are">
+              <li class="p-3 px-4 my-3">
+                <div>KAH 587P</div>
+                <small class="text-capitalize opacity-7">pick-up</small> </li>
+              <li class="p-3 px-4 my-3">
+                <div>KAH 587P</div>
+                <small class="text-capitalize opacity-7">pick-up</small> </li>
+              <li class="p-3 px-4 my-3">
+                <div>KAH 587P</div>
+                <small class="text-capitalize opacity-7">pick-up</small> </li>
+              <li class="p-3 px-4 my-3">
+                <div>KAH 587P</div>
+                <small class="text-capitalize opacity-7">pick-up</small> </li>
+              <li class="p-3 px-4 my-3">
+                <div>KAH 587P</div>
+                <small class="text-capitalize opacity-7">pick-up</small> </li>
+            </ul>
+          </div>
+          <!--			end of assets container--> 
         </div>
       </div>
-		
-		<div class="col-md-12 col-lg-5 col-sm-12 py-4 h-100 recent-transactions-container border dot-border py-3 mt-md-5 mt-lg-0">
-			<div class="recent-transactions p-y-3">
-				<div class="row">
-					<div class="col-12 border-bottom">
-						<p class="text-capitalize d-flex text-primary"><span class="trans-txt text-primary mt-0">recent activities</span><span><i data-feather="arrow-right"></i></span></p>
-					</div>
-					
-					<div class="col-12 border-bottom pb-3 pt-3 the-transaction dot-bottom-border">
-						<div class="row">
-							<div class="col-2 text-center">
-								<p class="text-uppercase mb-2 ppvx_text--md">sep</p>
-								<p class="m-0">
-									11
-								</p>
-							</div>
-							
-							<div class="col-7">
-								<p class="text-capitalize mb-2 ppvx_text--md">daily parking</p>
-								<p class="m-0 ppvx_text--md-det">
-									KBH 4589R
-								</p>
-							</div>
-							
-							<div class="col-3 text-right">
-								<p class="text-capitalize mb-2 ppvx_text--md">ksh 200</p>
-								
-							</div>
-						</div>
-						
-						
-					
-					</div>
-					
-					<div class="col-12 border-bottom pb-3 pt-3 the-transaction dot-bottom-border">
-						<div class="row">
-							<div class="col-2 text-center">
-								<p class="text-uppercase mb-2 ppvx_text--md">sep</p>
-								<p class="m-0">
-									11
-								</p>
-							</div>
-							
-							<div class="col-7">
-								<p class="text-capitalize mb-2 ppvx_text--md">daily parking</p>
-								<p class="m-0 ppvx_text--md-det">
-									KBH 4589R
-								</p>
-							</div>
-							
-							<div class="col-3 text-right">
-								<p class="text-capitalize mb-2 ppvx_text--md">ksh 200</p>
-								
-							</div>
-						</div>
-						
-						
-					
-					</div>
-					
-					<div class="col-12 border-bottom pb-3 pt-3 the-transaction dot-bottom-border">
-						<div class="row">
-							<div class="col-2 text-center">
-								<p class="text-uppercase mb-2 ppvx_text--md">sep</p>
-								<p class="m-0">
-									11
-								</p>
-							</div>
-							
-							<div class="col-7">
-								<p class="text-capitalize mb-2 ppvx_text--md">daily parking</p>
-								<p class="m-0 ppvx_text--md-det">
-									KBH 4589R
-								</p>
-							</div>
-							
-							<div class="col-3 text-right">
-								<p class="text-capitalize mb-2 ppvx_text--md">ksh 200</p>
-								
-							</div>
-						</div>
-						
-						
-					
-					</div>
-					
-					<div class="col-12 border-bottom pb-3 pt-3 the-transaction dot-bottom-border">
-						<div class="row">
-							<div class="col-2 text-center">
-								<p class="text-uppercase mb-2 ppvx_text--md">sep</p>
-								<p class="m-0">
-									11
-								</p>
-							</div>
-							
-							<div class="col-7">
-								<p class="text-capitalize mb-2 ppvx_text--md">daily parking</p>
-								<p class="m-0 ppvx_text--md-det">
-									KBH 4589R
-								</p>
-							</div>
-							
-							<div class="col-3 text-right">
-								<p class="text-capitalize mb-2 ppvx_text--md">ksh 200</p>
-								
-							</div>
-						</div>
-						
-						
-					
-					</div>
-					
-					<div class="col-12 border-bottom pb-3 pt-3 the-transaction dot-bottom-border">
-						<div class="row">
-							<div class="col-2 text-center">
-								<p class="text-uppercase mb-2 ppvx_text--md">sep</p>
-								<p class="m-0">
-									11
-								</p>
-							</div>
-							
-							<div class="col-7">
-								<p class="text-capitalize mb-2 ppvx_text--md">daily parking</p>
-								<p class="m-0 ppvx_text--md-det">
-									KBH 4589R
-								</p>
-							</div>
-							
-							<div class="col-3 text-right">
-								<p class="text-capitalize mb-2 ppvx_text--md">ksh 200</p>
-								
-							</div>
-						</div>
-						
-						
-					
-					</div>
-					
-					<div class="col-12 border-bottom pb-3 pt-3 the-transaction dot-bottom-border">
-						<div class="row">
-							<div class="col-2 text-center">
-								<p class="text-uppercase mb-2 ppvx_text--md">sep</p>
-								<p class="m-0">
-									11
-								</p>
-							</div>
-							
-							<div class="col-7">
-								<p class="text-capitalize mb-2 ppvx_text--md">daily parking</p>
-								<p class="m-0 ppvx_text--md-det">
-									KBH 4589R
-								</p>
-							</div>
-							
-							<div class="col-3 text-right">
-								<p class="text-capitalize mb-2 ppvx_text--md">ksh 200</p>
-								
-							</div>
-						</div>
-						
-						
-					
-					</div>
-					
-					
-					 <a href="#" class="btn btn-transparent text-capitalize font-14 mt-5 ml-5 text-capitalize d-none text-primary text-capitalize  text-primary d-none">see more transactions<i data-feather="arrow-right" class="ml-2"></i></a>
-				</div>
-			</div>
-		</div>
+      <div class="col-md-12 col-lg-5 col-sm-12 py-4 h-100 recent-transactions-container border dot-border py-3 mt-md-5 mt-lg-0">
+        <div class="recent-transactions p-y-3">
+          <div class="row">
+            <div class="col-12 border-bottom">
+              <p class="text-capitalize d-flex text-primary"><span class="trans-txt text-primary mt-0">recent activities</span><span><i data-feather="arrow-right"></i></span></p>
+            </div>
+            <div class="col-12 border-bottom pb-3 pt-3 the-transaction dot-bottom-border">
+              <div class="row">
+                <div class="col-2 text-center">
+                  <p class="text-uppercase mb-2 ppvx_text--md">sep</p>
+                  <p class="m-0"> 11 </p>
+                </div>
+                <div class="col-7">
+                  <p class="text-capitalize mb-2 ppvx_text--md">daily parking</p>
+                  <p class="m-0 ppvx_text--md-det"> KBH 4589R </p>
+                </div>
+                <div class="col-3 text-right">
+                  <p class="text-capitalize mb-2 ppvx_text--md">ksh 200</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 border-bottom pb-3 pt-3 the-transaction dot-bottom-border">
+              <div class="row">
+                <div class="col-2 text-center">
+                  <p class="text-uppercase mb-2 ppvx_text--md">sep</p>
+                  <p class="m-0"> 11 </p>
+                </div>
+                <div class="col-7">
+                  <p class="text-capitalize mb-2 ppvx_text--md">daily parking</p>
+                  <p class="m-0 ppvx_text--md-det"> KBH 4589R </p>
+                </div>
+                <div class="col-3 text-right">
+                  <p class="text-capitalize mb-2 ppvx_text--md">ksh 200</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 border-bottom pb-3 pt-3 the-transaction dot-bottom-border">
+              <div class="row">
+                <div class="col-2 text-center">
+                  <p class="text-uppercase mb-2 ppvx_text--md">sep</p>
+                  <p class="m-0"> 11 </p>
+                </div>
+                <div class="col-7">
+                  <p class="text-capitalize mb-2 ppvx_text--md">daily parking</p>
+                  <p class="m-0 ppvx_text--md-det"> KBH 4589R </p>
+                </div>
+                <div class="col-3 text-right">
+                  <p class="text-capitalize mb-2 ppvx_text--md">ksh 200</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 border-bottom pb-3 pt-3 the-transaction dot-bottom-border">
+              <div class="row">
+                <div class="col-2 text-center">
+                  <p class="text-uppercase mb-2 ppvx_text--md">sep</p>
+                  <p class="m-0"> 11 </p>
+                </div>
+                <div class="col-7">
+                  <p class="text-capitalize mb-2 ppvx_text--md">daily parking</p>
+                  <p class="m-0 ppvx_text--md-det"> KBH 4589R </p>
+                </div>
+                <div class="col-3 text-right">
+                  <p class="text-capitalize mb-2 ppvx_text--md">ksh 200</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 border-bottom pb-3 pt-3 the-transaction dot-bottom-border">
+              <div class="row">
+                <div class="col-2 text-center">
+                  <p class="text-uppercase mb-2 ppvx_text--md">sep</p>
+                  <p class="m-0"> 11 </p>
+                </div>
+                <div class="col-7">
+                  <p class="text-capitalize mb-2 ppvx_text--md">daily parking</p>
+                  <p class="m-0 ppvx_text--md-det"> KBH 4589R </p>
+                </div>
+                <div class="col-3 text-right">
+                  <p class="text-capitalize mb-2 ppvx_text--md">ksh 200</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 border-bottom pb-3 pt-3 the-transaction dot-bottom-border">
+              <div class="row">
+                <div class="col-2 text-center">
+                  <p class="text-uppercase mb-2 ppvx_text--md">sep</p>
+                  <p class="m-0"> 11 </p>
+                </div>
+                <div class="col-7">
+                  <p class="text-capitalize mb-2 ppvx_text--md">daily parking</p>
+                  <p class="m-0 ppvx_text--md-det"> KBH 4589R </p>
+                </div>
+                <div class="col-3 text-right">
+                  <p class="text-capitalize mb-2 ppvx_text--md">ksh 200</p>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="btn btn-transparent text-capitalize font-14 mt-5 ml-5 text-capitalize d-none text-primary text-capitalize  text-primary d-none">see more transactions<i data-feather="arrow-right" class="ml-2"></i></a> </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 <!--	main body--> 
-	<!-- download -->
+<!-- download -->
 <section id="download" class="clearfix parallax-section">
   <div class="container">
     <div class="row">
@@ -1139,7 +1089,7 @@
   </div>
   <!-- contaioner --> 
 </section>
-<!-- download -->
+<!-- download --> 
 <!--			footer-->
 <footer id="footer" class="clearfix"> 
   <!-- footer-top -->
@@ -1148,13 +1098,12 @@
       <div class="row"> 
         <!-- footer-widget -->
         <div class="col-sm-3">
-          <div class="footer-widget news-letter mb-5"> 
+          <div class="footer-widget news-letter mb-5">
             <div class="">
               <h3 class="text-white text-capitalize">NCCG Self sevice portal</h3>
               <p class="font-12">Make payments easily and quickly. Create account and get to enjoy paying for Nairobi City County services online.</p>
             </div>
-			  <img src="img/logo/nairobi-city-county-logo.png" height="60px;" class="pr-2">
-          </div>
+            <img src="img/logo/nairobi-city-county-logo.png" height="60px;" class="pr-2"> </div>
         </div>
         <!-- footer-widget --> 
         

@@ -726,9 +726,7 @@ footer p {
 	padding: 30px;
 }
 
-.btn-transparent{
-	 
-}
+
 
 .z-index-1{
 	z-index: 1;
@@ -3386,6 +3384,117 @@ transaction pop up styles
   .mx-xl-auto {
     margin-left: auto !important;
   }
+}
+
+.opacity-7{
+	
+	opacity: 0.7;
+}
+
+.assets-container{
+	background-color: whitesmoke;
+	height: 517px;
+}
+
+.assets-form-container{
+	background-color:white;
+	height: 517px;
+	opacity: 1;
+}
+
+.assets-container,.assets-form-container{
+	position: absolute;
+	top: 0;
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+	width: 100%;
+}
+
+.assets-main-coontainer{
+	overflow: hidden;
+	min-height: 517px;
+}
+
+.assets-main-coontainer .btn-transparent:hover{
+	background: transparent !important;
+	color: inherit !important;
+	 
+}
+
+.assets-container li{
+	background: white;
+}
+
+.assets-container li div:first-child{
+	font-weight: bold;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.the-assets-are li:hover{
+	box-shadow: 0px 8px 24px 0px rgba(29, 32, 41, .35);
+	background:#1b8241;
+	background-color: #1b8241;
+	color: white;
+}
+
+#add-asset, #close-asset-form{
+	border-radius: 50%;
+	padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	cursor: pointer;
+}
+
+#add-asset:hover,#close-asset-form:hover{
+	background: #ddd;
+	background-color: #ddd;
+	color: black;
+}
+.left{
+	left: -100% !important;
+/*	opacity: 0;*/
+}
+.right{
+	right: -100% !important;
+}
+
+.drop-container{
+	position: absolute;
+z-index: 1;
+background: white;
+box-shadow: 0px 8px 24px 0px rgba(29, 32, 41, .35);
+width: 100px;
+top: 43px;
+	display: none;
+}
+.drop-container:after{
+ position: absolute;
+    top: -15%;
+    height: 0;
+    width: 0;
+    left: 6%;
+    border: 12px solid transparent;
+    border-bottom-color: white;
+    content: "";
+}
+.drop-title{
+	cursor: pointer;
+}
+.drop-container li{
+	
+	cursor: pointer;
+}
+
+.drop-container li:hover{
+	color: black;
+}
+
+.mt-2px{
+	margin-top: 2px !important;
 }
 
 
