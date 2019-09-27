@@ -259,10 +259,128 @@ $(document).ready(function() {
 	})
 	
 	$('.assets-container .drop-container li').on('click', function(){
-		var thetext=$(this).text()+'<span><i data-feather="chevron-down" class="ml-2 position-absolute mb-0"></i></span>';
-		$('.assets-container .drop-title').html(thetext); 
+		var thetext=$(this).text();
+		$('.assets-container .the-assets-text').text(thetext);
 		$('.drop-container').slideUp();
+		console.log(thetext);
 	});
+	
+	
+//	for the assets form
+	
+	$('.assets-form-container .drop-container li').on('click', function(){
+		var thetext=$(this).text();
+		$('.assets-form-container .the-assets-text').text(thetext);
+		$('.drop-container').slideUp();
+		console.log(thetext);
+	});
+	
+	
+//	interchanging forms
+	$('.the-assets-form-group li').on('click', function(){
+		$('.the-assets-form').addClass('d-none');
+	});
+	
+	$('.nyumba').on('click',function(){
+		$('.house-form-inputs').removeClass('d-none');
+	});
+	
+	$('.gari').on('click',function(){
+		$('.car-form-inputs').removeClass('d-none');
+	});
+	
+	$('.soko').on('click',function(){
+		$('.stalls-form-inputs').removeClass('d-none');
+	});
+	
+	$('.gari').on('click',function(){
+		$('.car-form-inputs').removeClass('d-none');
+	});
+	
+	$('.shamba').on('click',function(){
+		$('.land-form-inputs').removeClass('d-none');
+	});
+	
+	
+//	payment method
+	$(".pay-container .pay-method").on('click', function(){
+		$(this).addClass('gray-bg').siblings().removeClass('gray-bg');
+	});
+	
+//	closing price container
+	
+	
+	
+	function showhideprice(parking_zone, car_type){
+		if((parking_zone!="-- select parking zone --") && (car_type!="-- select vehicle type --")){
+		$('.price-container').slideDown();
+	}
+	else if((parking_zone=="-- select parking zone --") || (car_type=="-- select vehicle type --")){
+		$('.price-container').slideUp();	
+	}
+	}
+	
+	$('.close-price-container').on('click', function(){
+		$(this).parent().slideUp();
+	});
+	
+	$('#zone').on('change',function(){
+		var parking_zone=$('#zone option:selected').val();
+	var car_type=$('#car_type option:selected').val();
+		showhideprice(parking_zone, car_type);
+		
+	})
+	
+	$('#car_type').on('change',function(){
+		var parking_zone=$('#zone option:selected').val();
+	var car_type=$('#car_type option:selected').val();
+		showhideprice(parking_zone, car_type);
+	})
+	
+	
+//	back to form
+	$('.back-toform').on('click',function(){
+		$('.details-confirm').addClass('fadeOutRight');
+		$('.details-confirm').addClass('d-none');
+		$('.the-transaction-form').removeClass('d-none');
+		$('.the-transaction-form').addClass('fadeInLeft');
+		$('.the-transaction-form').removeClass('fadeOutLeft');
+	});
+	
+	$('.transaction-form-btn').on('click',function(){
+		$('.details-confirm').removeClass('fadeOutRight');
+		$('.details-confirm').removeClass('d-none');
+		$('.the-transaction-form').removeClass('fadeInLeft');
+		$('.the-transaction-form').addClass('fadeOutLeft');
+		$('.the-transaction-form').addClass('d-none');
+		$('.details-confirm').addClass('fadeInRight');
+		
+	});
+	
+	$('.confirm-btn').on('click', function(){
+		$('.btn-txt').addClass('d-none');
+		$('.lds-ellipsis').removeClass('d-none');
+		
+		
+		
+		
+		setTimeout(popprice, 2200);
+		
+	});
+	
+	function popprice(){
+			$('#pay-confirmation-pop').removeClass('d-none');
+		}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 })(jQuery);

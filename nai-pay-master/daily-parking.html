@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="Theme Region">
 <meta name="description" content="">
-<title>NCCG Self service Platform</title>
+<title>Daily parking</title>
 <!-- Bootstrap CSS -->
 
 <script src="https://unpkg.com/feather-icons"></script>
@@ -15,8 +15,6 @@
 <link rel="stylesheet" href="css/bootstrap.css">
 <!--	bootstrap css-->
 <!--  CSS -->
-
-<link rel="stylesheet" href="css/transactions.css">
 <link rel="stylesheet" href="css/navigation-temp.css">
 <link rel="stylesheet" href="css/style.css">
 <!-- <link rel="stylesheet" href="css/style2.css"> -->
@@ -120,7 +118,7 @@
                   </div>
                 </div>
                 <div class="pull-right">
-                  <div class="wrap_icon inner-table-block btn-span-margin text-capitalize"> <a href="#" ><span id="sell-item">print receipt</span></a> <a href="shop-category.html"><span id="add-shop" class="btn-secondary text-black">create an account</span></a> </div>
+                  <div class="wrap_icon inner-table-block btn-span-margin text-capitalize"> <a href="#" ><span id="get-a-receipt">print receipt</span></a> <a href="shop-category.html"><span id="add-shop" class="btn-secondary text-black">create an account</span></a> </div>
                 </div>
               </div>
             </div>
@@ -795,392 +793,241 @@
   </div>
 </div>
 <div id="mobilemenu-overlay"></div>
-<!--		navigation bar --> 
-<!-- header --> 
-<!--	MENU CONTROLS--> 
-
-<!--	main body--> 
-<!--	my account navigations-->
-<div class="menu-row middle-block bgcolored user-nav">
-  <div class="maxwidth-theme p-sm-0 p-0"style="background-color: #00431b;">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 p-sm-0 p-0">
-          <div class="menu-only">
-            <nav class="mega-menu sliced ovisible initied">
-              <div class="table-menu">
-                <table>
-                  <tbody>
-                    <tr class="text-capitalize">
-                      <td class="menu-item dropdown catalog wide_menu" style="visibility: visible;"><div class="wrap" id="profile-btn"> <a class="text-center" href="#">
-                          <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">My Profile</font></font>
-                            <div class="line-wrapper"><span class="line"></span></div>
-                          </div>
-                          </a> <span class="tail"></span> </div></td>
-                      <td class="menu-item dropdown" style="visibility: visible;"><div class="wrap" id="transactions-btn"> <a class="text-center" href="#/">
-                          <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Transactions</font></font>
-                            <div class="line-wrapper"><span class="line"></span></div>
-                          </div>
-                          </a> <span class="tail"></span> </div></td>
-                      <td class="menu-item dropdown" style="visibility: visible;"><div class="wrap" id="assets-btn"> <a class="text-center" href="#/">
-                          <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> my assets</font></font>
-                            <div class="line-wrapper"><span class="line"></span></div>
-                          </div>
-                          </a> <span class="tail"></span> </div></td>
-                      <td class="menu-item dropdown" style="visibility: visible;"><div class="wrap" id="bills-btn"> <a class="text-center" href="#/">
-                          <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> my bills</font></font>
-                            <div class="line-wrapper"><span class="line"></span></div>
-                          </div>
-                          </a> <span class="tail"></span> </div></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </nav>
+<!--	search receipt pop up-->
+<section class="account-pop-up h-100vh w-100 justify-content-center align-items-center animated d-none" id="search-receipt">
+  <div class="container p-lg-5 p-md-0">
+    <div class="row p-5">
+      <div class="receipt-search-container m-5 d-flex flex-column-md animated" id="get-receipt-container">
+        <div class="col-lg-6 receipt-img-container">
+          <div class="col-lg-8 col-md-12 position-relative p-5">
+            <h2 class="mb-4 text-capitalize text-white">print a receipt for a transaction</h2>
+            <p class="font-14 mb-3 text-capitalize">Make sure all inputs are correct. The process has been made this way to help protect personal data</p>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!--	my account navigations-->
-<section id="home-one-info" class="homebg "> 
-  <!--		account intro-->
-  <div id="home-section" class="parallax-section py-5">
-    <div class="container">
-      <div class="row margin-120">
-        <div class="col-sm-12 col-md-12">
-          <h1 style="color: #fff" class="text-capitalize mb-1 p-0">my profile</h1>
-          <p class="text-capitalize ">You last logged in at: 14-01-2018 6:40 AM [ Kenya time (GMT + 6:00hrs)]</p>
-        </div>
-        <div class="col-md-1 col-sm-3 d-flex flex-column align-content-center justify-content-center mb-sm-3">
-          <div class="user-dp mb-sm-3"> <img src="img/user/default-user.png" class=" img"> </div>
-        </div>
-        <div class="col-md-6 col-sm-9 d-flex flex-column align-content-center justify-content-center">
-          <h1 style="color: #fff" class="text-capitalize mb-1 p-0 ">hello, john doe</h1>
-          <p class="text-capitalize pb-0 mb-md-0 mb-sm-3">joined in 2019</p>
-        </div>
-        <div class="col-auto text-center ">
-          <h2 class="text-capitalize mb-1 mt-0">23</h2>
-          <p class="text-capitalize">pending bills</p>
-        </div>
-        <div class="col-auto text-center">
-          <h2 class="text-capitalize mb-1 mt-0">23</h2>
-          <p class="text-capitalize">assets</p>
-        </div>
-      </div>
-      
-      <!-- row --> 
-    </div>
-    <!-- contaioner --> 
-  </div>
-  <!--		account intro-->
-  
-  <div class="container">
-    <div class="section services position-relative p-md-5 p-sm-4"> 
-      <!-- single-service -->
-      <div class="col-sm-12 text-capitalize position-relative p-0">
-        <h2>my assets</h2>
-        <p>this are some of the assets registered under your account</p>
-        <hr>
-      </div>
-      <div class="col-lg-7 col-md-12 col-sm-12 p-0">
-        <div class="mb-3 pr-lg-3 assets-main-coontainer position-relative"> 
-          
-          <!--			assets form-->
-          <div class="assets-form-container py-2 px-4">
-            <div class="col-12 border-bottom pt-4 px-0">
-              <p class="text-capitalize d-flex text-primary position-relative"> <span class="trans-txt text-primary mt-0 position-relative drop-title" >  <span class="the-assets-text">vehicles</span><i data-feather="chevron-down" class="ml-2 ml-2 position-absolute mb-0 mt-2px"></i> </span> <span id="close-asset-form" title="close the form"><i data-feather="x"></i></span>
-              <ul class="item_list list-unstyled text-capitalize p-3 drop-container the-assets-form-group">
-                <li class="gari">vehicles</li>
-                <li class="soko">stall</li>
-                <li class="nyumba">house</li>
-                <li class="shamba">land</li>
-              </ul>
-              </p>
+        <div class="col-lg-6 p-5 position-relative"> <span class="close-receipt-form position-absolute"> <i data-feather="x"></i></span>
+          <form class="transaction-info">
+            <div class="">
+              <h4 class="mb-5 pb-2 text-capitalize">correctly fill in the form bellow to continue</h4>
             </div>
-              <div class="row">
-<!--				  vehicles form inputs-->
-                <div class="car-form-inputs col-12 the-assets-form col-sm-12 p-0">
-				  	<form>
-						<div class="form-group col-sm-12 col-md-12">
-                  <label for="number-plate" class="text-capitalize">registration number</label>
-                  <input type="text" class="form-control" id="number-plate" placeholder="Password">
-                </div>
-                <div class="form-group col-sm-12 col-md-12">
-                  <label for="exampleInputPassword1" class="text-capitalize">car type</label>
-                  <select class="form-control" id="exampleFormControlSelect1">
-                    <option>-- select car type --</option>
-                    <option>canter</option>
-                    <option>pickup</option>
-                    <option>lorry</option>
-                    <option>personal</option>
-                    <option>bus</option>
-                  </select>
-                </div>
-						<div class="col-12">
-                  <button type="button" class="btn btn-primary text-capitaliz text-white font-14 pull-right">add to assets</button>
-                </div>
-					</form>
-				  </div>
-<!--				  end of vehicles form-->
-				  
-				  
-				  <!--				  vehicles form inputs-->
-                <div class="stalls-form-inputs col-12 d-none the-assets-form p-0">
-					<form>
-							
-                <div class="form-group col-sm-12 col-md-12">
-                  <label for="exampleInputPassword1" class="text-capitalize">market</label>
-                  <select class="form-control" id="exampleFormControlSelect1">
-                    <option>-- select the market --</option>
-                    <option>market name</option>
-                    <option>market name</option>
-                    <option>market name</option>
-                    <option>market name</option>
-                    <option>market name</option>
-                  </select>
-                </div>
-					
-					<div class="form-group col-sm-12 col-md-12">
-                  <label for="stall_type" class="text-capitalize">stall type</label>
-                  <select class="form-control" id="stall_type">
-                    <option>-- select stall type --</option>
-                    <option>type name</option>
-                    <option>type name</option>
-                    <option>type name</option>                    
-                  </select>
-                </div>
-					
-					<div class="form-group col-sm-12 col-md-12">
-                  <label for="stall_number" class="text-capitalize">stall number</label>
-                  <select class="form-control" id="stall_number">
-                    <option>-- stall number --</option>
-                    <option>stall number</option>
-                    <option>stall number</option>
-                    <option>stall number</option>
-                    <option>stall number</option>
-                    <option>stall number</option>
-                    
-                  </select>
-                </div>
-						
-						<div class="col-12">
-                  <button type="button" class="btn btn-primary text-capitaliz text-white font-14 pull-right">add to assets</button>
-                </div>
-					</form>
-					
-				  </div>
-<!--				  end of stalls form-->
-				  
-				   <!--				  house form inputs-->
-                <div class="house-form-inputs col-12 d-none the-assets-form p-0">
-				<form>
-							
-                <div class="form-group col-sm-12 col-md-12">
-                  <label for="house-estate" class="text-capitalize">select the estate</label>
-                  <select class="form-control" id="house-estate">
-                    <option>-- select the estate --</option>
-                    <option>estate name</option>
-                    <option>estate name</option>
-                    <option>estate name</option>
-                    <option>estate name</option>
-                    <option>estate name</option>
-                   
-                  </select>
-                </div>
-					
-					<div class="form-group col-sm-12 col-md-12">
-                  <label for="house_type" class="text-capitalize">select house type</label>
-                  <select class="form-control" id="house_type">
-                    <option>-- select house type --</option>
-                    <option>type name</option>
-                    <option>type name</option>
-                    <option>type name</option>                    
-                  </select>
-                </div>
-					
-					<div class="form-group col-sm-12 col-md-12">
-                  <label for="stall_number" class="text-capitalize">select house number</label>
-                  <select class="form-control" id="stall_number">
-                    <option>-- house number --</option>
-                    <option>house number</option>
-                    <option>house number</option>
-                    <option>house number</option>
-                    <option>house number</option>
-                    <option>house number</option>
-                                       
-                  </select>
-                </div>
-					
-					<div class="col-12">
-                  <button type="button" class="btn btn-primary text-capitaliz text-white font-14 pull-right">add to assets</button>
-                </div>
-					</form>
-					
-				  </div>
-<!--				  end of house form-->
-				  
-				  
-				   
-				   <!--				  land form inputs-->
-                <div class="land-form-inputs col-12 d-none the-assets-form p-0">
-				<form>
-				<div class="form-group col-sm-12 col-md-12">
-                  <label for="plot_number" class="text-capitalize">enter the plot number</label>
-                  <input type="text" class="form-control" id="plot_number" placeholder="plot number">
-                </div>
-					<div class="col-12">
-                  <button type="button" class="btn btn-primary text-capitaliz text-white font-14 pull-right">add to assets</button>
-                </div>
-					</form>
-					
-				  </div>
-<!--				  end of land form-->
-				  
-                
+            <div class="row m-0">
+              <div  class="form-group col-sm-12 pl-md-0">
+                <label for="sel1"><small>What was the transacton type?</small></label>
+                <select class="form-control mb-3" id="sel1" required>
+                  <option>Parking</option>
+                  <option>Business</option>
+                  <option class="text-capitalize">County bills</option>
+                  <option class="text-capitalize">land rates</option>
+                  <option class="text-capitalize">rents</option>
+                  <option class="text-capitalize">e-Construction</option>
+                  <option></option>
+                </select>
               </div>
-          </div>
-          <!--			assets form--> 
-          
-          <!--			the assets go here use pegination kindly not more than five assets per page-->
-          <div class="assets-container py-2 px-4 animated">
-            <div class="col-12 border-bottom pt-4 px-0">
-              <p class="text-capitalize d-flex text-primary position-relative "> <span class="trans-txt text-primary mt-0 drop-title" > <span class="the-assets-text">all assets</span><span><i data-feather="chevron-down" class="ml-2 position-absolute mb-0 mt-2px"></i></span> </span> <span id="add-asset" title="Add new asset"><i data-feather="plus"></i></span>
-              <ul class="item_list list-unstyled text-capitalize p-3 drop-container">
-                <li>all assets</li>
-                <li>vehcles</li>
-                <li>stall</li>
-                <li>house</li>
-                <li>land</li>
-              </ul>
-              </p>
             </div>
-            <ul class="item_list list-unstyled the-assets-are">
-              <li class="p-3 px-4 my-3">
-                <div>KAH 587P</div>
-                <small class="text-capitalize opacity-7">pick-up</small> </li>
-              <li class="p-3 px-4 my-3">
-                <div>KAH 587P</div>
-                <small class="text-capitalize opacity-7">pick-up</small> </li>
-              <li class="p-3 px-4 my-3">
-                <div>KAH 587P</div>
-                <small class="text-capitalize opacity-7">pick-up</small> </li>
-              <li class="p-3 px-4 my-3">
-                <div>KAH 587P</div>
-                <small class="text-capitalize opacity-7">pick-up</small> </li>
-              <li class="p-3 px-4 my-3">
-                <div>KAH 587P</div>
-                <small class="text-capitalize opacity-7">pick-up</small> </li>
-            </ul>
-          </div>
-          <!--			end of assets container--> 
-        </div>
-      </div>
-      <div class="col-md-12 col-lg-5 col-sm-12 py-4 h-100 recent-transactions-container border dot-border py-3 mt-md-5 mt-lg-0">
-        <div class="recent-transactions p-y-3">
-          <div class="row">
-            <div class="col-12 border-bottom">
-              <p class="text-capitalize d-flex text-primary"><span class="trans-txt text-primary mt-0">recent activities</span><span><i data-feather="arrow-right"></i></span></p>
-            </div>
-            <div class="col-12 border-bottom pb-3 pt-3 the-transaction dot-bottom-border">
-              <div class="row">
-                <div class="col-2 text-center">
-                  <p class="text-uppercase mb-2 ppvx_text--md">sep</p>
-                  <p class="m-0"> 11 </p>
+            <div class="row radio-container m-0">
+              <div class="col-12 pl-md-0 mb-3">
+                <div class="form-check-inline">
+                  <label class="form-check-label">M-Pesa
+                    <input type="radio" class="form-check-input" name="method" required>
+                    <span class="checkmark"></span> </label>
                 </div>
-                <div class="col-7">
-                  <p class="text-capitalize mb-2 ppvx_text--md">daily parking</p>
-                  <p class="m-0 ppvx_text--md-det"> KBH 4589R </p>
-                </div>
-                <div class="col-3 text-right">
-                  <p class="text-capitalize mb-2 ppvx_text--md">ksh 200</p>
+                <div class="form-check-inline">
+                  <label class="form-check-label">NBK
+                    <input type="radio" class="form-check-input" name="method" required>
+                    <span class="checkmark"></span> </label>
                 </div>
               </div>
             </div>
-            <div class="col-12 border-bottom pb-3 pt-3 the-transaction dot-bottom-border">
-              <div class="row">
-                <div class="col-2 text-center">
-                  <p class="text-uppercase mb-2 ppvx_text--md">sep</p>
-                  <p class="m-0"> 11 </p>
-                </div>
-                <div class="col-7">
-                  <p class="text-capitalize mb-2 ppvx_text--md">daily parking</p>
-                  <p class="m-0 ppvx_text--md-det"> KBH 4589R </p>
-                </div>
-                <div class="col-3 text-right">
-                  <p class="text-capitalize mb-2 ppvx_text--md">ksh 200</p>
-                </div>
-              </div>
+            <div class="row m-0">
+            <div class="form-group col-sm-12 pl-md-0 mb-3">
+              <label for="exampleInputEmail1" class="text-capitalize"><small>what was the refference number for the transaction?</small></label>
+              <input type="text" class="form-control" id="fname" placeholder="eg M-Pesa ref number" required>
             </div>
-            <div class="col-12 border-bottom pb-3 pt-3 the-transaction dot-bottom-border">
-              <div class="row">
-                <div class="col-2 text-center">
-                  <p class="text-uppercase mb-2 ppvx_text--md">sep</p>
-                  <p class="m-0"> 11 </p>
-                </div>
-                <div class="col-7">
-                  <p class="text-capitalize mb-2 ppvx_text--md">daily parking</p>
-                  <p class="m-0 ppvx_text--md-det"> KBH 4589R </p>
-                </div>
-                <div class="col-3 text-right">
-                  <p class="text-capitalize mb-2 ppvx_text--md">ksh 200</p>
-                </div>
-              </div>
+            <div class="form-group col-sm-12 pl-md-0 mb-3">
+              <label for="identifier" class="text-capitalize"><small>Unique identifire for transaction eg Number plate, bill number, Business ID etc</small></label>
+              <input type="text" class="form-control" id="identifier" placeholder="identifier" required>
             </div>
-            <div class="col-12 border-bottom pb-3 pt-3 the-transaction dot-bottom-border">
-              <div class="row">
-                <div class="col-2 text-center">
-                  <p class="text-uppercase mb-2 ppvx_text--md">sep</p>
-                  <p class="m-0"> 11 </p>
-                </div>
-                <div class="col-7">
-                  <p class="text-capitalize mb-2 ppvx_text--md">daily parking</p>
-                  <p class="m-0 ppvx_text--md-det"> KBH 4589R </p>
-                </div>
-                <div class="col-3 text-right">
-                  <p class="text-capitalize mb-2 ppvx_text--md">ksh 200</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 border-bottom pb-3 pt-3 the-transaction dot-bottom-border">
-              <div class="row">
-                <div class="col-2 text-center">
-                  <p class="text-uppercase mb-2 ppvx_text--md">sep</p>
-                  <p class="m-0"> 11 </p>
-                </div>
-                <div class="col-7">
-                  <p class="text-capitalize mb-2 ppvx_text--md">daily parking</p>
-                  <p class="m-0 ppvx_text--md-det"> KBH 4589R </p>
-                </div>
-                <div class="col-3 text-right">
-                  <p class="text-capitalize mb-2 ppvx_text--md">ksh 200</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 border-bottom pb-3 pt-3 the-transaction dot-bottom-border">
-              <div class="row">
-                <div class="col-2 text-center">
-                  <p class="text-uppercase mb-2 ppvx_text--md">sep</p>
-                  <p class="m-0"> 11 </p>
-                </div>
-                <div class="col-7">
-                  <p class="text-capitalize mb-2 ppvx_text--md">daily parking</p>
-                  <p class="m-0 ppvx_text--md-det"> KBH 4589R </p>
-                </div>
-                <div class="col-3 text-right">
-                  <p class="text-capitalize mb-2 ppvx_text--md">ksh 200</p>
-                </div>
-              </div>
-            </div>
-            <a href="#" class="btn btn-transparent text-capitalize font-14 mt-5 ml-5 text-capitalize d-none text-primary text-capitalize  text-primary d-none">see more transactions<i data-feather="arrow-right" class="ml-2"></i></a> </div>
+            <button type="submit" class="btn btn-primary text-capitalize text-white font-14 submit-btn">get receipt</button>
+          </form>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!--	main body--> 
-<!-- download -->
+<!--form section-->
+<!--	pay confirmation pop up-->
+	<section class="account-pop-up h-100vh w-100 justify-content-center align-items-center animated d-none" id="pay-confirmation-pop">
+  <div class="container p-md-5 p-sm-0">
+    <div class="row p-5 d-flex justify-content-center">
+      <div class="col-sm-12 col-md-6 col-lg-5 payment-pop-container m-5 m-sm-3 d-flex flex-column-md animated p-0">
+        
+        <div class="col-12 position-relative p-0">
+          <div class="">
+			  <div class="show-amount-loader">
+			  	<center class="p-5 text-white">
+					<div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+					<p class="text-center text-white m-0 p-0 mb-3">pending daily parking payment</p>
+					<h2 class="mb-5 pb-5 text-capitalize text-white"><sup class="font-14 text-uppercase">Kes</sup>2,000</h2>
+			  	</center>
+			  </div>
+			  <div class="col-12 p-lg-5 p-sm-3">
+			  		<h5><strong class="text-capitalize pb-3">payment procedure</strong></h5>
+				  <p class="font-12">follow the following payment procedure in order to complete the payment</p>
+				  <hr>
+				  	<ul type="1" class="font-14 pb-5">
+				  		<li>1.Check on a <strong>payment pop </strong>up on your phone.</li>
+				  		<li>2.Input your <strong>M-pesa pin</strong> and click OK.</li>
+				  		<li>3.An <strong>MPESA</strong> confimation SMS will be sent to you.</li>
+				  		<li>4.Wait for upto <strong>45 secs</strong> as we process your transaction</li>
+				  	</ul>
+			  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--	pay confirmation pop up-->
+<section id="service-form-section" class="parallax-section">
+  <div class="container">
+    <div class="row p-5 ">
+      <div class="service-form-container  d-flex flex-column-md animated col-12 p-0">
+        <div class="col-lg-7 service-form-img-container" id="parking-img">
+          <div class="col-lg-8 col-md-12 position-relative p-5">
+            <h2 class="mb-4 text-capitalize text-white">NCCC Daily Parking</h2>
+            <p class="font-14 mb-3 text-capitalize">fill in and remember to double check details to avoid any errors.</p>
+          </div>
+        </div>
+        <div class="col-lg-5 p-5 position-relative transactions-form-container d-flex">
+    	     <div class="col-12 p-0 the-transaction-form animated">
+				 <div class="">
+            <p class="mb-5 pb-2 text-capitalize"><strong>correctly fill in the form bellow to continue</strong></p>
+          </div>
+          <form class="transaction-form">
+            <div class="form-group col-sm-12 col-md-12 p-0">
+              <label for="zone" class="text-capitalize">select a parking zone</label>
+              <select class="form-control" id="zone">
+                <option>-- select parking zone --</option>
+                <option>parking zone</option>
+                <option>parking zone</option>
+                <option>parking zone</option>
+                <option>parking zone</option>
+                <option>parking zone</option>
+                <option >parking zone</option>
+              </select>
+            </div>
+            <div class="form-group col-sm-12 col-md-12 p-0">
+              <label for="car_type" class="text-capitalize">sellect vehicle type</label>
+              <select class="form-control" id="car_type">
+                <option >-- select vehicle type --</option>
+                <option >type name</option>
+                <option >type name</option>
+                <option>type name</option>
+                <option>type name</option>
+                <option>type name</option>
+                <option>type name</option>
+                <option>type name</option>
+              </select>
+            </div>
+            <div class="col-12 p-4 center gray-bg lighter-txt price-container position-relative">
+				 <span class="close-price-container position-absolute"> <i data-feather="x"></i></span>
+              <p class="text-uppercase m-0 font-14"><strong>sub total</strong></p>
+              <p class="text-uppercase m-0 font-12">kes 2,000</p>
+            </div>
+            <div class="form-group col-sm-12 col-md-12 p-0 my-3">
+              <p class="text-capitalize">payment options</p>
+              <div class="col-12 p-0 pay-container">
+                <label for="mpesa" class=" gray-bg w-100 row d-flex justify-content-center align-items-center align-content-center m-0 pay-method">
+                <div class="col-lg-1 col-md-2 pr-0 radio-side">
+                  <div class="radio-container col-12 p-0 w-100 h-100">
+                    <input type="radio" class="form-check-input" name="method" required="" id="mpesa" checked>
+                    <span class="checkmark"></span> </div>
+                </div>
+                <div class="col-md-10 col-lg-11 py-4">
+                  <p class="m-0 font-12 text-capitalize"><strong> Mpesa</strong></p>
+                  <p class="font-10px m-0">Pay instantly via mPesa. Enter your <strong>mpesa phone number</strong> and a payment request will be sent automatically to your phone</p>
+                </div>
+                <span class="checkmark"></span>
+                </label>
+                <label for="airtel" class=" w-100 row d-flex justify-content-center align-items-center align-content-center m-0 pay-method">
+                <div class="col-lg-1 col-md-2 pr-0 radio-side">
+                  <div class="radio-container col-12 p-0 w-100 h-100">
+                    <input type="radio" class="form-check-input" name="method" required="" id="airtel">
+                    <span class="checkmark"></span> </div>
+                </div>
+                <div class="col-md-10 col-lg-11 py-4">
+                  <p class="m-0 font-12 text-capitalize"><strong>airtel money</strong></p>
+                  <p class="font-10px m-0">provide your <strong>aitel money phone number</strong> and a payment request will be sent to your phone</p>
+                </div>
+                <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="form-group col-sm-12 col-md-12 p-0 my-2">
+                <label for="mpesa-phone" class="text-capitalize">mpesa phone number</label>
+                <input type="text" class="form-control" id="mpesa-phone" placeholder="eg 07123...">
+              </div>
+            </div>
+            <div class="form-group col-sm-12 col-md-12 p-0">
+              <label for="number-plate" class="text-capitalize">car's registration number</label>
+              <input type="text" class="form-control" id="number-plate" placeholder="eg KAA 1...">
+            </div>
+            <div class="col-12 p-0 text-uppercase mt-5">
+              <button type="button" class="btn btn-primary text-white font-14 w-100 p-4 center mx-0 transaction-form-btn"><span class="btn-text text-uppercase font-12">proceede to checkout | ksh 2,000</span> <i data-feather="arrow-right" class="ml-2 float-right pull-right"></i></button>
+            </div>
+          </form>
+			</div>
+			
+			<div class="col-12 d-none p-0 animated details-confirm">
+				 <div class="">
+            <p class="mb-5 pb-2 text-capitalize">
+				<span class="back-toform" title="back to transactions form"><i data-feather="arrow-left"  class="mr-3 float-left"></i></span><strong>confirm your transaction details</strong>
+					 </p>
+					 <hr class="mt-1 p-0">
+					 <p><strong class="text-capitalize">transaction details</strong></p>
+					 
+					 <div class="transactions-details-container text-capitalize">
+					 	<p class="m-0"><span>parking zone</span></p>
+						 <strong>the selected paring zone</strong>
+						 <hr>
+						 <p class="m-0"><span>vehicle type</span></p>
+						 <strong>canter</strong>
+						 <hr>
+						 
+						<p class="m-0"> <span>plate number</span></p>
+						 <strong class="text-uppercase">kbh 458t</strong>
+						 <hr>
+						<div class=" text-right amount-container">
+						 		 <p><span class="text-uppercase text-left">sub total</span> <strong> KES 2,000</strong></p>
+						 </div>
+						 <hr>
+						 
+						 <form>
+							 
+							 <div class="form-group col-sm-12 col-md-12 p-0">
+              <label for="number-plate" class="text-capitalize">M-pesa phone number</label>
+              <input type="text" class="form-control" id="number-plate" placeholder="eg 0712...">
+            </div>
+							 
+							  <div class="col-12 p-0 text-uppercase mt-5">
+              <button type="button" class="btn btn-primary text-white font-14 w-100 p-4 center mx-0 confirm-btn">
+				  <div class="btn-txt animated">
+				  	<span class="btn-text text-uppercase font-12">pay kes 2,000</span> 
+				  <i data-feather="arrow-right" class="ml-2 float-right pull-right">
+				  </i>
+				  </div>
+				  <div class="lds-ellipsis d-none animated"><div></div><div></div><div></div><div></div></div>
+								  </button>
+            </div>
+						 	
+						 </form>
+					 </div>
+          </div>
+          
+			</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--form section-->
 <section id="download" class="clearfix parallax-section">
   <div class="container">
     <div class="row">
