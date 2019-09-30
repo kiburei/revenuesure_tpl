@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="Theme Region">
 <meta name="description" content="">
-<title>Daily parking</title>
+<title>NCCG Self service Platform</title>
 <!-- Bootstrap CSS -->
 
 <script src="https://unpkg.com/feather-icons"></script>
@@ -795,7 +795,7 @@
 <div id="mobilemenu-overlay"></div>
 <!--	search receipt pop up-->
 <section class="account-pop-up h-100vh w-100 justify-content-center align-items-center animated d-none" id="search-receipt">
-  <div class="container p-lg-5 p-md-0">
+  <div class="container p-5">
     <div class="row p-5">
       <div class="receipt-search-container m-5 d-flex flex-column-md animated" id="get-receipt-container">
         <div class="col-lg-6 receipt-img-container">
@@ -804,24 +804,27 @@
             <p class="font-14 mb-3 text-capitalize">Make sure all inputs are correct. The process has been made this way to help protect personal data</p>
           </div>
         </div>
-        <div class="col-lg-6 p-5 position-relative"> <span class="close-receipt-form position-absolute"> <i data-feather="x"></i></span>
+        <div class="col-lg-6 p-5 position-relative">
+			<span class="close-receipt-form position-absolute"> <i data-feather="x"></i></span>
           <form class="transaction-info">
             <div class="">
               <h4 class="mb-5 pb-2 text-capitalize">correctly fill in the form bellow to continue</h4>
             </div>
             <div class="row m-0">
-              <div  class="form-group col-sm-12 pl-md-0">
-                <label for="sel1"><small>What was the transacton type?</small></label>
-                <select class="form-control mb-3" id="sel1" required>
-                  <option>Parking</option>
-                  <option>Business</option>
-                  <option class="text-capitalize">County bills</option>
-                  <option class="text-capitalize">land rates</option>
-                  <option class="text-capitalize">rents</option>
-                  <option class="text-capitalize">e-Construction</option>
-                  <option></option>
-                </select>
-              </div>
+             
+                <div  class="form-group col-sm-12 pl-md-0">
+                  <label for="sel1"><small>What was the transacton type?</small></label>
+                  <select class="form-control mb-3" id="sel1" required>
+                    <option>Parking</option>
+                    <option>Business</option>
+                    <option class="text-capitalize">County bills</option>
+                    <option class="text-capitalize">land rates</option>
+                    <option class="text-capitalize">rents</option>
+                    <option class="text-capitalize">e-Construction</option>
+                    <option></option>
+                  </select>
+                </div>
+           
             </div>
             <div class="row radio-container m-0">
               <div class="col-12 pl-md-0 mb-3">
@@ -853,196 +856,385 @@
     </div>
   </div>
 </section>
-<!--form section-->
-<!--	pay confirmation pop up-->
-	<section class="account-pop-up h-100vh w-100 justify-content-center align-items-center animated d-none" id="pay-confirmation-pop">
-  <div class="container p-md-5 p-sm-0">
-    <div class="row p-5 d-flex justify-content-center">
-      <div class="col-sm-12 col-md-6 col-lg-5 payment-pop-container m-5 m-sm-3 d-flex flex-column-md animated p-0">
-        
-        <div class="col-12 position-relative p-0">
-			      <span class="close-receipt-form position-absolute z-index-1 d-none transactions-actions animated text-white" id="close-pricepop"> <i data-feather="x"></i></span>
 
-          <div class="">
-			  <div class="show-amount-loader">
-			  	<center class="p-5 text-white">
-					<div class="lds-roller animated"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-					<div class="confirmed-pay d-none animated"><img src="img/icons/transactions-icons/check.svg"></div>
-					<p class="text-center text-white m-0 p-0 mb-3  payment-status">pending daily parking payment</p>
-					<h2 class="mb-5 pb-5 text-capitalize text-white"><sup class="font-14 text-uppercase">Kes</sup>2,000</h2>
-			  	</center>
-			  </div>
-			  <div class="col-12 p-lg-5 p-sm-3 ">
-			  		<div class="col-12 p-0 transacton-instructions">
-				  		<h5><strong class="text-capitalize pb-3">payment procedure</strong></h5>
-				  <p class="font-12">follow the following payment procedure in order to complete the payment</p>
-						
-				  <hr>
-				  	<ul type="1" class="font-14 pb-5">
-				  		<li>1.Check on a <strong>payment pop </strong>up on your phone.</li>
-				  		<li>2.Input your <strong>M-pesa pin</strong> and click OK.</li>
-				  		<li>3.An <strong>MPESA</strong> confimation SMS will be sent to you.</li>
-				  		<li>4.Wait for upto <strong>45 secs</strong> as we process your transaction</li>
-				  	</ul>
-				  </div>
-				  
-				  
-				  <div class="col-12 p-0 pb-3 d-none transactions-actions animated mt-5">
-					  <h5><strong class="text-capitalize pb-3">Thank You!</strong></h5>
-					  <p class="font-14 text-capitalize m-0">Payment was succesfully received.</p>				  
-					   <p class="font-14">you can close the pop up or perform the actions bellow</p>
-				  	<a href="#" class="btn btn-primary px-5 py-3 text-white text-uppercase font-12 font-sm-10 px-sm-4">Print Receipts</a>
-					  <a href="#" class="btn btn-secondary px-5 py-3 text-black text-uppercase font-12 font-sm-10 px-sm-4">add to assets</a>
-				  </div>
-			  </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!--	pay confirmation pop up-->
-<section id="service-form-section" class="parallax-section">
+<!--	search receipt pop up--> 
+<!--		navigation bar --> 
+<!-- header --> 
+<!--	MENU CONTROLS-->
+
+<section id="home-one-info" class="homebg ">
+<!-- view-ad -->
+<div id="home-section" class="parallax-section">
   <div class="container">
-    <div class="row p-5 ">
-      <div class="service-form-container  d-flex flex-column-md animated col-12 p-0">
-        <div class="col-lg-7 service-form-img-container" id="parking-img">
-          <div class="col-lg-8 col-md-12 position-relative p-5">
-            <h2 class="mb-4 text-capitalize text-white">NCCC Daily Parking</h2>
-            <p class="font-14 mb-3 text-capitalize">fill in and remember to double check details to avoid any errors.</p>
-          </div>
-        </div>
-        <div class="col-lg-5 p-5 position-relative transactions-form-container d-flex">
-    	     <div class="col-12 p-0 the-transaction-form animated">
-				 <div class="">
-            <p class="mb-5 pb-2 text-capitalize"><strong>correctly fill in the form bellow to continue</strong></p>
-          </div>
-          <form class="transaction-form">
-            <div class="form-group col-sm-12 col-md-12 p-0">
-              <label for="zone" class="text-capitalize">select a parking zone</label>
-              <select class="form-control" id="zone">
-                <option>-- select parking zone --</option>
-                <option>parking zone</option>
-                <option>parking zone</option>
-                <option>parking zone</option>
-                <option>parking zone</option>
-                <option>parking zone</option>
-                <option >parking zone</option>
-              </select>
-            </div>
-            <div class="form-group col-sm-12 col-md-12 p-0">
-              <label for="car_type" class="text-capitalize">sellect vehicle type</label>
-              <select class="form-control" id="car_type">
-                <option >-- select vehicle type --</option>
-                <option >type name</option>
-                <option >type name</option>
-                <option>type name</option>
-                <option>type name</option>
-                <option>type name</option>
-                <option>type name</option>
-                <option>type name</option>
-              </select>
-            </div>
-            <div class="col-12 p-4 center danger-light-bg lighter-txt price-container position-relative">
-				 <span class="close-price-container position-absolute"> <i data-feather="x"></i></span>
-              <p class="text-uppercase m-0 font-14"><strong>sub total</strong></p>
-              <p class="text-uppercase m-0 font-12">kes 2,000</p>
-            </div>
-            <div class="form-group col-sm-12 col-md-12 p-0 my-3">
-              <p class="text-capitalize">payment options</p>
-              <div class="col-12 p-0 pay-container">
-                <label for="mpesa" class=" gray-bg w-100 row d-flex justify-content-center align-items-center align-content-center m-0 pay-method">
-                <div class="col-lg-1 col-md-2 pr-0 radio-side">
-                  <div class="radio-container col-12 p-0 w-100 h-100">
-                    <input type="radio" class="form-check-input" name="method" required="" id="mpesa" checked>
-                    <span class="checkmark"></span> </div>
-                </div>
-                <div class="col-md-10 col-lg-11 py-4">
-                  <p class="m-0 font-12 text-capitalize"><strong> Mpesa</strong></p>
-                  <p class="font-10px m-0">Pay instantly via mPesa. Enter your <strong>mpesa phone number</strong> and a payment request will be sent automatically to your phone</p>
-                </div>
-                <span class="checkmark"></span>
-                </label>
-                <label for="airtel" class=" w-100 row d-flex justify-content-center align-items-center align-content-center m-0 pay-method">
-                <div class="col-lg-1 col-md-2 pr-0 radio-side">
-                  <div class="radio-container col-12 p-0 w-100 h-100">
-                    <input type="radio" class="form-check-input" name="method" required="" id="airtel">
-                    <span class="checkmark"></span> </div>
-                </div>
-                <div class="col-md-10 col-lg-11 py-4">
-                  <p class="m-0 font-12 text-capitalize"><strong>airtel money</strong></p>
-                  <p class="font-10px m-0">provide your <strong>aitel money phone number</strong> and a payment request will be sent to your phone</p>
-                </div>
-                <span class="checkmark"></span>
-                </label>
-              </div>
-              <div class="form-group col-sm-12 col-md-12 p-0 my-2">
-                <label for="mpesa-phone" class="text-capitalize">mpesa phone number</label>
-                <input type="text" class="form-control" id="mpesa-phone" placeholder="eg 07123...">
-              </div>
-            </div>
-            <div class="form-group col-sm-12 col-md-12 p-0">
-              <label for="number-plate" class="text-capitalize">car's registration number</label>
-              <input type="text" class="form-control" id="number-plate" placeholder="eg KAA 1...">
-            </div>
-            <div class="col-12 p-0 text-uppercase mt-5">
-              <button type="button" class="btn btn-primary text-white font-14 w-100 p-4 center mx-0 transaction-form-btn"><span class="btn-text text-uppercase font-12">proceede to checkout | ksh 2,000</span> <i data-feather="arrow-right" class="ml-2 float-right pull-right"></i></button>
-            </div>
-          </form>
-			</div>
-			
-			<div class="col-12 d-none p-0 animated details-confirm">
-				 <div class="">
-            <p class="mb-5 pb-2 text-capitalize">
-				<span class="back-toform" title="back to transactions form"><i data-feather="arrow-left"  class="mr-3 float-left"></i></span><strong>confirm your transaction details</strong>
-					 </p>
-					 <hr class="mt-1 p-0">
-					 <p><strong class="text-capitalize">transaction details</strong></p>
-					 
-					 <div class="transactions-details-container text-capitalize">
-					 	<p class="m-0"><span>parking zone</span></p>
-						 <strong>the selected paring zone</strong>
-						 <hr>
-						 <p class="m-0"><span>vehicle type</span></p>
-						 <strong>canter</strong>
-						 <hr>
-						 
-						<p class="m-0"> <span>plate number</span></p>
-						 <strong class="text-uppercase">kbh 458t</strong>
-						 <hr>
-						<div class=" text-right amount-container">
-						 		 <p><span class="text-uppercase text-left">sub total</span> <strong> KES 2,000</strong></p>
-						 </div>
-						 <hr>
-						 
-						 <form>
-							 
-							 <div class="form-group col-sm-12 col-md-12 p-0">
-              <label for="number-plate" class="text-capitalize">M-pesa phone number</label>
-              <input type="text" class="form-control" id="number-plate" placeholder="eg 0712...">
-            </div>
-							 
-							  <div class="col-12 p-0 text-uppercase mt-5">
-              <button type="button" class="btn btn-primary text-white font-14 w-100 p-4 center mx-0 confirm-btn">
-				  <div class="btn-txt animated">
-				  	<span class="btn-text text-uppercase font-12">pay kes 2,000</span> 
-				  <i data-feather="arrow-right" class="ml-2 float-right pull-right">
-				  </i>
-				  </div>
-				  <div class="lds-ellipsis d-none animated"><div></div><div></div><div></div><div></div></div>
-								  </button>
-            </div>
-						 	
-						 </form>
-					 </div>
-          </div>
-          
-			</div>
-        </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-5 margin-120">
+        <h2 class="text-capitalize mt-5 mb-3">Do it faster</h2>
+        <h1 style="color: #fff" class="mt-3">Welcome To the NCCG Self service Portal</h1>
+        <p class="text-capitalize">start paying for your county fees efficiently and surprisingly fast.</p>
+        <div class="ad-btn"> <a href="#" class="btn btn-secondary px-5 py-3 text-black text-uppercase">sign up</a> </div>
+      </div>
+      <div class="col-sm-6 text-center  phone-container d-none d-md-block  d-lg-block"> <img src="img/landing page images/hand-phone.png" class="img animated hand-phone">
+        <div class="shadow d-none"></div>
       </div>
     </div>
+    <!-- row --> 
   </div>
+  <!-- contaioner --> 
+</div>
+<!-- view-ad --> 
+
+<!--	mobile view services-->
+<row class="hidden-links-container">
+  <div class="col-lg-5 sub-link-container sub-link-container2"> 
+    
+    <!--            unified busines permit sub-links-->
+    <div class="sub-link unified-biz-permit1 left" id="unified-biz-permit">
+      <div class="subicon">
+        <div> <img src="img/new-icons/line/case.svg"> </div>
+        <p>single business permit</p>
+        <small>Select from fee type options below</small> </div>
+      <ul>
+        <li class="d-flex"><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="renew UBP.html">renew UBP</a></li>
+        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="register-business.html">register New business</a></li>
+        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="single business permit.html">print permit</a></li>
+        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="#">print receipt</a></li>
+      </ul>
+    </div>
+    <!--            unified busines permit sub-links--> 
+    <!--            land rates-->
+    <div class="sub-link land-rate1 left" id="land-rate">
+      <div class="subicon">
+        <div> <img src="img/new-icons/line/land.svg"> </div>
+        <p>land rates</p>
+        <small>Select from fee type options below</small> </div>
+      <ul>
+        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="pay land rate.html">pay land rate</a></li>
+        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="land-receipt.html">print receipt</a></li>
+      </ul>
+    </div>
+    <!--            land rates--> 
+    <!--            rent sub-links-->
+    <div class="sub-link rent1 left" id="rent">
+      <div class="subicon">
+        <div> <img src="img/new-icons/line/key.svg"> </div>
+        <p>rent</p>
+        <small>Select from fee type options below</small> </div>
+      <ul>
+        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="house rent form.html">house</a></li>
+        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="market stalls rent.html">stalls</a></li>
+        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="print stall receipt.html">receipt</a></li>
+      </ul>
+    </div>
+    <!--            unified busines permit sub-links--> 
+    <!--            parking sub-links-->
+    <div class="sub-link parking1 left" id="parking">
+      <div class="subicon">
+        <div> <img src="img/new-icons/line/parking.svg"> </div>
+        <p>parking</p>
+        <small>Select from fee type options below</small> </div>
+      <ul>
+        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="parking.html">daily parking</a></li>
+        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="seasonal parking form.html">Seasonal parking</a></li>
+        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="">Sacco</a></li>
+        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="">Offstreet Parking</a></li>
+        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="parking penalties.html">Penalties</a></li>
+        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="#">print receipt</a></li>
+      </ul>
+    </div>
+    <!--            unified busines permit sub-links--> 
+    <!--            wallet sub-links-->
+    <div class="sub-link wallet1 left" id="wallet">
+      <div class="subicon">
+        <div> <img src="img/new-icons/line/bill.svg"> </div>
+        <p>county bills</p>
+        <small>Select from fee type options below</small> </div>
+      <ul>
+        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="miss bill.html">pay Miscellaneous</a> </li>
+        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="misc receipt.html">Print Miscellaneous </a></li>
+      </ul>
+    </div>
+    <!--            wallet sub-links--> 
+    <!--            wallet sub-links-->
+    <div class="sub-link construction1 left" id="construction">
+      <div class="subicon">
+        <div> <img src="img/new-icons/line/econstruction.svg"> </div>
+        <p class="text-lowercase">e-Construction</p>
+        <small>Select from fee type options below</small> </div>
+      <ul>
+        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="construction permit.html">pay Permit</a></li>
+        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="e-construction invoice.html">print receipt</a></li>
+      </ul>
+    </div>
+    <!--            wallet sub-links--> 
+  </div>
+</row>
+<!--	mobile view services-->
+
+<div class="container">
+<div class="row">
+<!-- row --> 
+
+<!--				services go here-->
+
+<div class="container">
+  <div class="section services position-relative p-md-5 p-sm-4"> 
+    <!-- single-service -->
+    <div class="col-sm-12 text-capitalize position-relative p-0">
+      <h2>services</h2>
+      <p>Browse through the county services that are available to be paid for online</p>
+      <hr>
+    </div>
+    <section class="options-container p-0" id="options-container">
+      <div class="row">
+        <div class="col-lg-8 p-0"> 
+          <!--            option unified business permit-->
+          <div class="col-md-4 col-lg-4 col-sm-6 option business-permit">
+            <div class="active-triangle display-none">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40.5px" height="33.5px">
+                <path fill-rule="evenodd" stroke="#066130" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="#066130" d="M38.084,1.007 L1.015,1.007 L1.015,31.423 L38.084,1.007 Z" />
+              </svg>
+            </div>
+            <div class="icon-container"><img src="img/new-icons/case.svg"></div>
+            <div class="circular-bg"></div>
+            <p>Unified Business Permit</p>
+            <!--                more information about the option-->
+            <div class="options-info left">
+              <p>Reneiw or register for your business permit, print your receipts and so on...</p>
+              <span>
+              <div>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+                  <rect fill="none" width="25" height="25" />
+                  <polyline fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" points="19.946,35.891 9.057,25 19.947,14.11 " />
+                  <line fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="41" y1="25" x2="9.662" y2="25" />
+                </svg>
+              </div>
+              More </span> </div>
+            <!--                more information about the option--> 
+          </div>
+          <!--            end of option--> 
+          <!--            option landrates-->
+          <div class="col-md-4 col-lg-4 col-sm-6 option land-rates">
+            <div class="active-triangle display-none">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40.5px" height="33.5px">
+                <path fill-rule="evenodd" stroke="#066130" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="#066130" d="M38.084,1.007 L1.015,1.007 L1.015,31.423 L38.084,1.007 Z" />
+              </svg>
+            </div>
+            <div class="icon-container"><img src="img/new-icons/house.svg"></div>
+            <div class="circular-bg"></div>
+            <p>Land rates</p>
+            <!--                more information about the option-->
+            <div class="options-info left">
+              <p>Pay for your land rates or event print your receipts</p>
+              <span>
+              <div>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+                  <rect fill="none" width="25" height="25" />
+                  <polyline fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" points="19.946,35.891 9.057,25 19.947,14.11 " />
+                  <line fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="41" y1="25" x2="9.662" y2="25" />
+                </svg>
+              </div>
+              More </span> </div>
+            <!--                more information about the option--> 
+          </div>
+          <!--            end of option--> 
+          <!--            option rent payment-->
+          <div class="col-md-4 col-lg-4 col-sm-6  option rents">
+            <div class="active-triangle display-none">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40.5px" height="33.5px">
+                <path fill-rule="evenodd" stroke="#066130" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="#066130" d="M38.084,1.007 L1.015,1.007 L1.015,31.423 L38.084,1.007 Z" />
+              </svg>
+            </div>
+            <div class="icon-container"><img src="img/new-icons/key.svg"></div>
+            <div class="circular-bg"></div>
+            <p>Rents</p>
+            <!--                more information about the option-->
+            <div class="options-info left">
+              <p>Pay for your house rent, pay your stall rent</p>
+              <span>
+              <div>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+                  <rect fill="none" width="25" height="25" />
+                  <polyline fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" points="19.946,35.891 9.057,25 19.947,14.11 " />
+                  <line fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="41" y1="25" x2="9.662" y2="25" />
+                </svg>
+              </div>
+              More </span> </div>
+            <!--                more information about the option--> 
+          </div>
+          <!--            end of option--> 
+          <!--            option parking fees-->
+          <div class="col-md-4 col-lg-4 col-sm-6 option parking">
+            <div class="active-triangle display-none">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40.5px" height="33.5px">
+                <path fill-rule="evenodd" stroke="#066130" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="#066130" d="M38.084,1.007 L1.015,1.007 L1.015,31.423 L38.084,1.007 Z" />
+              </svg>
+            </div>
+            <div class="icon-container"><img src="img/new-icons/parking.svg"></div>
+            <div class="circular-bg"></div>
+            <p>Parking Fees</p>
+            <!--                more information about the option-->
+            <div class="options-info left">
+              <p>Pay for your parking, check your parking status, update your daily parking or even start paying for your seasonal parking fee, this is the link to go to...</p>
+              <span>
+              <div>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+                  <rect fill="none" width="25" height="25" />
+                  <polyline fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" points="19.946,35.891 9.057,25 19.947,14.11 " />
+                  <line fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="41" y1="25" x2="9.662" y2="25" />
+                </svg>
+              </div>
+              More </span> </div>
+            <!--                more information about the option--> 
+          </div>
+          <!--            end of option--> 
+          <!--            option-->
+          <div class="col-md-4 col-lg-4 col-sm-6  option E-Wallet">
+            <div class="active-triangle display-none">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40.5px" height="33.5px">
+                <path fill-rule="evenodd" stroke="#066130" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="#066130" d="M38.084,1.007 L1.015,1.007 L1.015,31.423 L38.084,1.007 Z" />
+              </svg>
+            </div>
+            <div class="icon-container"><img src="img/new-icons/receipt.svg"></div>
+            <div class="circular-bg"></div>
+            <p>Bills</p>
+            <!--                more information about the option-->
+            <div class="options-info left">
+              <p>Not sure of where your county fees are to be allocated, just visit this link and you will be assisted</p>
+              <span>
+              <div>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+                  <rect fill="none" width="25" height="25" />
+                  <polyline fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" points="19.946,35.891 9.057,25 19.947,14.11 " />
+                  <line fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="41" y1="25" x2="9.662" y2="25" />
+                </svg>
+              </div>
+              More </span> </div>
+            <!--                more information about the option--> 
+          </div>
+          <!--            end of option--> 
+          <!--            option-->
+          <div class="col-md-4 col-lg-4 col-sm-6  option construction">
+            <div class="active-triangle display-none">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40.5px" height="33.5px">
+                <path fill-rule="evenodd" stroke="#066130" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="#066130" d="M38.084,1.007 L1.015,1.007 L1.015,31.423 L38.084,1.007 Z" />
+              </svg>
+            </div>
+            <div class="icon-container"><img src="img/new-icons/brickwall.svg"></div>
+            <div class="circular-bg"></div>
+            <p>E-Construction</p>
+            <!--                more information about the option-->
+            <div class="options-info left">
+              <p>Click this option if you want to pay for your contruction fee</p>
+              <span>
+              <div>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+                  <rect fill="none" width="25" height="25" />
+                  <polyline fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" points="19.946,35.891 9.057,25 19.947,14.11 " />
+                  <line fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="41" y1="25" x2="9.662" y2="25" />
+                </svg>
+              </div>
+              More </span> </div>
+            <!--                more information about the option--> 
+          </div>
+          <!--            end of option--> 
+        </div>
+        <div class="col-lg-4 sub-link-container desktop-link pd-0 text-capitalize"> 
+          <!--            unified busines permit sub-links-->
+          <div class="sub-link unified-biz-permit1 left" id="unified-biz-permit">
+            <div class="subicon">
+              <div> <img src="img/new-icons/line/case.svg"> </div>
+              <p>single business permit</p>
+              <small>Select from fee type options below</small> </div>
+            <ul>
+              <li class="d-flex"><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="renew UBP.html">renew UBP</a></li>
+              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="register-business.html">register New business</a></li>
+              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="single business permit.html">print permit</a></li>
+              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="#">print receipt</a></li>
+            </ul>
+          </div>
+          <!--            unified busines permit sub-links--> 
+          <!--            land rates-->
+          <div class="sub-link land-rate1 left" id="land-rate">
+            <div class="subicon">
+              <div> <img src="img/new-icons/line/land.svg"> </div>
+              <p>land rates</p>
+              <small>Select from fee type options below</small> </div>
+            <ul>
+              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="pay land rate.html">pay land rate</a></li>
+              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="land-receipt.html">print receipt</a></li>
+            </ul>
+          </div>
+          <!--            land rates--> 
+          <!--            rent sub-links-->
+          <div class="sub-link rent1 left" id="rent">
+            <div class="subicon">
+              <div> <img src="img/new-icons/line/key.svg"> </div>
+              <p>rent</p>
+              <small>Select from fee type options below</small> </div>
+            <ul>
+              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="house rent form.html">house</a></li>
+              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="market stalls rent.html">stalls</a></li>
+              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="print stall receipt.html">receipt</a></li>
+            </ul>
+          </div>
+          <!--            unified busines permit sub-links--> 
+          <!--            parking sub-links-->
+          <div class="sub-link parking1 left" id="parking">
+            <div class="subicon">
+              <div> <img src="img/new-icons/line/parking.svg"> </div>
+              <p>parking</p>
+              <small>Select from fee type options below</small> </div>
+            <ul>
+              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="parking.html">daily parking</a></li>
+              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="seasonal parking form.html">Seasonal parking</a></li>
+              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="">Sacco</a></li>
+              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="">Offstreet Parking</a></li>
+              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="parking penalties.html">Penalties</a></li>
+              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="#">print receipt</a></li>
+            </ul>
+          </div>
+          <!--            unified busines permit sub-links--> 
+          <!--            wallet sub-links-->
+          <div class="sub-link wallet1 left" id="wallet">
+            <div class="subicon">
+              <div> <img src="img/new-icons/line/bill.svg"> </div>
+              <p>county bills</p>
+              <small>Select from fee type options below</small> </div>
+            <ul>
+              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="miss bill.html">pay Miscellaneous</a> </li>
+              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="misc receipt.html">Print Miscellaneous </a></li>
+            </ul>
+          </div>
+          <!--            wallet sub-links--> 
+          <!--            wallet sub-links-->
+          <div class="sub-link construction1 left" id="construction">
+            <div class="subicon">
+              <div> <img src="img/new-icons/line/econstruction.svg"> </div>
+              <p class="text-lowercase">e-Construction</p>
+              <small>Select from fee type options below</small> </div>
+            <ul>
+              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="construction permit.html">pay Permit</a></li>
+              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="e-construction invoice.html">print receipt</a></li>
+            </ul>
+          </div>
+          <!--            wallet sub-links--> 
+        </div>
+      </div>
+      <!--    the revenue streams--> 
+    </section>
+  </div>
+  <!-- services --> 
+  
+  <!--	mobile view services--> 
+  
+  <!--	mobile view services--> 
+  
+</div>
+
+<!-- container -->
 </section>
-<!--form section-->
+
+<!-- download -->
 <section id="download" class="clearfix parallax-section">
   <div class="container">
     <div class="row">
@@ -1071,6 +1263,28 @@
   <!-- contaioner --> 
 </section>
 <!-- download --> 
+
+<!--	pop up section-->
+<section class="account-pop-up h-100vh w-100 justify-content-center align-items-center d-none animated" id="pop">
+  <div class="container">
+    <div class="row">
+      <div class="coll-12">
+        <div class="pop-item p-5 plposition-relative animated m-5"> <a href="#" class="close-pop position-absolute text-white"><i data-feather="x"></i></a>
+          <div class="col-sm-10 col-md-8 col-lg-6 p-md-5"> <span class="text-uppercase p-3 bg-light-green mb-3 font-12">made simple</span>
+            <h2 class="mb-4 mt-4 text-capitalize text-white">make your transactions seamless</h2>
+            <p class="font-14 mb-3 text-capitalize">make your experience while transacting simple and easy by registering for an account. by doing so you will get to store your assests and track your transactions history.</p>
+            <form class="mb-5 form-inline">
+              <input type="email" class="form-control font-14 mr-3 mb-3"   title="enter email address" placeholder="Enter email to continue">
+              <button type="submit" class="btn btn-secondary px-4 font-14 text-black mb-3">Continue</button>
+            </form>
+            <a class="d-flex align-items-center text-white pt-4" href="#"> <span class="pop-pointer mr-2"><i data-feather="chevron-right"></i></span> <span class="text-capitalize">Or Login to your account</span> </a> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--	pop up section--> 
+
 <!--			footer-->
 <footer id="footer" class="clearfix"> 
   <!-- footer-top -->

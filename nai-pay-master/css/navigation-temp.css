@@ -41466,19 +41466,24 @@ button.button, input.button, .button, #header ul.menu.full.opened li:not(.search
 }
 .btn.btn-secondary {
     background-color: rgb(252, 192, 14);
-    border-color: #1c8241;
+   
 }
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
     background-color: #30c4a8;
     border-color: #30c4a8;
+}
+
+.btn.btn-secondary:hover, .btn.btn-secondary:active, .btn.btn-secondary:focus{
+	background: #fcb306;
+	background-color: #fcb306;
 }
 .btn.btn-success {
     background-color: #84bc29;
     border-color: #84bc29;
 }
 .btn.btn-success:hover, .btn.btn-success:active, .btn.btn-success:focus {
-    background-color: #9dca53;
-    border-color: #9dca53;
+    background-color: #2fa658;
+    border-color: #2fa658;
 }
 .btn.btn-info {
     background-color: #0ca9e3;

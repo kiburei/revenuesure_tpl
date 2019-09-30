@@ -17,6 +17,10 @@ setTimeout(explode, 5000);
 		closepop();
 	});
 	
+	$('#close-pricepop').on('click',function(){
+		closepaypop();
+	});
+	
 	
 	
 	function closepop(){
@@ -38,6 +42,13 @@ setTimeout(explode, 5000);
 		$('#get-receipt-container').addClass('rollOut');
 		
 	}
+	
+	
+	function closepaypop(){
+		$('#pay-confirmation-pop').addClass('d-none');
+		$('#pay-confirmation-pop').removeClass(' zoomOut');
+	}
+	
 	
 	function showreceiptform(){
 		$('#search-receipt').removeClass('zoomOut');
@@ -310,7 +321,10 @@ $(document).ready(function() {
 //	closing price container
 	
 	
-	
+//	function showhideprice2(parking_zone){
+//		if(parking_zone!="-- select off-street zone --"){
+//		$('.price-container').slideDown();
+//	}
 	function showhideprice(parking_zone, car_type){
 		if((parking_zone!="-- select parking zone --") && (car_type!="-- select vehicle type --")){
 		$('.price-container').slideDown();
@@ -334,6 +348,13 @@ $(document).ready(function() {
 	$('#car_type').on('change',function(){
 		var parking_zone=$('#zone option:selected').val();
 	var car_type=$('#car_type option:selected').val();
+		showhideprice(parking_zone, car_type);
+	})
+	
+	$('#parking-zone').on('change',function(){
+		
+		var parking_zone=$('#parking-zone option:selected').val();
+		var car_type=$('parking zone category').val();
 		showhideprice(parking_zone, car_type);
 	})
 	
@@ -365,12 +386,72 @@ $(document).ready(function() {
 		
 		
 		setTimeout(popprice, 2200);
+		setTimeout(showloader, 4200);
 		
 	});
 	
 	function popprice(){
 			$('#pay-confirmation-pop').removeClass('d-none');
 		}
+	
+	function showloader(){
+		$('.lds-roller').addClass('fadeOut');
+		$('.lds-roller').addClass('position-absolute');
+		$('.confirmed-pay').addClass('fadeIn');
+		$('.confirmed-pay').removeClass('d-none');
+		$('.transacton-instructions').addClass('d-none');
+		$('.transactions-actions').addClass('fadeIn');
+		$('.transactions-actions').removeClass('d-none');
+		
+		$('.payment-status').text('Received!');
+	}
+	
+//	delete pop functions
+	$('.cars-container').on('click','.remove-car', function () {
+		$('.notification-container').addClass('fadeIn');
+
+		$('.notification-container').removeClass('d-none');
+
+		$('.notification-container').removeClass('fadeOut');
+		$('.notification-container').removeClass('d-none');
+		$('.notification-container .card').addClass('bounceUp');
+		var title="lamba;";
+		var title=$(this).siblings().text();
+		$('#record-name').text(title);
+		
+		console.log(title);
+	});
+	
+	$('.transactions-details-container').on('click','.remove-car', function () {
+		$('.notification-container').addClass('fadeIn');
+
+		$('.notification-container').removeClass('d-none');
+
+		$('.notification-container').removeClass('fadeOut');
+		$('.notification-container').removeClass('d-none');
+		$('.notification-container .card').addClass('bounceUp');
+		var title="lamba;";
+		var title=$(this).parent().siblings().children("strong").text();
+		$('#record-name').text(title);
+		
+		console.log(title);
+	});
+	
+	$('.close-delete').on('click', function(){
+		closedeletealert();
+	});
+	
+	
+	function closedeletealert() {
+		$('.notification-container').addClass('fadeOut');
+		$('.notification-container').addClass('d-none');
+		$('.notification-container .card').addClass('fadeOutDown');
+
+		setTimeout(function () {
+			$('.notification-container').removeClass('fadeOut');
+			$('.notification-container .card').removeClass('fadeOutDown');
+		}, 1000);
+	}
 	
 	
 	

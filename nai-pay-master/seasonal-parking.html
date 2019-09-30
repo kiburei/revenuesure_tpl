@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="Theme Region">
 <meta name="description" content="">
-<title>Daily parking</title>
+<title>seasonal parking</title>
 <!-- Bootstrap CSS -->
 
 <script src="https://unpkg.com/feather-icons"></script>
@@ -901,34 +901,67 @@
   </div>
 </section>
 <!--	pay confirmation pop up-->
-<section id="service-form-section" class="parallax-section">
+		<!--delete car dialogue -->
+<div class="col-12 p-5 notification-container vw-100 vh-100 animated d-none">
+	<div >
+		<div class="card animated delete-row">
+			<div class="card-header bg-danger py-2 d-flex justify-content-between align-items-center align-content-center pr-3">
+				<h2 class="card-title text-capitalize text-white m-0">remove car</h2>
+				<div class="actions text-white float-right close-delete">
+					
+					<a  data-feather="x" href="#" class="actions__item text-white m-0 p-0 d-flex justify-content-center align-items-center close-dialogoue-delete" title="close noification"></a> 
+				</div>
+			</div>
+			<div class="card-body">
+				<div class="row">
+					
+				<div class="col-12">
+					<img src="img/icons/warning.svg" class=" icon float-left  mr-3">
+					<h2 class="card-title mb-3 kev-capitalize font-weight-bold" id="record-name">Firm name</h2>
+					<p>Are you sure you want to delete this car from the list of vehicles payable by this transaction</p>
+				</div>
+				</div>
+			</div>
+			<div class="card-footer d-flex justify-content-end text-capitalize">
+        <a class="card-link close-delete my-2" href="#">discard</a>
+        <a class="card-link text-danger glow my-2" href="#">remove from list</a>
+      </div>
+		</div>
+	</div>
+</div>
+<!--delete car dialogue-->
+<section id="service-form-section" class="#">
   <div class="container">
     <div class="row p-5 ">
       <div class="service-form-container  d-flex flex-column-md animated col-12 p-0">
-        <div class="col-lg-7 service-form-img-container" id="parking-img">
-          <div class="col-lg-8 col-md-12 position-relative p-5">
-            <h2 class="mb-4 text-capitalize text-white">NCCC Daily Parking</h2>
+        <div class="col-lg-7 service-form-img-container p-0" id="parking-img">
+          <div class="col-lg-8 col-md-12 position-relative p-sm-4">
+            <h2 class="mb-4 text-capitalize text-white">NCCC seasonal parking</h2>
             <p class="font-14 mb-3 text-capitalize">fill in and remember to double check details to avoid any errors.</p>
           </div>
         </div>
-        <div class="col-lg-5 p-5 position-relative transactions-form-container d-flex">
+        <div class="col-lg-5 p-5 position-relative transactions-form-container d-flex p-sm-4">
     	     <div class="col-12 p-0 the-transaction-form animated">
 				 <div class="">
             <p class="mb-5 pb-2 text-capitalize"><strong>correctly fill in the form bellow to continue</strong></p>
           </div>
           <form class="transaction-form">
+			  
+			  
+            
             <div class="form-group col-sm-12 col-md-12 p-0">
-              <label for="zone" class="text-capitalize">select a parking zone</label>
-              <select class="form-control" id="zone">
-                <option>-- select parking zone --</option>
-                <option>parking zone</option>
-                <option>parking zone</option>
-                <option>parking zone</option>
-                <option>parking zone</option>
-                <option>parking zone</option>
-                <option >parking zone</option>
+              <label for="car_type" class="text-capitalize">sellect arking duration</label>
+              <select class="form-control" id="parking duration">
+                <option >-- select parking duration --</option>
+                <option >1 month</option>
+                <option >3 months</option>
+                <option>6 months</option>
+                <option>1 year</option>
+                <option>every 15 minutes</option>                
               </select>
             </div>
+			  
+			  
             <div class="form-group col-sm-12 col-md-12 p-0">
               <label for="car_type" class="text-capitalize">sellect vehicle type</label>
               <select class="form-control" id="car_type">
@@ -942,11 +975,26 @@
                 <option>type name</option>
               </select>
             </div>
+			  
+			   <div class="form-group col-sm-12 col-md-12 p-0">
+              <label for="number-plate" class="text-capitalize">car's registration number</label>
+              <input type="text" class="form-control" id="number-plate" placeholder="eg KAA 1...">
+            </div>
+			  
+			  
             <div class="col-12 p-4 center danger-light-bg lighter-txt price-container position-relative">
 				 <span class="close-price-container position-absolute"> <i data-feather="x"></i></span>
               <p class="text-uppercase m-0 font-14"><strong>sub total</strong></p>
               <p class="text-uppercase m-0 font-12">kes 2,000</p>
             </div>
+			  
+			  <div class="col-12 p-0 cars-container mt-3">
+			  	<span class="font-12"><span>KBH 154G</span><i class="remove-car font-14 ml-2" data-feather="x"></i></span>
+			  	<span class="font-12"><span>KBH 154G</span><i class="remove-car font-14 ml-2" data-feather="x"></i></span>
+			  	<span class="font-12"><span>KBH 154G</span><i class="remove-car font-14 ml-2" data-feather="x"></i></span>
+			  	<span class="font-12"><span>KBH 154G</span><i class="remove-car font-14 ml-2" data-feather="x"></i></span>
+			  	<span class="font-12"><span>KBH 154G</span><i class="remove-car font-14 ml-2" data-feather="x"></i></span>
+			  </div>
             <div class="form-group col-sm-12 col-md-12 p-0 my-3">
               <p class="text-capitalize">payment options</p>
               <div class="col-12 p-0 pay-container">
@@ -980,10 +1028,7 @@
                 <input type="text" class="form-control" id="mpesa-phone" placeholder="eg 07123...">
               </div>
             </div>
-            <div class="form-group col-sm-12 col-md-12 p-0">
-              <label for="number-plate" class="text-capitalize">car's registration number</label>
-              <input type="text" class="form-control" id="number-plate" placeholder="eg KAA 1...">
-            </div>
+            
             <div class="col-12 p-0 text-uppercase mt-5">
               <button type="button" class="btn btn-primary text-white font-14 w-100 p-4 center mx-0 transaction-form-btn"><span class="btn-text text-uppercase font-12">proceede to checkout | ksh 2,000</span> <i data-feather="arrow-right" class="ml-2 float-right pull-right"></i></button>
             </div>
@@ -998,16 +1043,52 @@
 					 <hr class="mt-1 p-0">
 					 <p><strong class="text-capitalize">transaction details</strong></p>
 					 
-					 <div class="transactions-details-container text-capitalize">
-					 	<p class="m-0"><span>parking zone</span></p>
-						 <strong>the selected paring zone</strong>
+					 <div class="transactions-details-container text-capitalize ">
+						<div class="col-12 d-flex p-0 single-listing justify-content-between">
+						 	 <div>
+						 	<strong>KBH 457I</strong>
+					 	<p class="m-0"><span>category name</span></p>
+						 </div>
+						 
+						 <div class="amount-close d-flex align-items-center text-right">
+						 	<div class="amount-duration">
+							 	<strong class="text-uppercase">kes 1000</strong>
+							 <p class="m-0"><span class="font-12">6 Months</span></p>
+							 </div>
+							 <span class="ml-3 remove-car"><i data-feather="x"></i></span>
+						 </div>
+						 </div>
 						 <hr>
-						 <p class="m-0"><span>vehicle type</span></p>
-						 <strong>canter</strong>
+						 <div class="col-12 d-flex p-0 single-listing justify-content-between">
+						 	 <div>
+						 	<strong>KBH 457I</strong>
+					 	<p class="m-0"><span>category name</span></p>
+						 </div>
+						 
+						 <div class="amount-close d-flex align-items-center text-right">
+						 	<div class="amount-duration">
+							 	<strong class="text-uppercase">kes 1000</strong>
+							 <p class="m-0"><span class="font-12">6 Months</span></p>
+							 </div>
+							 <span class="ml-3 remove-car"><i data-feather="x"></i></span>
+						 </div>
+						 </div>
 						 <hr>
 						 
-						<p class="m-0"> <span>plate number</span></p>
-						 <strong class="text-uppercase">kbh 458t</strong>
+						<div class="col-12 d-flex p-0 single-listing justify-content-between">
+						 	 <div>
+						 	<strong>KBH 457I</strong>
+					 	<p class="m-0"><span>category name</span></p>
+						 </div>
+						 
+						 <div class="amount-close d-flex align-items-center text-right">
+						 	<div class="amount-duration">
+							 	<strong class="text-uppercase">kes 1000</strong>
+							 <p class="m-0"><span class="font-12">6 Months</span></p>
+							 </div>
+							 <span class="ml-3 remove-car"><i data-feather="x"></i></span>
+						 </div>
+						 </div>
 						 <hr>
 						<div class=" text-right amount-container">
 						 		 <p><span class="text-uppercase text-left">sub total</span> <strong> KES 2,000</strong></p>

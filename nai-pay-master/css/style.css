@@ -1214,7 +1214,7 @@ img {
     font-size: 18px;
     font-weight: 400;
     text-transform: capitalize;
-    background-color: #f5d812;
+  
    
     border: 0;
     -webkit-transition: all 0.3s ease-in-out;
@@ -1230,12 +1230,12 @@ img {
 }
 
 .btn.btn-primary:hover {
-    background-color:#fdc00e;
+    background-color:#25934c;
     color: black;
 }
 
 .btn.btn-sec:hover {
-    background-color:#48c173;
+    background-color:#fcb306;
     color: #fff;
 }
 
@@ -1432,7 +1432,7 @@ a, a:hover, a:focus, input:focus {
 }
 
 .account-pop-up{
-	background: #00000066;
+	background: #011d33bf;
     position: fixed;
     top: 0;
     left: 0;
@@ -1529,6 +1529,28 @@ a, a:hover, a:focus, input:focus {
 }
 	.m-sm-3{
 		margin: 1rem !important;
+	}
+	.px-sm-2{
+		padding-left:0.5rem !important;
+		padding-right:0.5rem !important;
+		
+	}
+	.px-sm-3{
+		padding-left:1rem !important;
+		padding-right:1rem !important;
+		
+	}
+	.px-sm-4{
+		padding-left:1.5rem !important;
+		padding-right:1.5rem !important;
+		
+	}
+	.p-sm-3{
+		padding:1rem !important;
+	}
+	
+	.p-sm-4{
+		padding:1.5rem !important;
 	}
 }
 
@@ -3538,14 +3560,19 @@ top: 43px;
 }
 
 #service-form-section{
-	background: url("../img/bg/nairobibg.jpg");
+	background:url("../img/bg/home-bg.svg");
+/*	background-image: url("IMAGE_URL"), linear-gradient(#eb01a5, #d13531);  W3C */
 	background-position:center;
 	background-attachment: fixed;
+	background-position:bottom;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 	
 }
 
 #service-form-section::before{
-	    background: linear-gradient(45deg, rgba(20,169,152,0.7) 0%,rgba(20,169,152,0.7) 42%,rgba(27,171,137,0.7) 54%,rgba(45,177,101,0.7) 74%,rgba(52,179,86,0.7) 84%,rgba(55,180,80,0.7) 90%,rgba(55,180,80,0.7) 100%);
+/*	    background: linear-gradient(45deg, rgba(20,169,152,0.7) 0%,rgba(20,169,152,0.7) 42%,rgba(27,171,137,0.7) 54%,rgba(45,177,101,0.7) 74%,rgba(52,179,86,0.7) 84%,rgba(55,180,80,0.7) 90%,rgba(55,180,80,0.7) 100%);*/
 }
 
 .gray-bg{
@@ -3806,6 +3833,410 @@ top: 43px;
     transform: skewy(6deg);
     background: white;
 }
+
+.confirmed-pay img{
+	width: 78px;
+    padding: 11px;
+    border-radius: 50%;
+}
+
+.primary-light-bg{
+	background: #c6f68d !important;
+    border: solid 1px green;
+    border-color: #41c300;
+}
+
+.danger-light-bg{
+	background: #ffd0d9 !important;
+    border-color: red solid 1px;
+    border: solid 1px #f78792;
+}
+
+.warning-light-bg{
+	background: #feecb3 !important;
+    border: solid 1px green;
+    border-color: #fcca2a;
+}
+
+
+/*drop shadows*/
+.effect2
+{
+  position: relative;
+}
+.effect2:before, .effect2:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+.effect2:after
+{
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+
+/*==================================================
+ * Effect 3
+ * ===============================================*/
+.effect3
+{
+  position: relative;
+}
+.effect3:before
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+
+/*==================================================
+ * Effect 4
+ * ===============================================*/
+.effect4
+{
+  position: relative;
+}
+.effect4:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  right: 10px;
+  left: auto;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+}
+
+/*==================================================
+ * Effect 5
+ * ===============================================*/
+.effect5
+{
+  position: relative;
+}
+.effect5:before, .effect5:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 25px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 35px 20px #777;
+  -moz-box-shadow: 0 35px 20px #777;
+  box-shadow: 0 35px 20px #777;
+  -webkit-transform: rotate(-8deg);
+  -moz-transform: rotate(-8deg);
+  -o-transform: rotate(-8deg);
+  -ms-transform: rotate(-8deg);
+  transform: rotate(-8deg);
+}
+.effect5:after
+{
+  -webkit-transform: rotate(8deg);
+  -moz-transform: rotate(8deg);
+  -o-transform: rotate(8deg);
+  -ms-transform: rotate(8deg);
+  transform: rotate(8deg);
+  right: 10px;
+  left: auto;
+}
+
+/*==================================================
+ * Effect 6
+ * ===============================================*/
+.effect6
+{
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.effect6:before, .effect6:after
+{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:50%;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+.effect6:after
+{
+    right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
+
+/*==================================================
+ * Effect 7
+ * ===============================================*/
+.effect7
+{
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.effect7:before, .effect7:after
+{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:0;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+.effect7:after
+{
+    right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
+
+/*==================================================
+ * Effect 8
+ * ===============================================*/
+.effect8
+{
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.effect8:before, .effect8:after
+{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:10px;
+    bottom:10px;
+    left:0;
+    right:0;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+.effect8:after
+{
+    right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
+
+.service-form-container{
+	position: relative;
+	display: block;
+	
+}
+.service-form-container:before, .service-form-container:after{
+	z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+
+.service-form-container:after{
+	-webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+
+.cars-container>span{
+	display: inline-flex;
+    align-items: center;
+    padding: 7px;
+    border-radius: 24px;
+	margin-bottom: 7px;
+	border-color: #b6b6b6;
+	border: 1px solid;
+}
+.cars-container .remove-car{
+	cursor: pointer;
+	
+}
+.cars-container svg, .single-listing svg{
+	height: 17px;
+	color: red;
+	cursor: pointer;
+}
+.single-listing svg{
+	height: 25px;
+}
+.bg-danger {
+    background-color: #fd003b!important;
+}
+
+.card {
+    position: relative;
+    background: #fff;
+    margin-bottom: 30px;
+    border-radius: 2px;
+}
+
+.card .card-header {
+    position: relative;
+    display: block;
+    padding: 26px 30px;
+    border-radius: 2px 2px 0 0;
+}
+
+.card-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 2.2rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 140%;
+    margin-top: -.35rem;
+}
+.card-footer:last-child {
+    border-radius: 0 0 2px 2px;
+}
+.card-link {
+    
+    color: #333;
+    display: inline-block;
+/*    margin-top: 1rem;*/
+    transition: color .3s;
+}
+
+.card-link+.card-link {
+    margin-left: 2.2rem;
+}
+
+.card-footer {
+    margin-top: -.35rem;
+}
+
+.card-footer {
+/*    padding: 2.1rem 2.2rem;*/
+    border-top: 1px solid transparent;
+}
+
+.notification-container .card {
+    max-width: 500px;
+    min-width: 488px;
+	
+	border: none !important;
+}
+
+.notification-container, .drop-file-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #00000085;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+	height:100vh;
+}
+
+.notification-container .icon {
+    height: 80px;
+}
+
+.close-delete{
+	cursor: pointer;
+}
+
+
+/*drop shadow*/
 
 
 
