@@ -424,9 +424,7 @@ $(document).ready(function() {
 	
 	$('.transactions-details-container').on('click','.remove-car', function () {
 		$('.notification-container').addClass('fadeIn');
-
 		$('.notification-container').removeClass('d-none');
-
 		$('.notification-container').removeClass('fadeOut');
 		$('.notification-container').removeClass('d-none');
 		$('.notification-container .card').addClass('bounceUp');
