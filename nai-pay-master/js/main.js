@@ -451,6 +451,37 @@ $(document).ready(function() {
 		}, 1000);
 	}
 	
+//	sign up form animations
+	$('.toogle-loginfforms li').on('click', function(){
+		$(this).addClass('active-log').siblings().removeClass('active-log');
+	})
+	
+	function showsignup(){
+		$('#signup-form').removeClass('d-none');
+		$('#signup-form').removeClass('bounceOutLeft');
+		$('#signup-form').addClass('bounceInRight');
+		$('#login-form').addClass('d-none');
+		$('#login-form').addClass('bounceOutLeft');
+		
+	}
+	
+	function showlogin(){
+		$('#login-form').removeClass('d-none');
+		$('#login-form').removeClass('bounceOutLeft');
+		$('#login-form').addClass('bounceInRight');
+		$('#signup-form').addClass('d-none');
+		$('#signup-form').addClass('bounceOutLeft');
+		
+	}
+	
+	$('.show-signup').on('click', function(){
+		showsignup();
+	});
+	
+	$('.show-login').on('click', function(){
+		showlogin();
+	});
+	
 	
 	
 	

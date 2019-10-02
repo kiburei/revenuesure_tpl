@@ -1700,8 +1700,7 @@ a, a:hover, a:focus, input:focus {
     user-select: none;
     align-items: flex-start;
     text-align: center;
-    margin-right: 2px;
-    margin-left: 2px;
+    
 }
 #sell-item,#get-a-receipt {
     background: #1b8241;
@@ -2497,6 +2496,9 @@ transaction pop up styles
 	}
 	.transactions-details-container strong{
 		font-size: 16px;
+	}
+	.login-bg{
+		padding: 0px!important;
 	}
 }
 
@@ -4303,6 +4305,66 @@ top: 43px;
 }
 .transactions-details-container hr{
 	margin: 10px 0px;
+}
+
+.h-100vh{
+	height: 100vh!important;
+}
+
+.login-wrap {
+    width: 100%;    
+    position: relative;
+    background: url("../img/bg/nairobibg.jpg") no-repeat center;
+    box-shadow: 0 12px 15px 0 rgba(0,0,0,.24), 0 17px 50px 0 rgba(0,0,0,.19);
+	overflow: hidden;
+}
+
+.login-wrap:before {
+	content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+   display: block;
+    background: rgba(40,57,101,.9);
+	left: 0;
+	top: 0;
+}
+
+.login-form input,.login-form input:focus {
+    border: none;
+    padding: 15px 20px;
+		color: white;
+    background: rgba(255,255,255,.1);
+}
+.login-form input:focus {
+	border: 1px solid #0ae810;
+}
+
+.login-header li{
+	font-size: 22px;
+	border-bottom: 2px solid transparent;
+	color: #6a6f8c;
+	cursor: pointer;
+}
+.active-log{
+	color: white !important;
+	border-bottom:2px solid #0ae810 !important;
+}
+
+.login-wrap hr{
+	height: 2px;
+    margin: 60px 0 50px 0;
+    background: rgba(255,255,255,.2);
+}
+.min-100vh{
+	min-height: 100vh;
+}
+
+.login-bg{
+	padding: 80px;
+}
+.login-bg .e-logo{
+	height: 185px;
 }
 
 
