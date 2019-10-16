@@ -27,103 +27,94 @@
   <div class="login-bg">
     <div class="container p-sm-0 p-5">
       <row class="d-flex justify-content-center align-items-center align-content-center min-100vh">
-        <div class="col-lg-6 login-wrap p-5 text-white">
-          <div class="row login-header ad-profile section h-100"> 
-				<ul class="user-menu col-12 w-100 text-uppercase toogle-loginfforms">
-					<li class="py-2 float-left  active-log show-login">log in</li>
-					<li class="py-2 float-left ml-3 show-signup">sign up</li>
-					
-				</ul>
-			</div>
-          <div class="login col-12 p-0 text-uppercase">
-			  <center>
-			  	<img src="img/logo/e-pay2.svg" class="e-logo mt-3 mx-3 mb-2" height="168px";>
-				  <hr class="my-3">
-			  </center>
-            <form class="col-12 px-0 login-form pt-3 animated" id="login-form">
-			  	<div class="form-group col-sm-12 col-md-12 p-0">
-              <label for="number-plate" class="text-capitalize">email address</label>
-              <input type="email" class="form-control" id="number-plate" placeholder="email@email.com">
-            </div>
-			  
-			  <div class="form-group col-sm-12 col-md-12 p-0 my-5">
-              <label for="number-plate" class="text-capitalize">account password</label>
-              <input type="password" class="form-control" id="pass" placeholder="enter password">
-            </div>
-			  
-			  <div class="col-12 p-0">
-			  	<input id="check" type="checkbox" class="check" checked>
-					<label for="check" class="text-capitalize"><span class="icon"></span> Keep me Signed in</label>
-			  </div>
-			  
-			   <div class="col-12 p-0 text-uppercase">
-              <button type="button" class="btn btn-primary text-white font-14 w-100 p-4 center mb-5">
-				  <div class="btn-txt animated">
-				  	<span class="btn-text text-uppercase font-12">sign in</span> 
-				  <i data-feather="arrow-right" class="ml-2 float-right pull-right">
-				  </i>
-				  </div>
-				  <div class="lds-ellipsis d-none animated"><div></div><div></div><div></div><div></div></div>
-								  </button>
-            </div>
-			  <hr class="mt-5">
-			  <p><center><a class="text-center text-capitalize">Forgot Password?</a></center></p>
-			  </form>
-			  
-			  <form class="col-12 px-0 login-form pt-3 animated d-none" id="signup-form">
-				  
-				  <div class="form-group col-sm-12 col-md-12 p-0 my-5">
-              <label for="number-plate" class="text-capitalize">first name</label>
-              <input type="text" class="form-control" id="number-plate" placeholder="eg John">
-            </div>
-				  
-				  <div class="form-group col-sm-12 col-md-12 p-0 my-5">
-              <label for="number-plate" class="text-capitalize">second name</label>
-              <input type="text" class="form-control" id="number-plate" placeholder="eg Doe">
-            </div>
-				  
-			  	<div class="form-group col-sm-12 col-md-12 p-0 my-5">
-              <label for="number-plate" class="text-capitalize">enter a valid email address</label>
-              <input type="email" class="form-control" id="number-plate" placeholder="email@email.com">
-            </div>
-				  
-				  <div class="form-group col-sm-12 col-md-12 p-0 my-5">
-              <label for="number-plate" class="text-capitalize">enter a valid phone number</label>
-              <input type="text" class="form-control" id="number-plate" placeholder="eg 0712 ...">
-            </div>
-			  
-			  <div class="form-group col-sm-12 col-md-12 p-0 my-5">
-              <label for="number-plate" class="text-capitalize">account password</label>
-              <input type="password" class="form-control" id="pass" placeholder="enter password">
-            </div>
-				  
-				   <div class="form-group col-sm-12 col-md-12 p-0 my-5">
-              <label for="number-plate" class="text-capitalize">confirm password</label>
-              <input type="password" class="form-control" id="pass" placeholder="enter password">
-            </div>
-			  
-			  <div class="col-12 p-0">
-			  	<input id="check" type="checkbox" class="check" checked>
-					<label for="check" class="text-capitalize"><span class="icon"></span> Keep me Signed in</label>
-			  </div>
-			  
-			   <div class="col-12 p-0 text-uppercase my-5">
-              <button type="button" class="btn btn-primary text-white font-14 w-100 p-4 center mb-5">
-				  <div class="btn-txt animated">
-				  	<span class="btn-text text-uppercase font-12">sign in</span> 
-				  <i data-feather="arrow-right" class="ml-2 float-right pull-right">
-				  </i>
-				  </div>
-				  <div class="lds-ellipsis d-none animated"><div></div><div></div><div></div><div></div></div>
-								  </button>
-            </div>
-			  <hr class="mt-5">
-			  <p><center><a class="text-center text-capitalize">Forgot Password?</a></center></p>
-			  </form>
-			  
+        <div class="col-lg-6 col-md-9  login-wrap p-5 text-white">
+          <div class="row login-header ad-profile section h-100">
+            <ul class="user-menu col-12 w-100 text-uppercase toogle-loginfforms">
+              <li class="py-2 float-left  active-log show-login">log in</li>
+              <li class="py-2 float-left ml-3 show-signup">sign up</li>
+            </ul>
           </div>
-			
-			
+          <div class="login col-12 p-0 text-uppercase">
+            <center>
+              <img src="img/logo/e-pay2.svg" class="e-logo mt-3 mx-3 mb-2" height="168px";>
+              <hr class="my-3">
+            </center>
+            <form class="col-12 px-0 login-form pt-3 animated" id="login-form">
+              <div class="form-group col-sm-12 col-md-12 p-0">
+                <label for="number-plate" class="text-capitalize">email address</label>
+                <input type="email" class="form-control" id="number-plate" placeholder="email@email.com">
+              </div>
+              <div class="form-group col-sm-12 col-md-12 p-0 my-5">
+                <label for="number-plate" class="text-capitalize">account password</label>
+                <input type="password" class="form-control" id="pass" placeholder="enter password">
+              </div>
+              <div class="col-12 p-0">
+                <input id="check" type="checkbox" class="check" checked>
+                <label for="check" class="text-capitalize"><span class="icon"></span> Keep me Signed in</label>
+              </div>
+              <div class="col-12 p-0 text-uppercase">
+                <button type="button" class="btn btn-primary text-white font-14 w-100 p-4 center mb-5">
+                <div class="btn-txt animated"> <span class="btn-text text-uppercase font-12">sign in</span> <i data-feather="arrow-right" class="ml-2 float-right pull-right"> </i> </div>
+                <div class="lds-ellipsis d-none animated">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                </button>
+              </div>
+              <hr class="mt-5">
+              <p>
+                <center>
+                  <a class="text-center text-capitalize">Forgot Password?</a>
+                </center>
+              </p>
+            </form>
+            <form class="col-12 px-0 login-form pt-3 animated d-none" id="signup-form">
+              <div class="row">
+                <div class="form-group col-sm-12 col-md-6">
+                  <label for="fname" class="text-capitalize">first name</label>
+                  <input type="text" class="form-control" id="fname" placeholder="first name eg John">
+                </div>
+                <div class="form-group col-sm-12 col-md-6">
+                  <label for="other-name" class="text-capitalize">other name(s)</label>
+                  <input type="text" class="form-control" id="other-names" placeholder="first name eg Doe">
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-sm-12 col-md-6">
+                  <label for="exampleInputEmail1" class="text-capitalize">Email address</label>
+                  <input type="email" class="form-control" id="fname" placeholder="example@email.com">
+                </div>
+                <div class="form-group col-sm-12 col-md-6">
+                  <label for="phone" class="text-capitalize">Enter your phone number</label>
+                  <input type="text" class="form-control" id="phone" placeholder="eg 071 ...">
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-sm-12 col-md-6">
+                  <label for="pass" class="text-capitalize">create password</label>
+                  <input type="password" class="form-control" id="pass" placeholder="password">
+                </div>
+                <div class="form-group col-sm-12 col-md-6">
+                  <label for="confirm" class="text-capitalize">confirm password</label>
+                  <input type="password" class="form-control" id="confirm" placeholder="confirm password">
+                </div>
+              </div>
+              <div class="col-12 p-0 text-uppercase my-5">
+                <button type="button" class="btn btn-primary text-white font-14 w-100 p-4 center mb-5">
+                <div class="btn-txt animated"> <span class="btn-text text-uppercase font-12">create account</span> <i data-feather="arrow-right" class="ml-2 float-right pull-right"> </i> </div>
+                <div class="lds-ellipsis d-none animated">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                </button>
+              </div>
+              
+            </form>
+          </div>
         </div>
       </row>
     </div>

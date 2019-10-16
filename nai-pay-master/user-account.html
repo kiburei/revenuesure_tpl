@@ -10,7 +10,9 @@
 <!-- Bootstrap CSS -->
 
 <script src="https://unpkg.com/feather-icons"></script>
+
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link href="css/bootstrap/datatables.bootstrap4.min.css" rel="stylesheet">
 <link href="css/animate/animate.min.css" rel="stylesheet">
 <link rel="stylesheet" href="css/bootstrap.css">
 <!--	bootstrap css-->
@@ -804,27 +806,24 @@
             <p class="font-14 mb-3 text-capitalize">Make sure all inputs are correct. The process has been made this way to help protect personal data</p>
           </div>
         </div>
-        <div class="col-lg-6 p-5 position-relative">
-			<span class="close-receipt-form position-absolute"> <i data-feather="x"></i></span>
+        <div class="col-lg-6 p-5 position-relative"> <span class="close-receipt-form position-absolute"> <i data-feather="x"></i></span>
           <form class="transaction-info">
             <div class="">
               <h4 class="mb-5 pb-2 text-capitalize">correctly fill in the form bellow to continue</h4>
             </div>
             <div class="row m-0">
-             
-                <div  class="form-group col-sm-12 pl-md-0">
-                  <label for="sel1"><small>What was the transacton type?</small></label>
-                  <select class="form-control mb-3" id="sel1" required>
-                    <option>Parking</option>
-                    <option>Business</option>
-                    <option class="text-capitalize">County bills</option>
-                    <option class="text-capitalize">land rates</option>
-                    <option class="text-capitalize">rents</option>
-                    <option class="text-capitalize">e-Construction</option>
-                    <option></option>
-                  </select>
-                </div>
-           
+              <div  class="form-group col-sm-12 pl-md-0">
+                <label for="sel1"><small>What was the transacton type?</small></label>
+                <select class="form-control mb-3" id="sel1" required>
+                  <option>Parking</option>
+                  <option>Business</option>
+                  <option class="text-capitalize">County bills</option>
+                  <option class="text-capitalize">land rates</option>
+                  <option class="text-capitalize">rents</option>
+                  <option class="text-capitalize">e-Construction</option>
+                  <option></option>
+                </select>
+              </div>
             </div>
             <div class="row radio-container m-0">
               <div class="col-12 pl-md-0 mb-3">
@@ -862,376 +861,1511 @@
 <!-- header --> 
 <!--	MENU CONTROLS-->
 
-<section id="home-one-info" class="homebg ">
-<!-- view-ad -->
-<div id="home-section" class="parallax-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12 col-md-5 margin-120">
-        <h2 class="text-capitalize mt-5 mb-3">Do it faster</h2>
-        <h1 style="color: #fff" class="mt-3">Welcome To the NCCG Self service Portal</h1>
-        <p class="text-capitalize">start paying for your county fees efficiently and surprisingly fast.</p>
-        <div class="ad-btn"> <a href="#" class="btn btn-secondary px-5 py-3 text-black text-uppercase">sign up</a> </div>
-      </div>
-      <div class="col-sm-6 text-center  phone-container d-none d-md-block  d-lg-block"> <img src="img/landing page images/hand-phone.png" class="img animated hand-phone">
-        <div class="shadow d-none"></div>
-      </div>
-    </div>
-    <!-- row --> 
-  </div>
-  <!-- contaioner --> 
-</div>
-<!-- view-ad --> 
-
-<!--	mobile view services-->
-<row class="hidden-links-container">
-  <div class="col-lg-5 sub-link-container sub-link-container2"> 
-    
-    <!--            unified busines permit sub-links-->
-    <div class="sub-link unified-biz-permit1 left" id="unified-biz-permit">
-      <div class="subicon">
-        <div> <img src="img/new-icons/line/case.svg"> </div>
-        <p>single business permit</p>
-        <small>Select from fee type options below</small> </div>
-      <ul>
-        <li class="d-flex"><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="renew UBP.html">renew UBP</a></li>
-        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="register-business.html">register New business</a></li>
-        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="single business permit.html">print permit</a></li>
-        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="#">print receipt</a></li>
-      </ul>
-    </div>
-    <!--            unified busines permit sub-links--> 
-    <!--            land rates-->
-    <div class="sub-link land-rate1 left" id="land-rate">
-      <div class="subicon">
-        <div> <img src="img/new-icons/line/land.svg"> </div>
-        <p>land rates</p>
-        <small>Select from fee type options below</small> </div>
-      <ul>
-        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="pay land rate.html">pay land rate</a></li>
-        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="land-receipt.html">print receipt</a></li>
-      </ul>
-    </div>
-    <!--            land rates--> 
-    <!--            rent sub-links-->
-    <div class="sub-link rent1 left" id="rent">
-      <div class="subicon">
-        <div> <img src="img/new-icons/line/key.svg"> </div>
-        <p>rent</p>
-        <small>Select from fee type options below</small> </div>
-      <ul>
-        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="house rent form.html">house</a></li>
-        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="market stalls rent.html">stalls</a></li>
-        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="print stall receipt.html">receipt</a></li>
-      </ul>
-    </div>
-    <!--            unified busines permit sub-links--> 
-    <!--            parking sub-links-->
-    <div class="sub-link parking1 left" id="parking">
-      <div class="subicon">
-        <div> <img src="img/new-icons/line/parking.svg"> </div>
-        <p>parking</p>
-        <small>Select from fee type options below</small> </div>
-      <ul>
-        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="parking.html">daily parking</a></li>
-        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="seasonal parking form.html">Seasonal parking</a></li>
-        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="">Sacco</a></li>
-        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="">Offstreet Parking</a></li>
-        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="parking penalties.html">Penalties</a></li>
-        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="#">print receipt</a></li>
-      </ul>
-    </div>
-    <!--            unified busines permit sub-links--> 
-    <!--            wallet sub-links-->
-    <div class="sub-link wallet1 left" id="wallet">
-      <div class="subicon">
-        <div> <img src="img/new-icons/line/bill.svg"> </div>
-        <p>county bills</p>
-        <small>Select from fee type options below</small> </div>
-      <ul>
-        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="miss bill.html">pay Miscellaneous</a> </li>
-        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="misc receipt.html">Print Miscellaneous </a></li>
-      </ul>
-    </div>
-    <!--            wallet sub-links--> 
-    <!--            wallet sub-links-->
-    <div class="sub-link construction1 left" id="construction">
-      <div class="subicon">
-        <div> <img src="img/new-icons/line/econstruction.svg"> </div>
-        <p class="text-lowercase">e-Construction</p>
-        <small>Select from fee type options below</small> </div>
-      <ul>
-        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="construction permit.html">pay Permit</a></li>
-        <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="e-construction invoice.html">print receipt</a></li>
-      </ul>
-    </div>
-    <!--            wallet sub-links--> 
-  </div>
-</row>
-<!--	mobile view services-->
-
-<div class="container">
-<div class="row">
-<!-- row --> 
-
-<!--				services go here-->
-
-<div class="container">
-  <div class="section services position-relative p-md-5 p-sm-4"> 
-    <!-- single-service -->
-    <div class="col-sm-12 text-capitalize position-relative p-0">
-      <h2>services</h2>
-      <p>Browse through the county services that are available to be paid for online</p>
-      <hr>
-    </div>
-    <section class="options-container p-0" id="options-container">
-      <div class="row">
-        <div class="col-lg-8 p-0"> 
-          <!--            option unified business permit-->
-          <div class="col-md-4 col-lg-4 col-sm-6 option business-permit">
-            <div class="active-triangle display-none">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40.5px" height="33.5px">
-                <path fill-rule="evenodd" stroke="#066130" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="#066130" d="M38.084,1.007 L1.015,1.007 L1.015,31.423 L38.084,1.007 Z" />
-              </svg>
-            </div>
-            <div class="icon-container"><img src="img/new-icons/case.svg"></div>
-            <div class="circular-bg"></div>
-            <p>Unified Business Permit</p>
-            <!--                more information about the option-->
-            <div class="options-info left">
-              <p>Reneiw or register for your business permit, print your receipts and so on...</p>
-              <span>
-              <div>
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
-                  <rect fill="none" width="25" height="25" />
-                  <polyline fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" points="19.946,35.891 9.057,25 19.947,14.11 " />
-                  <line fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="41" y1="25" x2="9.662" y2="25" />
-                </svg>
+<section id="home-one-info" class="homebg "> 
+  <!-- view-ad -->
+  <div id="home-section2">
+    <div class="container p-0">
+      <div class="row p-md-4 white-bg p-sm-0 m-0">
+        <div class="col-md-8 col-sm-12 p-5" id="summary-container">
+          <div class="row  position-relative">
+            <div class="d-flex pr-3">
+              <div class="z-index-10">
+                <div class="profile-pic-container"> <img src="img/user/default-user.png"> </div>
               </div>
-              More </span> </div>
-            <!--                more information about the option--> 
-          </div>
-          <!--            end of option--> 
-          <!--            option landrates-->
-          <div class="col-md-4 col-lg-4 col-sm-6 option land-rates">
-            <div class="active-triangle display-none">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40.5px" height="33.5px">
-                <path fill-rule="evenodd" stroke="#066130" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="#066130" d="M38.084,1.007 L1.015,1.007 L1.015,31.423 L38.084,1.007 Z" />
-              </svg>
-            </div>
-            <div class="icon-container"><img src="img/new-icons/house.svg"></div>
-            <div class="circular-bg"></div>
-            <p>Land rates</p>
-            <!--                more information about the option-->
-            <div class="options-info left">
-              <p>Pay for your land rates or event print your receipts</p>
-              <span>
-              <div>
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
-                  <rect fill="none" width="25" height="25" />
-                  <polyline fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" points="19.946,35.891 9.057,25 19.947,14.11 " />
-                  <line fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="41" y1="25" x2="9.662" y2="25" />
-                </svg>
+              <div class="d-flex justify-content-center flex-column mx-4">
+                <h1 style="color: #fff" class="text-capitalize mb-1 p-0 d-flex ">hello, john doe</h1>
+                <p class="text-capitalize pb-0 mb-md-0 mb-sm-3 font-14-sm">Last seen: 14 May 19 6:40 AM</p>
               </div>
-              More </span> </div>
-            <!--                more information about the option--> 
-          </div>
-          <!--            end of option--> 
-          <!--            option rent payment-->
-          <div class="col-md-4 col-lg-4 col-sm-6  option rents">
-            <div class="active-triangle display-none">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40.5px" height="33.5px">
-                <path fill-rule="evenodd" stroke="#066130" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="#066130" d="M38.084,1.007 L1.015,1.007 L1.015,31.423 L38.084,1.007 Z" />
-              </svg>
             </div>
-            <div class="icon-container"><img src="img/new-icons/key.svg"></div>
-            <div class="circular-bg"></div>
-            <p>Rents</p>
-            <!--                more information about the option-->
-            <div class="options-info left">
-              <p>Pay for your house rent, pay your stall rent</p>
-              <span>
-              <div>
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
-                  <rect fill="none" width="25" height="25" />
-                  <polyline fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" points="19.946,35.891 9.057,25 19.947,14.11 " />
-                  <line fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="41" y1="25" x2="9.662" y2="25" />
-                </svg>
-              </div>
-              More </span> </div>
-            <!--                more information about the option--> 
-          </div>
-          <!--            end of option--> 
-          <!--            option parking fees-->
-          <div class="col-md-4 col-lg-4 col-sm-6 option parking">
-            <div class="active-triangle display-none">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40.5px" height="33.5px">
-                <path fill-rule="evenodd" stroke="#066130" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="#066130" d="M38.084,1.007 L1.015,1.007 L1.015,31.423 L38.084,1.007 Z" />
-              </svg>
+            <div class="favorites-user d-md-flex float-right pull-right d-sm-none">
+              <div class="my-ads pr-4"> <a href="my-ads.html"><strong class="text-white">
+                <h2 class="text-white">23</h2>
+                </strong><small class="text-white">My Assets</small></a> </div>
+              <div class="favorites border-left pl-4"> <a href="#"><strong class="text-white">
+                <h2 class="text-white">18</h2>
+                </strong><small class="text-white">My Bills</small></a> </div>
             </div>
-            <div class="icon-container"><img src="img/new-icons/parking.svg"></div>
-            <div class="circular-bg"></div>
-            <p>Parking Fees</p>
-            <!--                more information about the option-->
-            <div class="options-info left">
-              <p>Pay for your parking, check your parking status, update your daily parking or even start paying for your seasonal parking fee, this is the link to go to...</p>
-              <span>
-              <div>
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
-                  <rect fill="none" width="25" height="25" />
-                  <polyline fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" points="19.946,35.891 9.057,25 19.947,14.11 " />
-                  <line fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="41" y1="25" x2="9.662" y2="25" />
-                </svg>
-              </div>
-              More </span> </div>
-            <!--                more information about the option--> 
           </div>
-          <!--            end of option--> 
-          <!--            option-->
-          <div class="col-md-4 col-lg-4 col-sm-6  option E-Wallet">
-            <div class="active-triangle display-none">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40.5px" height="33.5px">
-                <path fill-rule="evenodd" stroke="#066130" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="#066130" d="M38.084,1.007 L1.015,1.007 L1.015,31.423 L38.084,1.007 Z" />
-              </svg>
-            </div>
-            <div class="icon-container"><img src="img/new-icons/receipt.svg"></div>
-            <div class="circular-bg"></div>
-            <p>Bills</p>
-            <!--                more information about the option-->
-            <div class="options-info left">
-              <p>Not sure of where your county fees are to be allocated, just visit this link and you will be assisted</p>
-              <span>
-              <div>
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
-                  <rect fill="none" width="25" height="25" />
-                  <polyline fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" points="19.946,35.891 9.057,25 19.947,14.11 " />
-                  <line fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="41" y1="25" x2="9.662" y2="25" />
-                </svg>
-              </div>
-              More </span> </div>
-            <!--                more information about the option--> 
-          </div>
-          <!--            end of option--> 
-          <!--            option-->
-          <div class="col-md-4 col-lg-4 col-sm-6  option construction">
-            <div class="active-triangle display-none">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40.5px" height="33.5px">
-                <path fill-rule="evenodd" stroke="#066130" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="#066130" d="M38.084,1.007 L1.015,1.007 L1.015,31.423 L38.084,1.007 Z" />
-              </svg>
-            </div>
-            <div class="icon-container"><img src="img/new-icons/brickwall.svg"></div>
-            <div class="circular-bg"></div>
-            <p>E-Construction</p>
-            <!--                more information about the option-->
-            <div class="options-info left">
-              <p>Click this option if you want to pay for your contruction fee</p>
-              <span>
-              <div>
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
-                  <rect fill="none" width="25" height="25" />
-                  <polyline fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" points="19.946,35.891 9.057,25 19.947,14.11 " />
-                  <line fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="41" y1="25" x2="9.662" y2="25" />
-                </svg>
-              </div>
-              More </span> </div>
-            <!--                more information about the option--> 
-          </div>
-          <!--            end of option--> 
         </div>
-        <div class="col-lg-4 sub-link-container desktop-link pd-0 text-capitalize"> 
-          <!--            unified busines permit sub-links-->
-          <div class="sub-link unified-biz-permit1 left" id="unified-biz-permit">
-            <div class="subicon">
-              <div> <img src="img/new-icons/line/case.svg"> </div>
-              <p>single business permit</p>
-              <small>Select from fee type options below</small> </div>
-            <ul>
-              <li class="d-flex"><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="renew UBP.html">renew UBP</a></li>
-              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="register-business.html">register New business</a></li>
-              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="single business permit.html">print permit</a></li>
-              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="#">print receipt</a></li>
+        <div class="col-md-4 col-sm-12 d-md-block p-0">
+          <div id="carouselExampleSlidesOnly" class="row h-100 m-0 carousel slide p-0">
+            <div class="col-12 asset-sum-container pri-grad text-white text-capitalize overflow-hidden carousel-inner px-5" >
+              <div class="row my-5 the-asset-count carousel-item active">
+               	<div class="col-12 d-flex justify-content-between">
+				  	 <div class="col-">
+                  <h1 class="text-white mb-2 p-0"><strong class="sec-txt2">20</strong></h1>
+                  <p class="sec-txt2 m-0 p-0">vehiles</p>
+                </div>
+                <div class="col-3 p-0 d-flex align-items-center justify-content-center"> <img src="img/icons/assets-icons/car.svg" class=""> </div>
+				  </div>
+              </div>
+				
+				<div class="row m-5 the-asset-count carousel-item">
+               <div class="col-12 d-flex justify-content-between">
+				  	 <div class="col-">
+                  <h1 class="text-white mb-2 p-0"><strong class="sec-txt2">20</strong></h1>
+                  <p class="sec-txt2 m-0 p-0">house(s)</p>
+                </div>
+                <div class="col-3 p-0 d-flex align-items-center justify-content-center"> <img src="img/icons/assets-icons/house.svg" class=""> </div>
+				  </div>
+              </div>
+				
+				<div class="row my-5 the-asset-count carousel-item">
+               <div class="col-12 d-flex justify-content-between">
+				  	 <div class="col-">
+                  <h1 class="text-white mb-2 p-0"><strong class="sec-txt2">6</strong></h1>
+                  <p class="sec-txt2 m-0 p-0">market stalls(s)</p>
+                </div>
+                <div class="col-3 p-0 d-flex align-items-center justify-content-center"> <img src="img/icons/assets-icons/stall.svg" class=""> </div>
+				  </div>
+              </div>
+				
+				<div class="row my-5 the-asset-count carousel-item">
+               <div class="col-12 d-flex justify-content-between">
+				  	 <div class="col-">
+                  <h1 class="text-white mb-2 p-0"><strong class="sec-txt2">6</strong></h1>
+                  <p class="sec-txt2 m-0 p-0">businesses</p>
+                </div>
+                <div class="col-3 p-0 d-flex align-items-center justify-content-center"> <img src="img/icons/assets-icons/biz.svg" class=""> </div>
+				  </div>
+              </div>
+				
+				<div class="row my-5 the-asset-count carousel-item">
+               <div class="col-12 d-flex justify-content-between">
+				  	 <div class="col-">
+                  <h1 class="text-white mb-2 p-0"><strong class="sec-txt2">6</strong></h1>
+                  <p class="sec-txt2 m-0 p-0">plot(s) of land</p>
+                </div>
+                <div class="col-3 p-0 d-flex align-items-center justify-content-center"> <img src="img/icons/assets-icons/field.svg" class=""> </div>
+				  </div>
+              </div>
+				
+				
+				<div class="row my-5 the-asset-count carousel-item">
+               <div class="col-12 d-flex justify-content-between">
+				  	 <div class="col-">
+                  <h1 class="text-white mb-2 p-0"><strong class="sec-txt2">6</strong></h1>
+                  <p class="sec-txt2 m-0 p-0">pending bills</p>
+                </div>
+                <div class="col-3 p-0 d-flex align-items-center justify-content-center"> <img src="img/icons/assets-icons/bills.svg" class=""> </div>
+				  </div>
+              </div>
+				
+				<div class="row my-5 the-asset-count carousel-item">
+               <div class="col-12 d-flex justify-content-between">
+				  	 <div class="col-">
+                  <h1 class="text-white mb-2 p-0"><strong class="sec-txt2">6</strong></h1>
+                  <p class="sec-txt2 m-0 p-0">all assets</p>
+                </div>
+                <div class="col-3 p-0 d-flex align-items-center justify-content-center"> <img src="img/icons/assets-icons/flag.svg" class=""> </div>
+				  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="profile-nav my-3">
+            <ul class="nav text-capitalize font-14-sm">
+              <li class="nav-item  account-link"> <a class="nav-link active">account</a> </li>
+              <li class="nav-item assets-link"> <a class="nav-link">assets</a> </li>
+              <li class="nav-item bills-link"> <a class="nav-link">bills</a> </li>
+              <li class="nav-item transactions-link"> <a class="nav-link">transactions</a> </li>
             </ul>
           </div>
-          <!--            unified busines permit sub-links--> 
-          <!--            land rates-->
-          <div class="sub-link land-rate1 left" id="land-rate">
-            <div class="subicon">
-              <div> <img src="img/new-icons/line/land.svg"> </div>
-              <p>land rates</p>
-              <small>Select from fee type options below</small> </div>
-            <ul>
-              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="pay land rate.html">pay land rate</a></li>
-              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="land-receipt.html">print receipt</a></li>
-            </ul>
-          </div>
-          <!--            land rates--> 
-          <!--            rent sub-links-->
-          <div class="sub-link rent1 left" id="rent">
-            <div class="subicon">
-              <div> <img src="img/new-icons/line/key.svg"> </div>
-              <p>rent</p>
-              <small>Select from fee type options below</small> </div>
-            <ul>
-              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="house rent form.html">house</a></li>
-              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="market stalls rent.html">stalls</a></li>
-              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="print stall receipt.html">receipt</a></li>
-            </ul>
-          </div>
-          <!--            unified busines permit sub-links--> 
-          <!--            parking sub-links-->
-          <div class="sub-link parking1 left" id="parking">
-            <div class="subicon">
-              <div> <img src="img/new-icons/line/parking.svg"> </div>
-              <p>parking</p>
-              <small>Select from fee type options below</small> </div>
-            <ul>
-              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="parking.html">daily parking</a></li>
-              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="seasonal parking form.html">Seasonal parking</a></li>
-              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="">Sacco</a></li>
-              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="">Offstreet Parking</a></li>
-              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="parking penalties.html">Penalties</a></li>
-              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="#">print receipt</a></li>
-            </ul>
-          </div>
-          <!--            unified busines permit sub-links--> 
-          <!--            wallet sub-links-->
-          <div class="sub-link wallet1 left" id="wallet">
-            <div class="subicon">
-              <div> <img src="img/new-icons/line/bill.svg"> </div>
-              <p>county bills</p>
-              <small>Select from fee type options below</small> </div>
-            <ul>
-              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="miss bill.html">pay Miscellaneous</a> </li>
-              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="misc receipt.html">Print Miscellaneous </a></li>
-            </ul>
-          </div>
-          <!--            wallet sub-links--> 
-          <!--            wallet sub-links-->
-          <div class="sub-link construction1 left" id="construction">
-            <div class="subicon">
-              <div> <img src="img/new-icons/line/econstruction.svg"> </div>
-              <p class="text-lowercase">e-Construction</p>
-              <small>Select from fee type options below</small> </div>
-            <ul>
-              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="construction permit.html">pay Permit</a></li>
-              <li><i class="fas fa-arrow-right" data-feather="arrow-right"></i><a href="e-construction invoice.html">print receipt</a></li>
-            </ul>
-          </div>
-          <!--            wallet sub-links--> 
+        </div>
+		  
+		  <div class="col-sm-12 text-capitalize position-relative py-3 text-black px-sm-4 account-txt-block">
+			  <img src="img/bg/text-loader.jpg" class="position-absolute ml-0 mt-0 txt-loader d-none">
+        <h4 class="mb-1 p-md-0">profile details</h4>
+        <p class=" p-md-0 font-12-sm">below are etails on your profile. do remember to save your work once you have edited an item in your profile</p>
+        <hr>
+      </div>
+		  
+<!--		  account form-->
+		  <div class="col-lg-7 col-md-12 col-sm-12 animated my-profile-linker" id="my-account">
+        <div class="mb-3 pr-lg-3">
+          <form class="acount-details-form mt-0">
+            <div class="row">
+			  	<div class="form-group col-sm-12 col-md-6 pl-md-0 pl-lg-3">
+              <label for="exampleInputEmail1" class="text-capitalize">first name</label>
+              <input type="text" class="form-control" id="fname" placeholder="first name eg John">
+            </div>
+            <div class="form-group col-sm-12 col-md-6 pl-md-0 ">
+              <label for="exampleInputEmail1" class="text-capitalize">other name(s)</label>
+              <input type="text" class="form-control" id="other-names" placeholder="first name eg Doe">
+            </div>
+			  </div>
+            <div class="row">
+			  	<div class="form-group col-sm-12 col-md-6 pl-md-0 pl-lg-3">
+              <label for="exampleInputEmail1" class="text-capitalize">phone number</label>
+              <input type="text" class="form-control" id="fname" placeholder="eg 07...">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your phone number with anyone else.</small> </div>
+            <div class="form-group form-group col-sm-12 col-md-6 pl-md-0">
+              <label for="exampleInputEmail1" class="text-capitalize">your email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> </div>
+			  </div>
+			  
+			  <div class="row">
+			  	<div class="col-12 text-capitalize">
+				  	<hr>
+					<p>use this section to have your password changed</p>
+				  </div>
+			  </div>
+            
+			 
+            <div class="row">
+				
+				<div class="form-group col-sm-12 col-md-12">
+              <label for="old" class="text-capitalize">old password</label>
+              <input type="password" class="form-control" id="old" placeholder="Password">
+            </div>
+			  	<div class="form-group col-sm-12 col-md-6">
+              <label for="password" class="text-capitalize">new password</label>
+              <input type="password" class="form-control" id="password" placeholder="Password">
+            </div>
+			  
+			  <div class="form-group col-sm-12 col-md-6 pl-md-0">
+              <label for="exampleInputPassword1" class="text-capitalize">confirm password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+			  </div>
+			  
+			  <button type="submit" class="btn btn-primary text-capitalize text-white font-14 submit-btn" disabled>save changes</button>
+            
+          </form>
         </div>
       </div>
-      <!--    the revenue streams--> 
-    </section>
-  </div>
-  <!-- services --> 
-  
-  <!--	mobile view services--> 
-  
-  <!--	mobile view services--> 
-  
-</div>
+<!--		  account form-->
+		  
+<!--		  loader container-->
+		  <div class="col-lg-7 col-md-12 col-sm-12 animated  p-0 profile-loader  justify-content-center align-content-center align-items-center d-none">
+		  	<div class=" ">
+			  	<div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+			  </div>
+		  </div>
+<!--		  loader container-->
+		  
+		  <!--		  my assets container -->
+		   <div class="col-lg-7 col-md-12 col-sm-12 p-0 animated d-none my-profile-linker" id="the-assets">
+        <div class="mb-3 px-lg-3 assets-main-coontainer position-relative"> 
+          
+          <!--			assets form-->
+          <div class="assets-form-container py-2 px-5">
+            <div class="col-12 border-bottom pt-4 px-0">
+              <p class="text-capitalize d-flex text-primary position-relative"> <span class="trans-txt text-primary mt-0 position-relative drop-title" >  <span class="the-assets-text">vehicles</span><i data-feather="chevron-down" class="ml-2 ml-2 position-absolute mb-0 mt-2px"></i> </span> <span id="close-asset-form" title="close the form"><i data-feather="x"></i></span>
+              <ul class="item_list list-unstyled text-capitalize p-3 drop-container the-assets-form-group">
+                <li class="gari">vehicles</li>
+                <li class="soko">stall</li>
+                <li class="nyumba">house</li>
+                <li class="shamba">land</li>
+              </ul>
+              </p>
+            </div>
+              <div class="row">
+<!--				  vehicles form inputs-->
+                <div class="car-form-inputs col-12 the-assets-form col-sm-12 p-0">
+				  	<form>
+						<div class="form-group col-sm-12 col-md-12">
+                  <label for="number-plate" class="text-capitalize">registration number</label>
+                  <input type="text" class="form-control" id="number-plate" placeholder="Password">
+                </div>
+                <div class="form-group col-sm-12 col-md-12">
+                  <label for="exampleInputPassword1" class="text-capitalize">car type</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>-- select car type --</option>
+                    <option>canter</option>
+                    <option>pickup</option>
+                    <option>lorry</option>
+                    <option>personal</option>
+                    <option>bus</option>
+                  </select>
+                </div>
+						<div class="col-12">
+                  <button type="button" class="btn btn-primary text-capitaliz text-white font-14 pull-right">add to assets</button>
+                </div>
+					</form>
+				  </div>
+<!--				  end of vehicles form-->
+				  
+				  
+				  <!--				  vehicles form inputs-->
+                <div class="stalls-form-inputs col-12 d-none the-assets-form p-0">
+					<form>
+							
+                <div class="form-group col-sm-12 col-md-12">
+                  <label for="exampleInputPassword1" class="text-capitalize">market</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>-- select the market --</option>
+                    <option>market name</option>
+                    <option>market name</option>
+                    <option>market name</option>
+                    <option>market name</option>
+                    <option>market name</option>
+                  </select>
+                </div>
+					
+					<div class="form-group col-sm-12 col-md-12">
+                  <label for="stall_type" class="text-capitalize">stall type</label>
+                  <select class="form-control" id="stall_type">
+                    <option>-- select stall type --</option>
+                    <option>type name</option>
+                    <option>type name</option>
+                    <option>type name</option>                    
+                  </select>
+                </div>
+					
+					<div class="form-group col-sm-12 col-md-12">
+                  <label for="stall_number" class="text-capitalize">stall number</label>
+                  <select class="form-control" id="stall_number">
+                    <option>-- stall number --</option>
+                    <option>stall number</option>
+                    <option>stall number</option>
+                    <option>stall number</option>
+                    <option>stall number</option>
+                    <option>stall number</option>
+                    
+                  </select>
+                </div>
+						
+						<div class="col-12">
+                  <button type="button" class="btn btn-primary text-capitaliz text-white font-14 pull-right">add to assets</button>
+                </div>
+					</form>
+					
+				  </div>
+<!--				  end of stalls form-->
+				  
+				   <!--				  house form inputs-->
+                <div class="house-form-inputs col-12 d-none the-assets-form p-0">
+				<form>
+							
+                <div class="form-group col-sm-12 col-md-12">
+                  <label for="house-estate" class="text-capitalize">select the estate</label>
+                  <select class="form-control" id="house-estate">
+                    <option>-- select the estate --</option>
+                    <option>estate name</option>
+                    <option>estate name</option>
+                    <option>estate name</option>
+                    <option>estate name</option>
+                    <option>estate name</option>
+                   
+                  </select>
+                </div>
+					
+					<div class="form-group col-sm-12 col-md-12">
+                  <label for="house_type" class="text-capitalize">select house type</label>
+                  <select class="form-control" id="house_type">
+                    <option>-- select house type --</option>
+                    <option>type name</option>
+                    <option>type name</option>
+                    <option>type name</option>                    
+                  </select>
+                </div>
+					
+					<div class="form-group col-sm-12 col-md-12">
+                  <label for="stall_number" class="text-capitalize">select house number</label>
+                  <select class="form-control" id="stall_number">
+                    <option>-- house number --</option>
+                    <option>house number</option>
+                    <option>house number</option>
+                    <option>house number</option>
+                    <option>house number</option>
+                    <option>house number</option>
+                                       
+                  </select>
+                </div>
+					
+					<div class="col-12">
+                  <button type="button" class="btn btn-primary text-capitaliz text-white font-14 pull-right">add to assets</button>
+                </div>
+					</form>
+					
+				  </div>
+<!--				  end of house form-->
+				  
+				  
+				   
+				   <!--				  land form inputs-->
+                <div class="land-form-inputs col-12 d-none the-assets-form p-0">
+				<form>
+				<div class="form-group col-sm-12 col-md-12">
+                  <label for="plot_number" class="text-capitalize">enter the plot number</label>
+                  <input type="text" class="form-control" id="plot_number" placeholder="plot number">
+                </div>
+					<div class="col-12">
+                  <button type="button" class="btn btn-primary text-capitaliz text-white font-14 pull-right">add to assets</button>
+                </div>
+					</form>
+					
+				  </div>
+<!--				  end of land form-->
+				  
+                
+              </div>
+          </div>
+          <!--			assets form--> 
+          
+          <!--			the assets go here use pegination kindly not more than five assets per page-->
+          <div class="assets-container py-2 px-4 animated p-sm-0 py-md-4">
+            <div class="col-12 border-bottom pt-4 px-0 px-sm-4">
+              <p class="text-capitalize d-flex text-primary position-relative "> <span class="trans-txt text-primary mt-0 drop-title" > <span class="the-assets-text">all assets</span><span><i data-feather="chevron-down" class="ml-2 position-absolute mb-0 mt-2px"></i></span> </span> <span id="add-asset" title="Add new asset"><i data-feather="plus"></i></span>
+              <ul class="item_list list-unstyled text-capitalize p-3 drop-container">
+                <li>all assets</li>
+                <li>vehcles</li>
+                <li>stall</li>
+                <li>house</li>
+                <li>land</li>
+              </ul>
+              </p>
+            </div>
+			   <div class="col-12 white-bg p-4">
+			   	<table id="example" class="the-assets-are col-12 table mt-3 p-0">
+			   		<thead class="border-0">
+				   		<tr class="d-none">
+							 <td></td>
+				   		<th></th>
+				   		<th></th>
+				   		
+				   </tr>
+				   </thead>
+				  <tbody>
+					  
+				   	 <tr class="">
+						 <td></td>
+				   		<td class="p-3 px-4">
+					   		<div>KAH 587P</div>
+                			<small class="text-capitalize opacity-7">pick-up</small>
+					   </td>
+						 <td>
+							 <a title="view more informaytion about this asset" ><i data-feather="eye"></i></a>
+							 <a title="start a transaction" ><i data-feather="play"></i></a>
+							 <a title="delete this asset" ><i class="text-danger" data-feather="trash-2"></i></a>
+						 </td>
+						 
+				   </tr>
+				   
+				    <tr class="">
+						 <td></td>
+				   		<td class="p-3 px-4">
+					   		<div>KAH 257P</div>
+                			<small class="text-capitalize opacity-7">pick-up</small>
+						</td>
+							 <td>
+							 <a title="view more informaytion about this asset" ><i data-feather="eye"></i></a>
+							 <a title="start a transaction" ><i data-feather="play"></i></a>
+							 <a title="delete this asset" ><i class="text-danger" data-feather="trash-2"></i></a>
+						 </td>
+					   
+				   </tr>
+					  <tr class="">
+						   <td></td>
+				   		<td class="p-3 px-4">
+					   		<div>KAH 587P</div>
+                			<small class="text-capitalize opacity-7">pick-up</small>
+						</td>
+							 <td>
+							 <a title="view more informaytion about this asset" ><i data-feather="eye"></i></a>
+							 <a title="start a transaction" ><i data-feather="play"></i></a>
+							 <a title="delete this asset" ><i class="text-danger" data-feather="trash-2"></i></a>
+						 </td>
+					   
+				   </tr>
+					  <tr class="">
+						   <td></td>
+				   		<td class="p-3 px-4">
+					   		<div>KAH 587P</div>
+                			<small class="text-capitalize opacity-7">pick-up</small>
+						</td>
+							 <td>
+							 <a title="view more informaytion about this asset" ><i data-feather="eye"></i></a>
+							 <a title="start a transaction" ><i data-feather="play"></i></a>
+							 <a title="delete this asset" ><i class="text-danger" data-feather="trash-2"></i></a>
+						 </td>
+					   
+				   </tr>
+					  
+					  <tr class="">
+						   <td></td>
+				   		<td class="p-3 px-4">
+					   		<div>KAH 587P</div>
+                			<small class="text-capitalize opacity-7">pick-up</small>
+						</td>
+							 <td>
+							 <a title="view more informaytion about this asset" ><i data-feather="eye"></i></a>
+							 <a title="start a transaction" ><i data-feather="play"></i></a>
+							 <a title="delete this asset" ><i class="text-danger" data-feather="trash-2"></i></a>
+						 </td>
+					   
+				   </tr>
+					  <tr class="">
+						   <td></td>
+				   		<td class="p-3 px-4">
+					   		<div>KAH 587P</div>
+                			<small class="text-capitalize opacity-7">pick-up</small>
+						</td>
+							 <td>
+							 <a title="view more informaytion about this asset" ><i data-feather="eye"></i></a>
+							 <a title="start a transaction" ><i data-feather="play"></i></a>
+							 <a title="delete this asset" ><i class="text-danger" data-feather="trash-2"></i></a>
+						 </td>
+					   
+				   </tr>
+					  <tr class="">
+						   <td></td>
+				   		<td class="p-3 px-4">
+					   		<div>KAH 587P</div>
+                			<small class="text-capitalize opacity-7">pick-up</small>
+						</td>
+							 <td>
+							 <a title="view more informaytion about this asset" ><i data-feather="eye"></i></a>
+							 <a title="start a transaction" ><i data-feather="play"></i></a>
+							 <a title="delete this asset" ><i class="text-danger" data-feather="trash-2"></i></a>
+						 </td>
+					   
+				   </tr>
+					  <tr class="">
+						   <td></td>
+				   		<td class="p-3 px-4">
+					   		<div>KAH 587P</div>
+                			<small class="text-capitalize opacity-7">pick-up</small>
+						</td>
+							 <td>
+							 <a title="view more informaytion about this asset" ><i data-feather="eye"></i></a>
+							 <a title="start a transaction" ><i data-feather="play"></i></a>
+							 <a title="delete this asset" ><i class="text-danger" data-feather="trash-2"></i></a>
+						 </td>
+					   
+				   </tr>
+					  <tr class="">
+						   <td></td>
+				   		<td class="p-3 px-4">
+					   		<div>KAH 587P</div>
+                			<small class="text-capitalize opacity-7">pick-up</small>
+						</td>
+							 <td>
+							 <a title="view more informaytion about this asset" ><i data-feather="eye"></i></a>
+							 <a title="start a transaction" ><i data-feather="play"></i></a>
+							 <a title="delete this asset" ><i class="text-danger" data-feather="trash-2"></i></a>
+						 </td>
+					   
+				   </tr>
+				   </tbody>
+			   </table>
+			   </div>
+            
+          </div>
+          <!--			end of assets container--> 
+        </div>
+      </div>
+<!--		  my assets container -->
+	  
+	  <!--		 bill container -->
+		  <div class="col-lg-7 col-md-12 col-sm-12 animated my-profile-linker d-none" id="my-bills">
+        <div class="mb-3 pr-lg-3">
+          <table class="col-12 table table-striped p-0" id="bill-table">
+				<thead class="thead-dark">
+			  		<tr>
+						<th class="pb-3">Bill</th>
+			  			<th class="pb-3">Date</th>
+			  			<th class="text-right pb-4">Bill amount</th>
+					</tr>
+			  	</thead>
+			  <tbody>
+			  		<tr class="text-capitalize">
+				  		<td>
+					   		<div>bill title</div>
+                			<small class="text-capitalize opacity-7">205825479</small>
+						</td>
+						<td>
+						<div>May 22</div>
+                			<small class="text-capitalize opacity-7">2019</small>
+						</td>
+						
+						<td class="text-right">
+							<strong>ksh 2000</strong>
+						</td>
+				 	 </tr>
+				  <tr class="text-capitalize">
+				  		<td>
+					   		<div>bill title</div>
+                			<small class="text-capitalize opacity-7">2058479</small>
+						</td>
+						<td>
+						<div>May 22</div>
+                			<small class="text-capitalize opacity-7">2019</small>
+						</td>
+						
+						<td class="text-right">
+							<strong>ksh 2000</strong>
+						</td>
+				 	 </tr>
+				  <tr class="text-capitalize">
+				  		<td>
+					   		<div>bill title</div>
+                			<small class="text-capitalize opacity-7">2058479</small>
+						</td>
+						<td>
+						<div>May 22</div>
+                			<small class="text-capitalize opacity-7">2019</small>
+						</td>
+						
+						<td class="text-right">
+							<strong>ksh 2000</strong>
+						</td>
+				 	 </tr>
+				  <tr class="text-capitalize">
+				  		<td>
+					   		<div>bill title</div>
+                			<small class="text-capitalize opacity-7">2058479</small>
+						</td>
+						<td>
+						<div>May 22</div>
+                			<small class="text-capitalize opacity-7">2019</small>
+						</td>
+						
+						<td class="text-right">
+							<strong>ksh 2000</strong>
+						</td>
+				 	 </tr>
+			  </tbody>
+			</table>
+        </div>
+      </div>
+<!--		  bill container -->
+		  
+<!--		  transactions-->
+		  <div class="col-md-12 col-lg-5 col-sm-12 py-4 h-100 recent-transactions-container border dot-border py-3 mt-md-5 mt-lg-0" id="transactions-minor">
+			<div class="recent-transactions p-y-3">
+				<div class="row">
+					<div class="col-12 border-bottom">
+						<p class="text-capitalize d-flex text-primary"><span class="trans-txt text-primary mt-0">recent activities</span><span class="transactions-link"><i data-feather="arrow-right"></i></span></p>
+					</div>
+					
+					<div class="col-12 border-bottom pb-3 pt-3 the-transaction dot-bottom-border">
+						<div class="row">
+							<div class="col-2 text-center">
+								<p class="text-uppercase mb-2 ppvx_text--md">sep</p>
+								<p class="m-0">
+									11
+								</p>
+							</div>
+							
+							<div class="col-7">
+								<p class="text-capitalize mb-2 ppvx_text--md">daily parking</p>
+								<p class="m-0 ppvx_text--md-det">
+									KBH 4589R
+								</p>
+							</div>
+							
+							<div class="col-3 text-right">
+								<p class="text-capitalize mb-2 ppvx_text--md">ksh 200</p>
+								
+							</div>
+						</div>
+						
+						
+					
+					</div>
+					
+					<div class="col-12 border-bottom pb-3 pt-3 the-transaction dot-bottom-border">
+						<div class="row">
+							<div class="col-2 text-center">
+								<p class="text-uppercase mb-2 ppvx_text--md">sep</p>
+								<p class="m-0">
+									11
+								</p>
+							</div>
+							
+							<div class="col-7">
+								<p class="text-capitalize mb-2 ppvx_text--md">daily parking</p>
+								<p class="m-0 ppvx_text--md-det">
+									KBH 4589R
+								</p>
+							</div>
+							
+							<div class="col-3 text-right">
+								<p class="text-capitalize mb-2 ppvx_text--md">ksh 200</p>
+								
+							</div>
+						</div>
+						
+						
+					
+					</div>
+					
+					<div class="col-12 border-bottom pb-3 pt-3 the-transaction dot-bottom-border">
+						<div class="row">
+							<div class="col-2 text-center">
+								<p class="text-uppercase mb-2 ppvx_text--md">sep</p>
+								<p class="m-0">
+									11
+								</p>
+							</div>
+							
+							<div class="col-7">
+								<p class="text-capitalize mb-2 ppvx_text--md">daily parking</p>
+								<p class="m-0 ppvx_text--md-det">
+									KBH 4589R
+								</p>
+							</div>
+							
+							<div class="col-3 text-right">
+								<p class="text-capitalize mb-2 ppvx_text--md">ksh 200</p>
+								
+							</div>
+						</div>
+						
+						
+					
+					</div>
+					
+					<div class="col-12 border-bottom pb-3 pt-3 the-transaction dot-bottom-border">
+						<div class="row">
+							<div class="col-2 text-center">
+								<p class="text-uppercase mb-2 ppvx_text--md">sep</p>
+								<p class="m-0">
+									11
+								</p>
+							</div>
+							
+							<div class="col-7">
+								<p class="text-capitalize mb-2 ppvx_text--md">daily parking</p>
+								<p class="m-0 ppvx_text--md-det">
+									KBH 4589R
+								</p>
+							</div>
+							
+							<div class="col-3 text-right">
+								<p class="text-capitalize mb-2 ppvx_text--md">ksh 200</p>
+								
+							</div>
+						</div>
+						
+						
+					
+					</div>
+					
+					<div class="col-12 border-bottom pb-3 pt-3 the-transaction dot-bottom-border">
+						<div class="row">
+							<div class="col-2 text-center">
+								<p class="text-uppercase mb-2 ppvx_text--md">sep</p>
+								<p class="m-0">
+									11
+								</p>
+							</div>
+							
+							<div class="col-7">
+								<p class="text-capitalize mb-2 ppvx_text--md">daily parking</p>
+								<p class="m-0 ppvx_text--md-det">
+									KBH 4589R
+								</p>
+							</div>
+							
+							<div class="col-3 text-right">
+								<p class="text-capitalize mb-2 ppvx_text--md">ksh 200</p>
+								
+							</div>
+						</div>
+						
+						
+					
+					</div>
+					
+					<div class="col-12 border-bottom pb-3 pt-3 the-transaction dot-bottom-border">
+						<div class="row">
+							<div class="col-2 text-center">
+								<p class="text-uppercase mb-2 ppvx_text--md">sep</p>
+								<p class="m-0">
+									11
+								</p>
+							</div>
+							
+							<div class="col-7">
+								<p class="text-capitalize mb-2 ppvx_text--md">daily parking</p>
+								<p class="m-0 ppvx_text--md-det">
+									KBH 4579R
+								</p>
+							</div>
+							
+							<div class="col-3 text-right">
+								<p class="text-capitalize mb-2 ppvx_text--md">ksh 200</p>
+								
+							</div>
+						</div>
+						
+						
+						
+						
+					
+					</div>
+					
+					
+					 <a  class="text-capitalize font-14 mt-5 ml-2 text-capitalize text-primary text-capitalize text-primary d-flex transactions-link">see more transactions<i data-feather="arrow-right" class="ml-2"></i></a>
+				</div>
+			</div>
+		</div>
+<!--		  transactions-->
+	  
+<!--	  transactions pager-->
+	  <div class="col-sm-12 p-0 transactions-page d-none animated" id="transactions-main">
+        <div class="mb-3">
+          <div class="transactions-container px-3 py-3">
+            <h2 class="d-none">completed transactions</h2>
+            <!--		single transaction history--> 
+            
+            <!--			  fiter transactions-->
+            <div class="single-transaction">
+              <div class="main-transaction-container"> <span>
+                <div class="date">
+                  <ul>
+                    <li>Mar</li>
+                    <li>20</li>
+                  </ul>
+                </div>
+                <div class="type-of-transaction">
+                  <ul>
+                    <li>Parking Fees</li>
+                    <li>CBD</li>
+                  </ul>
+                </div>
+                </span>
+                <div class="transaction-amount"> ksh 300 </div>
+              </div>
+              <div class="transaction-more-details"> <span class="close-panel-container">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 width="20" height="20" viewBox="0 0 16383 16383" enable-background="new 0 0 16383 16383" xml:space="preserve">
+                  <g>
+                    <path d="M311.277,16071.723c98.298,98.297,226.086,145.809,355.512,145.809c127.787,0,257.213-49.148,355.511-147.447
+								l7169.2-7177.393l7170.84,7179.031c98.297,98.297,226.084,147.447,355.51,147.447c127.789,0,257.215-49.15,355.512-145.811
+								c196.596-194.957,196.596-512.787,0-709.383L8909.076,8191.5l7162.646-7170.84c194.959-196.596,194.959-514.426,0-709.383
+								c-196.596-196.597-514.426-196.597-709.383,0L8191.5,7490.308L1020.661,311.277c-196.596-196.597-514.426-196.597-709.384,0
+								c-196.596,194.957-196.596,512.787,0,709.383l7161.01,7170.84l-7161.01,7170.84
+								C114.682,15558.934,114.682,15876.764,311.277,16071.723z"/>
+                  </g>
+                </svg>
+                </span>
+               <div class="row">
+				 <div class="process-info col-sm-12 col-md-6">
+                  <ul>
+                    <li>time</li>
+                    <li>08:00 PM</li>
+                    <li>Type Of vehcle</li>
+                    <li>Personal</li>
+                    <li>Registration Number</li>
+                    <li>KBH 225Y</li>
+                  </ul>
+                  <a class="print-details" target="new" href="receipt.html">
+                     <i data-feather="printer" class="ml-1"></i>
+					  <span>Print Details</span>
+                   </a>
+                </div>
+                <div class="transaction-info col-sm-12 col-md-6 float-right pull-right">
+                  <ul>
+                    <li>transaction num</li>
+                    <li>12J84001KA999653DKBH 225Y</li>
+                    <li>transaction details</li>
+                    <li>
+                      <p>car parking</p>
+                      <p>300</p>
+                    </li>
+                    <li>
+                      <p>total</p>
+                      <p>300</p>
+                    </li>
+                  </ul>
+                  <p class="report">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16383px" height="16383px" viewBox="0 0 16383 16383" enable-background="new 0 0 16383 16383" xml:space="preserve">
+                      <g>
+                        <g transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)">
+                          <path d="M78554.836-5910.839c-2226.445-784.746-3858.195-1944.667-4862.469-3388.008
+											c-658.594-1004.276-58277.594-101594.25-68284.328-119253.484c-3512.519-6148.531-3920.454-7308.453-3732.05-9942.828
+											c312.915-3700.922,2445.986-7026.688,5645.585-8814.063l1662.871-909.266H81910.07h72925.633l1662.891,909.266
+											c4297.25,2383.719,6680.984,7809.781,5301.531,12044.781c-815.859,2445.969-71264.414,125464.281-72770,127001
+											C86584.148-5691.308,82005.102-4687.03,78554.836-5910.839z M83572.961-13563.338
+											c439.055-407.939,16623.828-28449.08,35977.07-62324.203c31742.047-55518.695,35161.188-61665.617,35003.922-62607.617
+											c-126.156-532.453-532.469-1317.219-909.266-1662.875l-720.859-689.734l-71169.375,62.25l-71171.039,95.016l-720.85,1066.547
+											c-407.939,596.344-720.85,1379.438-720.85,1756.25s4736.328,9002.461,10539.179,19164.844
+											C58762.543-50294.02,79840.914-13594.471,80279.977-13250.428C81094.203-12622.957,82725.945-12778.592,83572.961-13563.338z"/>
+                          <path d="M79056.164-45901.742c-4674.07-1756.25-7182.305-5802.852-7182.305-11605.711
+											c0-2321.477,658.594-6523.711,3137.344-19823.43c2319.836-12514.969,3574.766-20324.75,4233.359-26191.492
+											c689.727-6399.219,784.75-6680.992,1818.516-7025.039c532.453-188.398,1159.914-188.398,1725.125,0
+											c753.617,250.664,878.133,501.313,1097.656,2164.203c1317.195,10539.18,2070.813,15400.016,3545.281,23493.219
+											c4485.664,24277.957,4955.859,27790.469,4077.734,31240.73c-815.875,3199.598-2917.813,5865.117-5834,7370.711
+											C84262.68-45524.938,80592.883-45338.168,79056.164-45901.742z"/>
+                          <path d="M79244.563-116256.883c-2634.383-973.148-4862.469-4139.977-4862.469-6962.773
+											c0-3951.578,3607.539-7590.25,7527.984-7590.25c3889.328,0,7528,3638.672,7528,7527.984
+											c0,1975.805-720.859,3576.406-2352.617,5175.391C84827.891-115817.82,82160.734-115190.359,79244.563-116256.883z"/>
+                        </g>
+                      </g>
+                    </svg>
+                    report an issue </p>
+                </div>	  
+			  </div>
+              </div>
+            </div>
+            <!--			  fiter transactions-->
+            
+            <div class="single-transaction">
+              <div class="main-transaction-container"> <span>
+                <div class="date">
+                  <ul>
+                    <li>Mar</li>
+                    <li>20</li>
+                  </ul>
+                </div>
+                <div class="type-of-transaction">
+                  <ul>
+                    <li>Parking Fees</li>
+                    <li>CBD</li>
+                  </ul>
+                </div>
+                </span>
+                <div class="transaction-amount"> ksh 300 </div>
+              </div>
+              <div class="transaction-more-details"> <span class="close-panel-container">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 width="20" height="20" viewBox="0 0 16383 16383" enable-background="new 0 0 16383 16383" xml:space="preserve">
+                  <g>
+                    <path d="M311.277,16071.723c98.298,98.297,226.086,145.809,355.512,145.809c127.787,0,257.213-49.148,355.511-147.447
+								l7169.2-7177.393l7170.84,7179.031c98.297,98.297,226.084,147.447,355.51,147.447c127.789,0,257.215-49.15,355.512-145.811
+								c196.596-194.957,196.596-512.787,0-709.383L8909.076,8191.5l7162.646-7170.84c194.959-196.596,194.959-514.426,0-709.383
+								c-196.596-196.597-514.426-196.597-709.383,0L8191.5,7490.308L1020.661,311.277c-196.596-196.597-514.426-196.597-709.384,0
+								c-196.596,194.957-196.596,512.787,0,709.383l7161.01,7170.84l-7161.01,7170.84
+								C114.682,15558.934,114.682,15876.764,311.277,16071.723z"/>
+                  </g>
+                </svg>
+                </span>
+               <div class="row">
+				 <div class="process-info col-sm-12 col-md-6">
+                  <ul>
+                    <li>time</li>
+                    <li>08:00 PM</li>
+                    <li>Type Of vehcle</li>
+                    <li>Personal</li>
+                    <li>Registration Number</li>
+                    <li>KBH 225Y</li>
+                  </ul>
+                   <a class="print-details" target="new" href="receipt.html">
+                     <i data-feather="printer" class="ml-1"></i>
+					  <span>Print Details</span>
+                   </a>
+                </div>
+                <div class="transaction-info col-sm-12 col-md-6 float-right pull-right">
+                  <ul>
+                    <li>transaction num</li>
+                    <li>12J84001KA999653DKBH 225Y</li>
+                    <li>transaction details</li>
+                    <li>
+                      <p>car parking</p>
+                      <p>300</p>
+                    </li>
+                    <li>
+                      <p>total</p>
+                      <p>300</p>
+                    </li>
+                  </ul>
+                  <p class="report">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16383px" height="16383px" viewBox="0 0 16383 16383" enable-background="new 0 0 16383 16383" xml:space="preserve">
+                      <g>
+                        <g transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)">
+                          <path d="M78554.836-5910.839c-2226.445-784.746-3858.195-1944.667-4862.469-3388.008
+											c-658.594-1004.276-58277.594-101594.25-68284.328-119253.484c-3512.519-6148.531-3920.454-7308.453-3732.05-9942.828
+											c312.915-3700.922,2445.986-7026.688,5645.585-8814.063l1662.871-909.266H81910.07h72925.633l1662.891,909.266
+											c4297.25,2383.719,6680.984,7809.781,5301.531,12044.781c-815.859,2445.969-71264.414,125464.281-72770,127001
+											C86584.148-5691.308,82005.102-4687.03,78554.836-5910.839z M83572.961-13563.338
+											c439.055-407.939,16623.828-28449.08,35977.07-62324.203c31742.047-55518.695,35161.188-61665.617,35003.922-62607.617
+											c-126.156-532.453-532.469-1317.219-909.266-1662.875l-720.859-689.734l-71169.375,62.25l-71171.039,95.016l-720.85,1066.547
+											c-407.939,596.344-720.85,1379.438-720.85,1756.25s4736.328,9002.461,10539.179,19164.844
+											C58762.543-50294.02,79840.914-13594.471,80279.977-13250.428C81094.203-12622.957,82725.945-12778.592,83572.961-13563.338z"/>
+                          <path d="M79056.164-45901.742c-4674.07-1756.25-7182.305-5802.852-7182.305-11605.711
+											c0-2321.477,658.594-6523.711,3137.344-19823.43c2319.836-12514.969,3574.766-20324.75,4233.359-26191.492
+											c689.727-6399.219,784.75-6680.992,1818.516-7025.039c532.453-188.398,1159.914-188.398,1725.125,0
+											c753.617,250.664,878.133,501.313,1097.656,2164.203c1317.195,10539.18,2070.813,15400.016,3545.281,23493.219
+											c4485.664,24277.957,4955.859,27790.469,4077.734,31240.73c-815.875,3199.598-2917.813,5865.117-5834,7370.711
+											C84262.68-45524.938,80592.883-45338.168,79056.164-45901.742z"/>
+                          <path d="M79244.563-116256.883c-2634.383-973.148-4862.469-4139.977-4862.469-6962.773
+											c0-3951.578,3607.539-7590.25,7527.984-7590.25c3889.328,0,7528,3638.672,7528,7527.984
+											c0,1975.805-720.859,3576.406-2352.617,5175.391C84827.891-115817.82,82160.734-115190.359,79244.563-116256.883z"/>
+                        </g>
+                      </g>
+                    </svg>
+                    report an issue </p>
+                </div>	  
+			  </div>
+              </div>
+            </div>
+            
+            <!--		single transaction history--> 
+            
+            <!--		single transaction history-->
+            
+            <div class="single-transaction">
+              <div class="main-transaction-container"> <span>
+                <div class="date">
+                  <ul>
+                    <li>Mar</li>
+                    <li>20</li>
+                  </ul>
+                </div>
+                <div class="type-of-transaction">
+                  <ul>
+                    <li>Parking Fees</li>
+                    <li>CBD</li>
+                  </ul>
+                </div>
+                </span>
+                <div class="transaction-amount"> ksh 300 </div>
+              </div>
+              <div class="transaction-more-details"> <span class="close-panel-container">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 width="20" height="20" viewBox="0 0 16383 16383" enable-background="new 0 0 16383 16383" xml:space="preserve">
+                  <g>
+                    <path d="M311.277,16071.723c98.298,98.297,226.086,145.809,355.512,145.809c127.787,0,257.213-49.148,355.511-147.447
+								l7169.2-7177.393l7170.84,7179.031c98.297,98.297,226.084,147.447,355.51,147.447c127.789,0,257.215-49.15,355.512-145.811
+								c196.596-194.957,196.596-512.787,0-709.383L8909.076,8191.5l7162.646-7170.84c194.959-196.596,194.959-514.426,0-709.383
+								c-196.596-196.597-514.426-196.597-709.383,0L8191.5,7490.308L1020.661,311.277c-196.596-196.597-514.426-196.597-709.384,0
+								c-196.596,194.957-196.596,512.787,0,709.383l7161.01,7170.84l-7161.01,7170.84
+								C114.682,15558.934,114.682,15876.764,311.277,16071.723z"/>
+                  </g>
+                </svg>
+                </span>
+               <div class="row">
+				 <div class="process-info col-sm-12 col-md-6">
+                  <ul>
+                    <li>time</li>
+                    <li>08:00 PM</li>
+                    <li>Type Of vehcle</li>
+                    <li>Personal</li>
+                    <li>Registration Number</li>
+                    <li>KBH 225Y</li>
+                  </ul>
+                   <a class="print-details" target="new" href="receipt.html">
+                     <i data-feather="printer" class="ml-1"></i>
+					  <span>Print Details</span>
+                   </a>
+                </div>
+                <div class="transaction-info col-sm-12 col-md-6 float-right pull-right">
+                  <ul>
+                    <li>transaction num</li>
+                    <li>12J84001KA999653DKBH 225Y</li>
+                    <li>transaction details</li>
+                    <li>
+                      <p>car parking</p>
+                      <p>300</p>
+                    </li>
+                    <li>
+                      <p>total</p>
+                      <p>300</p>
+                    </li>
+                  </ul>
+                  <p class="report">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16383px" height="16383px" viewBox="0 0 16383 16383" enable-background="new 0 0 16383 16383" xml:space="preserve">
+                      <g>
+                        <g transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)">
+                          <path d="M78554.836-5910.839c-2226.445-784.746-3858.195-1944.667-4862.469-3388.008
+											c-658.594-1004.276-58277.594-101594.25-68284.328-119253.484c-3512.519-6148.531-3920.454-7308.453-3732.05-9942.828
+											c312.915-3700.922,2445.986-7026.688,5645.585-8814.063l1662.871-909.266H81910.07h72925.633l1662.891,909.266
+											c4297.25,2383.719,6680.984,7809.781,5301.531,12044.781c-815.859,2445.969-71264.414,125464.281-72770,127001
+											C86584.148-5691.308,82005.102-4687.03,78554.836-5910.839z M83572.961-13563.338
+											c439.055-407.939,16623.828-28449.08,35977.07-62324.203c31742.047-55518.695,35161.188-61665.617,35003.922-62607.617
+											c-126.156-532.453-532.469-1317.219-909.266-1662.875l-720.859-689.734l-71169.375,62.25l-71171.039,95.016l-720.85,1066.547
+											c-407.939,596.344-720.85,1379.438-720.85,1756.25s4736.328,9002.461,10539.179,19164.844
+											C58762.543-50294.02,79840.914-13594.471,80279.977-13250.428C81094.203-12622.957,82725.945-12778.592,83572.961-13563.338z"/>
+                          <path d="M79056.164-45901.742c-4674.07-1756.25-7182.305-5802.852-7182.305-11605.711
+											c0-2321.477,658.594-6523.711,3137.344-19823.43c2319.836-12514.969,3574.766-20324.75,4233.359-26191.492
+											c689.727-6399.219,784.75-6680.992,1818.516-7025.039c532.453-188.398,1159.914-188.398,1725.125,0
+											c753.617,250.664,878.133,501.313,1097.656,2164.203c1317.195,10539.18,2070.813,15400.016,3545.281,23493.219
+											c4485.664,24277.957,4955.859,27790.469,4077.734,31240.73c-815.875,3199.598-2917.813,5865.117-5834,7370.711
+											C84262.68-45524.938,80592.883-45338.168,79056.164-45901.742z"/>
+                          <path d="M79244.563-116256.883c-2634.383-973.148-4862.469-4139.977-4862.469-6962.773
+											c0-3951.578,3607.539-7590.25,7527.984-7590.25c3889.328,0,7528,3638.672,7528,7527.984
+											c0,1975.805-720.859,3576.406-2352.617,5175.391C84827.891-115817.82,82160.734-115190.359,79244.563-116256.883z"/>
+                        </g>
+                      </g>
+                    </svg>
+                    report an issue </p>
+                </div>	  
+			  </div>
+              </div>
+            </div>
+            
+            <!--		single transaction history--> 
+            
+            <!--		single transaction history-->
+            
+            <div class="single-transaction">
+              <div class="main-transaction-container"> <span>
+                <div class="date">
+                  <ul>
+                    <li>Mar</li>
+                    <li>20</li>
+                  </ul>
+                </div>
+                <div class="type-of-transaction">
+                  <ul>
+                    <li>Parking Fees</li>
+                    <li>CBD</li>
+                  </ul>
+                </div>
+                </span>
+                <div class="transaction-amount"> ksh 300 </div>
+              </div>
+              <div class="transaction-more-details"> <span class="close-panel-container">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 width="20" height="20" viewBox="0 0 16383 16383" enable-background="new 0 0 16383 16383" xml:space="preserve">
+                  <g>
+                    <path d="M311.277,16071.723c98.298,98.297,226.086,145.809,355.512,145.809c127.787,0,257.213-49.148,355.511-147.447
+								l7169.2-7177.393l7170.84,7179.031c98.297,98.297,226.084,147.447,355.51,147.447c127.789,0,257.215-49.15,355.512-145.811
+								c196.596-194.957,196.596-512.787,0-709.383L8909.076,8191.5l7162.646-7170.84c194.959-196.596,194.959-514.426,0-709.383
+								c-196.596-196.597-514.426-196.597-709.383,0L8191.5,7490.308L1020.661,311.277c-196.596-196.597-514.426-196.597-709.384,0
+								c-196.596,194.957-196.596,512.787,0,709.383l7161.01,7170.84l-7161.01,7170.84
+								C114.682,15558.934,114.682,15876.764,311.277,16071.723z"/>
+                  </g>
+                </svg>
+                </span>
+               <div class="row">
+				 <div class="process-info col-sm-12 col-md-6">
+                  <ul>
+                    <li>time</li>
+                    <li>08:00 PM</li>
+                    <li>Type Of vehcle</li>
+                    <li>Personal</li>
+                    <li>Registration Number</li>
+                    <li>KBH 225Y</li>
+                  </ul>
+                   <a class="print-details" target="new" href="receipt.html">
+                     <i data-feather="printer" class="ml-1"></i>
+					  <span>Print Details</span>
+                   </a>
+                </div>
+                <div class="transaction-info col-sm-12 col-md-6 float-right pull-right">
+                  <ul>
+                    <li>transaction num</li>
+                    <li>12J84001KA999653DKBH 225Y</li>
+                    <li>transaction details</li>
+                    <li>
+                      <p>car parking</p>
+                      <p>300</p>
+                    </li>
+                    <li>
+                      <p>total</p>
+                      <p>300</p>
+                    </li>
+                  </ul>
+                  <p class="report">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16383px" height="16383px" viewBox="0 0 16383 16383" enable-background="new 0 0 16383 16383" xml:space="preserve">
+                      <g>
+                        <g transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)">
+                          <path d="M78554.836-5910.839c-2226.445-784.746-3858.195-1944.667-4862.469-3388.008
+											c-658.594-1004.276-58277.594-101594.25-68284.328-119253.484c-3512.519-6148.531-3920.454-7308.453-3732.05-9942.828
+											c312.915-3700.922,2445.986-7026.688,5645.585-8814.063l1662.871-909.266H81910.07h72925.633l1662.891,909.266
+											c4297.25,2383.719,6680.984,7809.781,5301.531,12044.781c-815.859,2445.969-71264.414,125464.281-72770,127001
+											C86584.148-5691.308,82005.102-4687.03,78554.836-5910.839z M83572.961-13563.338
+											c439.055-407.939,16623.828-28449.08,35977.07-62324.203c31742.047-55518.695,35161.188-61665.617,35003.922-62607.617
+											c-126.156-532.453-532.469-1317.219-909.266-1662.875l-720.859-689.734l-71169.375,62.25l-71171.039,95.016l-720.85,1066.547
+											c-407.939,596.344-720.85,1379.438-720.85,1756.25s4736.328,9002.461,10539.179,19164.844
+											C58762.543-50294.02,79840.914-13594.471,80279.977-13250.428C81094.203-12622.957,82725.945-12778.592,83572.961-13563.338z"/>
+                          <path d="M79056.164-45901.742c-4674.07-1756.25-7182.305-5802.852-7182.305-11605.711
+											c0-2321.477,658.594-6523.711,3137.344-19823.43c2319.836-12514.969,3574.766-20324.75,4233.359-26191.492
+											c689.727-6399.219,784.75-6680.992,1818.516-7025.039c532.453-188.398,1159.914-188.398,1725.125,0
+											c753.617,250.664,878.133,501.313,1097.656,2164.203c1317.195,10539.18,2070.813,15400.016,3545.281,23493.219
+											c4485.664,24277.957,4955.859,27790.469,4077.734,31240.73c-815.875,3199.598-2917.813,5865.117-5834,7370.711
+											C84262.68-45524.938,80592.883-45338.168,79056.164-45901.742z"/>
+                          <path d="M79244.563-116256.883c-2634.383-973.148-4862.469-4139.977-4862.469-6962.773
+											c0-3951.578,3607.539-7590.25,7527.984-7590.25c3889.328,0,7528,3638.672,7528,7527.984
+											c0,1975.805-720.859,3576.406-2352.617,5175.391C84827.891-115817.82,82160.734-115190.359,79244.563-116256.883z"/>
+                        </g>
+                      </g>
+                    </svg>
+                    report an issue </p>
+                </div>	  
+			  </div>
+              </div>
+            </div>
+            
+            <!--		single transaction history--> 
+            
+            <!--		single transaction history-->
+            
+            <div class="single-transaction">
+              <div class="main-transaction-container"> <span>
+                <div class="date">
+                  <ul>
+                    <li>Mar</li>
+                    <li>20</li>
+                  </ul>
+                </div>
+                <div class="type-of-transaction">
+                  <ul>
+                    <li>Parking Fees</li>
+                    <li>CBD</li>
+                  </ul>
+                </div>
+                </span>
+                <div class="transaction-amount"> ksh 300 </div>
+              </div>
+              <div class="transaction-more-details"> <span class="close-panel-container">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 width="20" height="20" viewBox="0 0 16383 16383" enable-background="new 0 0 16383 16383" xml:space="preserve">
+                  <g>
+                    <path d="M311.277,16071.723c98.298,98.297,226.086,145.809,355.512,145.809c127.787,0,257.213-49.148,355.511-147.447
+								l7169.2-7177.393l7170.84,7179.031c98.297,98.297,226.084,147.447,355.51,147.447c127.789,0,257.215-49.15,355.512-145.811
+								c196.596-194.957,196.596-512.787,0-709.383L8909.076,8191.5l7162.646-7170.84c194.959-196.596,194.959-514.426,0-709.383
+								c-196.596-196.597-514.426-196.597-709.383,0L8191.5,7490.308L1020.661,311.277c-196.596-196.597-514.426-196.597-709.384,0
+								c-196.596,194.957-196.596,512.787,0,709.383l7161.01,7170.84l-7161.01,7170.84
+								C114.682,15558.934,114.682,15876.764,311.277,16071.723z"/>
+                  </g>
+                </svg>
+                </span>
+               <div class="row">
+				 <div class="process-info col-sm-12 col-md-6">
+                  <ul>
+                    <li>time</li>
+                    <li>08:00 PM</li>
+                    <li>Type Of vehcle</li>
+                    <li>Personal</li>
+                    <li>Registration Number</li>
+                    <li>KBH 225Y</li>
+                  </ul>
+                  <p class="print-details">
+                     <i data-feather="printer" class="ml-1"></i>
+					  <span>Print Details</span>
+                   </p>
+                </div>
+                <div class="transaction-info col-sm-12 col-md-6 float-right pull-right">
+                  <ul>
+                    <li>transaction num</li>
+                    <li>12J84001KA999653DKBH 225Y</li>
+                    <li>transaction details</li>
+                    <li>
+                      <p>car parking</p>
+                      <p>300</p>
+                    </li>
+                    <li>
+                      <p>total</p>
+                      <p>300</p>
+                    </li>
+                  </ul>
+                  <p class="report">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16383px" height="16383px" viewBox="0 0 16383 16383" enable-background="new 0 0 16383 16383" xml:space="preserve">
+                      <g>
+                        <g transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)">
+                          <path d="M78554.836-5910.839c-2226.445-784.746-3858.195-1944.667-4862.469-3388.008
+											c-658.594-1004.276-58277.594-101594.25-68284.328-119253.484c-3512.519-6148.531-3920.454-7308.453-3732.05-9942.828
+											c312.915-3700.922,2445.986-7026.688,5645.585-8814.063l1662.871-909.266H81910.07h72925.633l1662.891,909.266
+											c4297.25,2383.719,6680.984,7809.781,5301.531,12044.781c-815.859,2445.969-71264.414,125464.281-72770,127001
+											C86584.148-5691.308,82005.102-4687.03,78554.836-5910.839z M83572.961-13563.338
+											c439.055-407.939,16623.828-28449.08,35977.07-62324.203c31742.047-55518.695,35161.188-61665.617,35003.922-62607.617
+											c-126.156-532.453-532.469-1317.219-909.266-1662.875l-720.859-689.734l-71169.375,62.25l-71171.039,95.016l-720.85,1066.547
+											c-407.939,596.344-720.85,1379.438-720.85,1756.25s4736.328,9002.461,10539.179,19164.844
+											C58762.543-50294.02,79840.914-13594.471,80279.977-13250.428C81094.203-12622.957,82725.945-12778.592,83572.961-13563.338z"/>
+                          <path d="M79056.164-45901.742c-4674.07-1756.25-7182.305-5802.852-7182.305-11605.711
+											c0-2321.477,658.594-6523.711,3137.344-19823.43c2319.836-12514.969,3574.766-20324.75,4233.359-26191.492
+											c689.727-6399.219,784.75-6680.992,1818.516-7025.039c532.453-188.398,1159.914-188.398,1725.125,0
+											c753.617,250.664,878.133,501.313,1097.656,2164.203c1317.195,10539.18,2070.813,15400.016,3545.281,23493.219
+											c4485.664,24277.957,4955.859,27790.469,4077.734,31240.73c-815.875,3199.598-2917.813,5865.117-5834,7370.711
+											C84262.68-45524.938,80592.883-45338.168,79056.164-45901.742z"/>
+                          <path d="M79244.563-116256.883c-2634.383-973.148-4862.469-4139.977-4862.469-6962.773
+											c0-3951.578,3607.539-7590.25,7527.984-7590.25c3889.328,0,7528,3638.672,7528,7527.984
+											c0,1975.805-720.859,3576.406-2352.617,5175.391C84827.891-115817.82,82160.734-115190.359,79244.563-116256.883z"/>
+                        </g>
+                      </g>
+                    </svg>
+                    report an issue </p>
+                </div>	  
+			  </div>
+              </div>
+            </div>
+            
+            <!--		single transaction history--> 
+            
+            <!--		single transaction history-->
+            
+            <div class="single-transaction">
+              <div class="main-transaction-container"> <span>
+                <div class="date">
+                  <ul>
+                    <li>Mar</li>
+                    <li>20</li>
+                  </ul>
+                </div>
+                <div class="type-of-transaction">
+                  <ul>
+                    <li>Parking Fees</li>
+                    <li>CBD</li>
+                  </ul>
+                </div>
+                </span>
+                <div class="transaction-amount"> ksh 300 </div>
+              </div>
+              <div class="transaction-more-details"> <span class="close-panel-container">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 width="20" height="20" viewBox="0 0 16383 16383" enable-background="new 0 0 16383 16383" xml:space="preserve">
+                  <g>
+                    <path d="M311.277,16071.723c98.298,98.297,226.086,145.809,355.512,145.809c127.787,0,257.213-49.148,355.511-147.447
+								l7169.2-7177.393l7170.84,7179.031c98.297,98.297,226.084,147.447,355.51,147.447c127.789,0,257.215-49.15,355.512-145.811
+								c196.596-194.957,196.596-512.787,0-709.383L8909.076,8191.5l7162.646-7170.84c194.959-196.596,194.959-514.426,0-709.383
+								c-196.596-196.597-514.426-196.597-709.383,0L8191.5,7490.308L1020.661,311.277c-196.596-196.597-514.426-196.597-709.384,0
+								c-196.596,194.957-196.596,512.787,0,709.383l7161.01,7170.84l-7161.01,7170.84
+								C114.682,15558.934,114.682,15876.764,311.277,16071.723z"/>
+                  </g>
+                </svg>
+                </span>
+               <div class="row">
+				 <div class="process-info col-sm-12 col-md-6">
+                  <ul>
+                    <li>time</li>
+                    <li>08:00 PM</li>
+                    <li>Type Of vehcle</li>
+                    <li>Personal</li>
+                    <li>Registration Number</li>
+                    <li>KBH 225Y</li>
+                  </ul>
+                   <a class="print-details" target="new" href="receipt.html">
+                     <i data-feather="printer" class="ml-1"></i>
+					  <span>Print Details</span>
+                   </a>
+                </div>
+                <div class="transaction-info col-sm-12 col-md-6 float-right pull-right">
+                  <ul>
+                    <li>transaction num</li>
+                    <li>12J84001KA999653DKBH 225Y</li>
+                    <li>transaction details</li>
+                    <li>
+                      <p>car parking</p>
+                      <p>300</p>
+                    </li>
+                    <li>
+                      <p>total</p>
+                      <p>300</p>
+                    </li>
+                  </ul>
+                  <p class="report">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16383px" height="16383px" viewBox="0 0 16383 16383" enable-background="new 0 0 16383 16383" xml:space="preserve">
+                      <g>
+                        <g transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)">
+                          <path d="M78554.836-5910.839c-2226.445-784.746-3858.195-1944.667-4862.469-3388.008
+											c-658.594-1004.276-58277.594-101594.25-68284.328-119253.484c-3512.519-6148.531-3920.454-7308.453-3732.05-9942.828
+											c312.915-3700.922,2445.986-7026.688,5645.585-8814.063l1662.871-909.266H81910.07h72925.633l1662.891,909.266
+											c4297.25,2383.719,6680.984,7809.781,5301.531,12044.781c-815.859,2445.969-71264.414,125464.281-72770,127001
+											C86584.148-5691.308,82005.102-4687.03,78554.836-5910.839z M83572.961-13563.338
+											c439.055-407.939,16623.828-28449.08,35977.07-62324.203c31742.047-55518.695,35161.188-61665.617,35003.922-62607.617
+											c-126.156-532.453-532.469-1317.219-909.266-1662.875l-720.859-689.734l-71169.375,62.25l-71171.039,95.016l-720.85,1066.547
+											c-407.939,596.344-720.85,1379.438-720.85,1756.25s4736.328,9002.461,10539.179,19164.844
+											C58762.543-50294.02,79840.914-13594.471,80279.977-13250.428C81094.203-12622.957,82725.945-12778.592,83572.961-13563.338z"/>
+                          <path d="M79056.164-45901.742c-4674.07-1756.25-7182.305-5802.852-7182.305-11605.711
+											c0-2321.477,658.594-6523.711,3137.344-19823.43c2319.836-12514.969,3574.766-20324.75,4233.359-26191.492
+											c689.727-6399.219,784.75-6680.992,1818.516-7025.039c532.453-188.398,1159.914-188.398,1725.125,0
+											c753.617,250.664,878.133,501.313,1097.656,2164.203c1317.195,10539.18,2070.813,15400.016,3545.281,23493.219
+											c4485.664,24277.957,4955.859,27790.469,4077.734,31240.73c-815.875,3199.598-2917.813,5865.117-5834,7370.711
+											C84262.68-45524.938,80592.883-45338.168,79056.164-45901.742z"/>
+                          <path d="M79244.563-116256.883c-2634.383-973.148-4862.469-4139.977-4862.469-6962.773
+											c0-3951.578,3607.539-7590.25,7527.984-7590.25c3889.328,0,7528,3638.672,7528,7527.984
+											c0,1975.805-720.859,3576.406-2352.617,5175.391C84827.891-115817.82,82160.734-115190.359,79244.563-116256.883z"/>
+                        </g>
+                      </g>
+                    </svg>
+                    report an issue </p>
+                </div>	  
+			  </div>
+              </div>
+            </div>
+            
+            <!--		single transaction history--> 
+            
+            <!--		single transaction history-->
+            
+            <div class="single-transaction">
+              <div class="main-transaction-container"> <span>
+                <div class="date">
+                  <ul>
+                    <li>Mar</li>
+                    <li>20</li>
+                  </ul>
+                </div>
+                <div class="type-of-transaction">
+                  <ul>
+                    <li>Parking Fees</li>
+                    <li>CBD</li>
+                  </ul>
+                </div>
+                </span>
+                <div class="transaction-amount"> ksh 300 </div>
+              </div>
+              <div class="transaction-more-details"> <span class="close-panel-container">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 width="20" height="20" viewBox="0 0 16383 16383" enable-background="new 0 0 16383 16383" xml:space="preserve">
+                  <g>
+                    <path d="M311.277,16071.723c98.298,98.297,226.086,145.809,355.512,145.809c127.787,0,257.213-49.148,355.511-147.447
+								l7169.2-7177.393l7170.84,7179.031c98.297,98.297,226.084,147.447,355.51,147.447c127.789,0,257.215-49.15,355.512-145.811
+								c196.596-194.957,196.596-512.787,0-709.383L8909.076,8191.5l7162.646-7170.84c194.959-196.596,194.959-514.426,0-709.383
+								c-196.596-196.597-514.426-196.597-709.383,0L8191.5,7490.308L1020.661,311.277c-196.596-196.597-514.426-196.597-709.384,0
+								c-196.596,194.957-196.596,512.787,0,709.383l7161.01,7170.84l-7161.01,7170.84
+								C114.682,15558.934,114.682,15876.764,311.277,16071.723z"/>
+                  </g>
+                </svg>
+                </span>
+               <div class="row">
+				 <div class="process-info col-sm-12 col-md-6">
+                  <ul>
+                    <li>time</li>
+                    <li>08:00 PM</li>
+                    <li>Type Of vehcle</li>
+                    <li>Personal</li>
+                    <li>Registration Number</li>
+                    <li>KBH 225Y</li>
+                  </ul>
+                   <a class="print-details" target="new" href="receipt.html">
+                     <i data-feather="printer" class="ml-1"></i>
+					  <span>Print Details</span>
+                   </a>
+                </div>
+                <div class="transaction-info col-sm-12 col-md-6 float-right pull-right">
+                  <ul>
+                    <li>transaction num</li>
+                    <li>12J84001KA999653DKBH 225Y</li>
+                    <li>transaction details</li>
+                    <li>
+                      <p>car parking</p>
+                      <p>300</p>
+                    </li>
+                    <li>
+                      <p>total</p>
+                      <p>300</p>
+                    </li>
+                  </ul>
+                  <p class="report">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16383px" height="16383px" viewBox="0 0 16383 16383" enable-background="new 0 0 16383 16383" xml:space="preserve">
+                      <g>
+                        <g transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)">
+                          <path d="M78554.836-5910.839c-2226.445-784.746-3858.195-1944.667-4862.469-3388.008
+											c-658.594-1004.276-58277.594-101594.25-68284.328-119253.484c-3512.519-6148.531-3920.454-7308.453-3732.05-9942.828
+											c312.915-3700.922,2445.986-7026.688,5645.585-8814.063l1662.871-909.266H81910.07h72925.633l1662.891,909.266
+											c4297.25,2383.719,6680.984,7809.781,5301.531,12044.781c-815.859,2445.969-71264.414,125464.281-72770,127001
+											C86584.148-5691.308,82005.102-4687.03,78554.836-5910.839z M83572.961-13563.338
+											c439.055-407.939,16623.828-28449.08,35977.07-62324.203c31742.047-55518.695,35161.188-61665.617,35003.922-62607.617
+											c-126.156-532.453-532.469-1317.219-909.266-1662.875l-720.859-689.734l-71169.375,62.25l-71171.039,95.016l-720.85,1066.547
+											c-407.939,596.344-720.85,1379.438-720.85,1756.25s4736.328,9002.461,10539.179,19164.844
+											C58762.543-50294.02,79840.914-13594.471,80279.977-13250.428C81094.203-12622.957,82725.945-12778.592,83572.961-13563.338z"/>
+                          <path d="M79056.164-45901.742c-4674.07-1756.25-7182.305-5802.852-7182.305-11605.711
+											c0-2321.477,658.594-6523.711,3137.344-19823.43c2319.836-12514.969,3574.766-20324.75,4233.359-26191.492
+											c689.727-6399.219,784.75-6680.992,1818.516-7025.039c532.453-188.398,1159.914-188.398,1725.125,0
+											c753.617,250.664,878.133,501.313,1097.656,2164.203c1317.195,10539.18,2070.813,15400.016,3545.281,23493.219
+											c4485.664,24277.957,4955.859,27790.469,4077.734,31240.73c-815.875,3199.598-2917.813,5865.117-5834,7370.711
+											C84262.68-45524.938,80592.883-45338.168,79056.164-45901.742z"/>
+                          <path d="M79244.563-116256.883c-2634.383-973.148-4862.469-4139.977-4862.469-6962.773
+											c0-3951.578,3607.539-7590.25,7527.984-7590.25c3889.328,0,7528,3638.672,7528,7527.984
+											c0,1975.805-720.859,3576.406-2352.617,5175.391C84827.891-115817.82,82160.734-115190.359,79244.563-116256.883z"/>
+                        </g>
+                      </g>
+                    </svg>
+                    report an issue </p>
+                </div>	  
+			  </div>
+              </div>
+            </div>
+            <!--		single transaction history--> 
+            
+            <!--		single transaction history-->
+            
+            <div class="single-transaction">
+              <div class="main-transaction-container"> <span>
+                <div class="date">
+                  <ul>
+                    <li>Mar</li>
+                    <li>20</li>
+                  </ul>
+                </div>
+                <div class="type-of-transaction">
+                  <ul>
+                    <li>Parking Fees</li>
+                    <li>CBD</li>
+                  </ul>
+                </div>
+                </span>
+                <div class="transaction-amount"> ksh 300 </div>
+              </div>
+              <div class="transaction-more-details"> <span class="close-panel-container">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 width="20" height="20" viewBox="0 0 16383 16383" enable-background="new 0 0 16383 16383" xml:space="preserve">
+                  <g>
+                    <path d="M311.277,16071.723c98.298,98.297,226.086,145.809,355.512,145.809c127.787,0,257.213-49.148,355.511-147.447
+								l7169.2-7177.393l7170.84,7179.031c98.297,98.297,226.084,147.447,355.51,147.447c127.789,0,257.215-49.15,355.512-145.811
+								c196.596-194.957,196.596-512.787,0-709.383L8909.076,8191.5l7162.646-7170.84c194.959-196.596,194.959-514.426,0-709.383
+								c-196.596-196.597-514.426-196.597-709.383,0L8191.5,7490.308L1020.661,311.277c-196.596-196.597-514.426-196.597-709.384,0
+								c-196.596,194.957-196.596,512.787,0,709.383l7161.01,7170.84l-7161.01,7170.84
+								C114.682,15558.934,114.682,15876.764,311.277,16071.723z"/>
+                  </g>
+                </svg>
+                </span>
+               <div class="row">
+				 <div class="process-info col-sm-12 col-md-6">
+                  <ul>
+                    <li>time</li>
+                    <li>08:00 PM</li>
+                    <li>Type Of vehcle</li>
+                    <li>Personal</li>
+                    <li>Registration Number</li>
+                    <li>KBH 225Y</li>
+                  </ul>
+                  <p class="print-details">
+                     <i data-feather="printer" class="ml-1"></i>
+					  <span>Print Details</span>
+                   </p>
+                </div>
+                <div class="transaction-info col-sm-12 col-md-6 float-right pull-right">
+                  <ul>
+                    <li>transaction num</li>
+                    <li>12J84001KA999653DKBH 225Y</li>
+                    <li>transaction details</li>
+                    <li>
+                      <p>car parking</p>
+                      <p>300</p>
+                    </li>
+                    <li>
+                      <p>total</p>
+                      <p>300</p>
+                    </li>
+                  </ul>
+                  <p class="report">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16383px" height="16383px" viewBox="0 0 16383 16383" enable-background="new 0 0 16383 16383" xml:space="preserve">
+                      <g>
+                        <g transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)">
+                          <path d="M78554.836-5910.839c-2226.445-784.746-3858.195-1944.667-4862.469-3388.008
+											c-658.594-1004.276-58277.594-101594.25-68284.328-119253.484c-3512.519-6148.531-3920.454-7308.453-3732.05-9942.828
+											c312.915-3700.922,2445.986-7026.688,5645.585-8814.063l1662.871-909.266H81910.07h72925.633l1662.891,909.266
+											c4297.25,2383.719,6680.984,7809.781,5301.531,12044.781c-815.859,2445.969-71264.414,125464.281-72770,127001
+											C86584.148-5691.308,82005.102-4687.03,78554.836-5910.839z M83572.961-13563.338
+											c439.055-407.939,16623.828-28449.08,35977.07-62324.203c31742.047-55518.695,35161.188-61665.617,35003.922-62607.617
+											c-126.156-532.453-532.469-1317.219-909.266-1662.875l-720.859-689.734l-71169.375,62.25l-71171.039,95.016l-720.85,1066.547
+											c-407.939,596.344-720.85,1379.438-720.85,1756.25s4736.328,9002.461,10539.179,19164.844
+											C58762.543-50294.02,79840.914-13594.471,80279.977-13250.428C81094.203-12622.957,82725.945-12778.592,83572.961-13563.338z"/>
+                          <path d="M79056.164-45901.742c-4674.07-1756.25-7182.305-5802.852-7182.305-11605.711
+											c0-2321.477,658.594-6523.711,3137.344-19823.43c2319.836-12514.969,3574.766-20324.75,4233.359-26191.492
+											c689.727-6399.219,784.75-6680.992,1818.516-7025.039c532.453-188.398,1159.914-188.398,1725.125,0
+											c753.617,250.664,878.133,501.313,1097.656,2164.203c1317.195,10539.18,2070.813,15400.016,3545.281,23493.219
+											c4485.664,24277.957,4955.859,27790.469,4077.734,31240.73c-815.875,3199.598-2917.813,5865.117-5834,7370.711
+											C84262.68-45524.938,80592.883-45338.168,79056.164-45901.742z"/>
+                          <path d="M79244.563-116256.883c-2634.383-973.148-4862.469-4139.977-4862.469-6962.773
+											c0-3951.578,3607.539-7590.25,7527.984-7590.25c3889.328,0,7528,3638.672,7528,7527.984
+											c0,1975.805-720.859,3576.406-2352.617,5175.391C84827.891-115817.82,82160.734-115190.359,79244.563-116256.883z"/>
+                        </g>
+                      </g>
+                    </svg>
+                    report an issue </p>
+                </div>	  
+			  </div>
+              </div>
+            </div>
+            <!--		single transaction history--> 
+          </div>
+        </div>
+      </div>
+<!--	  transactions pager-->
+	  
+	  		  
 
-<!-- container -->
+      </div>
+      <!-- row --> 
+    </div>
+    <!-- contaioner --> 
+  </div>
+  <!-- view-ad --> 
+  
+  <!-- container --> 
 </section>
 
 <!-- download -->
@@ -1388,8 +2522,11 @@
 <script type="text/javascript" src="js/submenuSlider.js"></script> 
 <script type="text/javascript" src="js/main.js"></script> 
 <script type="text/javascript" src="js/nav.js"></script> 
+<script type="text/javascript" src="js/datatables.min.js"></script> 
+<script type="text/javascript" src="js/datatables.bootstrap4.min.js"></script> 
 <script type="text/javascript">
     var audio1 = document.getElementById("audioID");
+	
 
     //Example of an HTML Audio/Video Method
 
@@ -1397,6 +2534,7 @@
         audio1.play();
     }
 	 feather.replace();
+	
     </script> 
 <!--scripts-->
 </body>

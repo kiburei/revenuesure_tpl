@@ -66,6 +66,10 @@ setTimeout(explode, 5000);
 		showreceiptform();
 	});
 	
+	$('.get-a-receipt').on('click',function(){
+		showreceiptform();
+	});
+	
 	
 });
 
@@ -483,6 +487,114 @@ $(document).ready(function() {
 	});
 	
 	
+	$('.profile-nav .nav-item a, .transactions-link').on('click', function(){
+		$('.my-profile-linker').addClass('d-none');
+		$('.my-profile-linker').removeClass('fadeIn');
+		$(this).addClass('active').parent().siblings().children().removeClass('active');
+		$('.profile-loader').removeClass('d-none');
+		$('.profile-loader').addClass('fadeIn');
+		$('.txt-loader').removeClass('d-none');
+		$('.account-txt-block p,.account-txt-block h4').addClass('d-none');
+		$('.account-txt-block').addClass('mb-5');
+		$('#transactions-minor').removeClass('d-none');
+		$('#transactions-main').removeClass('fadeIn');
+			$('#transactions-main').addClass('d-none');
+		setTimeout(function () {
+			$('.profile-loader').addClass('d-none');
+			$('.profile-loader').removeClass('col-md-12,col-lg-12');
+		$('.profile-loader').removeClass('fadeIn');
+			$('.account-txt-block p,.account-txt-block h4').removeClass('d-none');
+			$('.txt-loader').addClass('d-none');
+			$('.account-txt-block').removeClass('mb-5');
+		}, 1800);
+		
+		
+		
+		
+		
+	});
+	
+	$('.account-link').on('click', function(){
+		$('.account-txt-block h4').text('My account')
+			$('.account-txt-block p').text('Below Are Etails On Your Profile. Do Remember To Save Your Work Once You Have Edited An Item In Your Profile')
+		
+		setTimeout(function () {
+			$('.my-profile-linker').addClass('d-none');
+			$('#my-account').addClass('fadeIn');
+			$('#my-account').removeClass('d-none');
+			
+		
+		}, 1801);
+	});
+	
+	$('.assets-link').on('click', function(){
+		$('.account-txt-block h4').text('My Assets')
+			$('.account-txt-block p').text('This Are Some Of The Assets Registered Under Your Account')
+		
+		setTimeout(function () {
+			$('.my-profile-linker').addClass('d-none');
+			$('#the-assets').addClass('fadeIn');
+			$('#the-assets').removeClass('d-none');
+		
+		}, 1801);
+	});
+	
+	
+	$('.bills-link').on('click', function(){
+		$('.account-txt-block h4').text('My bills')
+			$('.account-txt-block p').text('bellow are a number of bills that were raised for you at the county')
+		
+		setTimeout(function () {
+			$('.my-profile-linker').addClass('d-none');
+			$('#my-bills').addClass('fadeIn');
+			$('#my-bills').removeClass('d-none');
+		
+		}, 1801);
+	});
+	
+	
+	$('.transactions-link').on('click', function(){
+		$('.account-txt-block h4').text('My transactions');
+			$('.account-txt-block p').text('bellow are a number of transactions that you have done within the county');
+		$('.profile-loader').addClass('col-md-12,col-lg-12');
+		$('#transactions-minor').addClass('d-none');
+		
+		
+		
+		setTimeout(function () {
+			
+			$('#transactions-main').addClass('fadeIn');
+			$('#transactions-main').removeClass('d-none');
+			
+			$('.my-profile-linker').addClass('d-none');
+			$('.my-profile-linker').removeClass('fadeIn');
+		
+		}, 1801);
+	});
+	
+//	data tables
+	$(document).ready(function() {
+    $('#example').DataTable( {
+       
+        "ordering": false,
+		pageLength: 5,
+       
+    } );
+} );
+	$(document).ready(function() {
+    $('#bill-table').DataTable( {
+       
+        "ordering": false,
+		pageLength: 5,
+       
+    } );
+} );
+//	data tables
+	
+	
+	
+	$('#carouselExampleSlidesOnly').carousel();
+
 	
 	
 	
